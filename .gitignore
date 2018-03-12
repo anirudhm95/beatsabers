@@ -1,0 +1,12 @@
+
+BeatSabers/BeatSabers/Temp/UnityLockfile
+*.unwrap
+BeatSabers/BeatSabers/Library/EditorInstance.json
+BeatSabers/BeatSabers/BeatSabers.csproj
+BeatSabers/BeatSabers/BeatSabers.sln
+BeatSabers/BeatSabers/Temp/
+BeatSabers/BeatSabers/Temp/ProcessJobs/
+BeatSabers/BeatSabers/Library/*
+*.meta
+
+BeatSabers/BeatSabers/BeatSabers.sln
