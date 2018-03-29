@@ -4,55 +4,53 @@ using UnityEngine;
 
 public class onMouseClick : MonoBehaviour {
     private bool _clickable = false;
-    private Collider2D myCollider;
-    public LineRenderer myLine;
+    BoxCollider myCollider;
+    public BoxCollider lineCollider;
+    public GameObject line;
+
     // Use this for initialization
     void Start () {
-        myCollider = gameObject.GetComponent<Collider2D>();
-	}
+        myCollider = GetComponent<BoxCollider>();
+        line = GameObject.FindGameObjectWithTag("line");
+        lineCollider = line.GetComponent<BoxCollider>() as BoxCollider;
+    }
 
     // Update is called once per frame
     void Update()
     {
-        OnMouseDown();
-        OnTriggerEnter(myCollider);
-        //OnTriggerExit(myCollider);
-        
-
-    }
-
-
-
-    void OnTriggerEnter(Collider2D other)
-    {
-        if (other.gameObject.tag == "line")
+        if (myCollider.bounds.Intersects(lineCollider.bounds))
         {
-            Debug.Log("hit hit hit");
-            _clickable = true;
+            Debug.Log("intersecting");
+            OnMouseDown();
         }
+        //OnTriggerExit(myCollider);
+
+
     }
+
 
 
     void OnMouseDown()
     {
-        if (!_clickable) return;
-        //do your interaction stuff below this line
-        if (Input.GetMouseButtonDown(0))
+        if (!_clickable == true)
         {
-            RaycastHit hit;
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-            if (Physics.Raycast(ray, out hit))
+            //do your interaction stuff below this line
+            if (Input.GetMouseButtonDown(0))
             {
-                BoxCollider bc = hit.collider as BoxCollider;
-                if (bc != null)
+                RaycastHit hit;
+                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+                if (Physics.Raycast(ray, out hit))
                 {
-                    Destroy(bc.gameObject);
+                    BoxCollider bc = hit.collider as BoxCollider;
+                    if (bc != null)
+                    {
+                        Destroy(bc.gameObject);
+                    }
                 }
             }
         }
     }
-
     
     //void OnTriggerExit(Collider2D other)
     //{
