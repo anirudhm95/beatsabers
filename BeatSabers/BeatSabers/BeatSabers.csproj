@@ -323,6 +323,15 @@
     <Compile Include="Assets\AudioHelm\Scripts\SampleSequencer.cs" />
     <Compile Include="Assets\AudioHelm\Scripts\Sequencer.cs" />
     <Compile Include="Assets\AudioHelm\Scripts\Utils.cs" />
+    <Compile Include="Assets\Scripts\cubemove.cs" />
+    <Compile Include="Assets\Scripts\DrawLine.cs" />
+    <Compile Include="Assets\Scripts\GM.cs" />
+    <Compile Include="Assets\Scripts\LevelManager.cs" />
+    <Compile Include="Assets\Scripts\RobotFadeIn.cs" />
+    <Compile Include="Assets\Scripts\ShootLaser.cs" />
+    <Compile Include="Assets\Scripts\Spawner.cs" />
+    <Compile Include="Assets\Scripts\spherecontrol.cs" />
+    <Compile Include="Assets\Scripts\sucess1.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_LaserPointer.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_Teleporter.cs" />
