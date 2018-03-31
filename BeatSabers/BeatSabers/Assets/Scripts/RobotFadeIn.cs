@@ -6,6 +6,8 @@ using UnityEngine;
 public class RobotFadeIn : MonoBehaviour
 {
     Material[] mats;
+    public float fadeSpeed = .003f;
+    float lerpAmount;
 
     void Start()
     {
@@ -19,8 +21,10 @@ public class RobotFadeIn : MonoBehaviour
         StartCoroutine("FadeIn", mats);
     }
 
-    public float fadeSpeed = .003f;
-    float lerpAmount;
+    public void BeginFadeout()
+    {
+        StartCoroutine("FadeOut", mats);
+    }
 
     IEnumerator FadeIn(Material[] materialsToFadeIn)
     {
@@ -40,9 +44,9 @@ public class RobotFadeIn : MonoBehaviour
 
         if (lerpAmount >= 1) {
             GetComponent<ShootLaser>().SetHasFinishedSpawning(true);
-            StartCoroutine("FadeOut", mats);
         }
     }
+
 
 
     IEnumerator FadeOut(Material[] materialsToFadeOut)
