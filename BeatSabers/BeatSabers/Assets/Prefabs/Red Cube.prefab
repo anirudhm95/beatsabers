@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 23363341951784056}
   - component: {fileID: 114107778687319794}
   - component: {fileID: 114811581534505866}
+  - component: {fileID: 114303152198699318}
   m_Layer: 0
   m_Name: Red Cube
   m_TagString: projectile
@@ -108,6 +109,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a923b57b281644642ba3a4dcb7269d1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114303152198699318
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1439567199382324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c59708fcc2e232a438e5ca7c19e2b04d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lineCollider: {fileID: 0}
+  line: {fileID: 0}
 --- !u!114 &114811581534505866
 MonoBehaviour:
   m_ObjectHideFlags: 1

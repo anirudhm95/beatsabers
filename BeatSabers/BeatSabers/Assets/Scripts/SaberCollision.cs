@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MouseCollision : MonoBehaviour {
+public class SaberCollision : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -19,10 +19,6 @@ public class MouseCollision : MonoBehaviour {
         if (other.tag == "Player")
         {
             Destroy(gameObject);
-        }
-        if (other.tag == "projectile")
-        {
-            Debug.Log("Collision Detected box");
         }
         Debug.Log(message: other.tag);
     }
