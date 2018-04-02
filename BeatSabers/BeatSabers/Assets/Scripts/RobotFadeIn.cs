@@ -6,10 +6,13 @@ using UnityEngine;
 public class RobotFadeIn : MonoBehaviour
 {
     Material[] mats;
+    public float fadeSpeed = .003f;
+    float lerpAmount;
+    Renderer[] r;
 
     void Start()
     {
-        Renderer[] r = GetComponentsInChildren<Renderer>();
+        r = GetComponentsInChildren<Renderer>();
         mats = new Material[r.Length];
         for (int i = 0; i < r.Length; i++)
         {
@@ -19,8 +22,10 @@ public class RobotFadeIn : MonoBehaviour
         StartCoroutine("FadeIn", mats);
     }
 
-    public float fadeSpeed = .003f;
-    float lerpAmount;
+    public void BeginFadeout()
+    {
+        StartCoroutine("FadeOut", mats);
+    }
 
     IEnumerator FadeIn(Material[] materialsToFadeIn)
     {
@@ -28,7 +33,7 @@ public class RobotFadeIn : MonoBehaviour
 
         while (lerpAmount < 1)
         {
-            for (int i = 0; i < materialsToFadeIn.Length; i++)
+            for (int i = 1; i < materialsToFadeIn.Length; i++)
             {
                 Color c = materialsToFadeIn[i].color;
                 c.a = Mathf.Lerp(0, 1, lerpAmount);
@@ -40,9 +45,9 @@ public class RobotFadeIn : MonoBehaviour
 
         if (lerpAmount >= 1) {
             GetComponent<ShootLaser>().SetHasFinishedSpawning(true);
-            StartCoroutine("FadeOut", mats);
         }
     }
+
 
 
     IEnumerator FadeOut(Material[] materialsToFadeOut)
@@ -51,7 +56,7 @@ public class RobotFadeIn : MonoBehaviour
 
         while (lerpAmount < 1)
         {
-            for (int i = 0; i < materialsToFadeOut.Length; i++)
+            for (int i = 1; i < materialsToFadeOut.Length; i++)
             {
                 Color c = materialsToFadeOut[i].color;
                 c.a = Mathf.InverseLerp(1, 0, lerpAmount);
@@ -59,6 +64,11 @@ public class RobotFadeIn : MonoBehaviour
                 lerpAmount += fadeSpeed;
             }
             yield return null;
+        }
+
+        if (lerpAmount >= 1)
+        {
+            Destroy(gameObject);
         }
     }
 }
