@@ -113,6 +113,75 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &30121650
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4333813428047760, guid: e3dac1094efa45148a8574d2df70b5d0, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 11.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 4333813428047760, guid: e3dac1094efa45148a8574d2df70b5d0, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4333813428047760, guid: e3dac1094efa45148a8574d2df70b5d0, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4333813428047760, guid: e3dac1094efa45148a8574d2df70b5d0, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4333813428047760, guid: e3dac1094efa45148a8574d2df70b5d0, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4333813428047760, guid: e3dac1094efa45148a8574d2df70b5d0, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4333813428047760, guid: e3dac1094efa45148a8574d2df70b5d0, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4333813428047760, guid: e3dac1094efa45148a8574d2df70b5d0, type: 2}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: e3dac1094efa45148a8574d2df70b5d0, type: 2}
+  m_IsPrefabParent: 0
+--- !u!83 &34354553
+AudioClip:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: helm
+  m_LoadType: 0
+  m_Channels: 1
+  m_Frequency: 48000
+  m_BitsPerSample: 32
+  m_Length: 0
+  m_IsTrackerFormat: 0
+  m_Ambisonic: 0
+  m_SubsoundIndex: 0
+  m_PreloadAudioData: 1
+  m_LoadInBackground: 0
+  m_Legacy3D: 0
+  m_Resource:
+    m_Source: 
+    m_Offset: 0
+    m_Size: 0
+  m_CompressionFormat: 0
+  m_EditorResource:
+    m_Source: 
+    m_Offset: 0
+    m_Size: 0
+  m_EditorCompressionFormat: 0
 --- !u!1001 &74576391
 Prefab:
   m_ObjectHideFlags: 0
@@ -212,6 +281,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!83 &174371297
+AudioClip:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: helm
+  m_LoadType: 0
+  m_Channels: 1
+  m_Frequency: 48000
+  m_BitsPerSample: 32
+  m_Length: 0
+  m_IsTrackerFormat: 0
+  m_Ambisonic: 0
+  m_SubsoundIndex: 0
+  m_PreloadAudioData: 1
+  m_LoadInBackground: 0
+  m_Legacy3D: 0
+  m_Resource:
+    m_Source: 
+    m_Offset: 0
+    m_Size: 0
+  m_CompressionFormat: 0
+  m_EditorResource:
+    m_Source: 
+    m_Offset: 0
+    m_Size: 0
+  m_EditorCompressionFormat: 0
 --- !u!1001 &192994477
 Prefab:
   m_ObjectHideFlags: 0
@@ -319,6 +415,108 @@ BoxCollider:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: d01a7ebd7d2fd3c4ba80fc6fc7832fb7, type: 3}
   m_PrefabInternal: {fileID: 192994477}
+--- !u!1 &253632849 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1677762289284962, guid: 22d49c57c1bdee74e96497a3f2d2494d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1383724466}
+--- !u!114 &253632855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 253632849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c30bf07d7beb1d743837df3b4d10fd1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 3.666667
+  sequencer: {fileID: 1574941762}
+--- !u!1001 &261801213
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 114633426340432574, guid: 338087c6465720f48a0c53b405039d02,
+        type: 2}
+      propertyPath: noteOnEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4520697809887980, guid: 338087c6465720f48a0c53b405039d02, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 11.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 4520697809887980, guid: 338087c6465720f48a0c53b405039d02, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4520697809887980, guid: 338087c6465720f48a0c53b405039d02, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4520697809887980, guid: 338087c6465720f48a0c53b405039d02, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4520697809887980, guid: 338087c6465720f48a0c53b405039d02, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4520697809887980, guid: 338087c6465720f48a0c53b405039d02, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4520697809887980, guid: 338087c6465720f48a0c53b405039d02, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4520697809887980, guid: 338087c6465720f48a0c53b405039d02, type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114633426340432574, guid: 338087c6465720f48a0c53b405039d02,
+        type: 2}
+      propertyPath: noteOnEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114633426340432574, guid: 338087c6465720f48a0c53b405039d02,
+        type: 2}
+      propertyPath: noteOnEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 338087c6465720f48a0c53b405039d02, type: 2}
+  m_IsPrefabParent: 0
+--- !u!83 &280470858
+AudioClip:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: helm
+  m_LoadType: 0
+  m_Channels: 1
+  m_Frequency: 48000
+  m_BitsPerSample: 32
+  m_Length: 0
+  m_IsTrackerFormat: 0
+  m_Ambisonic: 0
+  m_SubsoundIndex: 0
+  m_PreloadAudioData: 1
+  m_LoadInBackground: 0
+  m_Legacy3D: 0
+  m_Resource:
+    m_Source: 
+    m_Offset: 0
+    m_Size: 0
+  m_CompressionFormat: 0
+  m_EditorResource:
+    m_Source: 
+    m_Offset: 0
+    m_Size: 0
+  m_EditorCompressionFormat: 0
 --- !u!1001 &307810914
 Prefab:
   m_ObjectHideFlags: 0
@@ -657,6 +855,53 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 549ac3294cc9f6a4c9d552c176334656, type: 2}
   m_IsPrefabParent: 0
+--- !u!1001 &454402761
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4888317528052764, guid: 61b84d4fc6aae6c4e8356de878f273be, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 395.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4888317528052764, guid: 61b84d4fc6aae6c4e8356de878f273be, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 266
+      objectReference: {fileID: 0}
+    - target: {fileID: 4888317528052764, guid: 61b84d4fc6aae6c4e8356de878f273be, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4888317528052764, guid: 61b84d4fc6aae6c4e8356de878f273be, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4888317528052764, guid: 61b84d4fc6aae6c4e8356de878f273be, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4888317528052764, guid: 61b84d4fc6aae6c4e8356de878f273be, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4888317528052764, guid: 61b84d4fc6aae6c4e8356de878f273be, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4888317528052764, guid: 61b84d4fc6aae6c4e8356de878f273be, type: 2}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 82172497302841294, guid: 61b84d4fc6aae6c4e8356de878f273be,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 2133106272}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 61b84d4fc6aae6c4e8356de878f273be, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &467175466
 GameObject:
   m_ObjectHideFlags: 0
@@ -861,7 +1106,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 600968693}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.9216113, y: 0.3, z: -5.3892164}
+  m_LocalPosition: {x: 3.9216113, y: 0.3, z: -5.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1090394248}
@@ -4653,6 +4898,33 @@ Transform:
   m_PrefabParentObject: {fileID: 4544125824310482, guid: 549ac3294cc9f6a4c9d552c176334656,
     type: 2}
   m_PrefabInternal: {fileID: 1647433709}
+--- !u!83 &804242484
+AudioClip:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: helm
+  m_LoadType: 0
+  m_Channels: 1
+  m_Frequency: 48000
+  m_BitsPerSample: 32
+  m_Length: 0
+  m_IsTrackerFormat: 0
+  m_Ambisonic: 0
+  m_SubsoundIndex: 0
+  m_PreloadAudioData: 1
+  m_LoadInBackground: 0
+  m_Legacy3D: 0
+  m_Resource:
+    m_Source: 
+    m_Offset: 0
+    m_Size: 0
+  m_CompressionFormat: 0
+  m_EditorResource:
+    m_Source: 
+    m_Offset: 0
+    m_Size: 0
+  m_EditorCompressionFormat: 0
 --- !u!4 &892406214 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 3d5f7f93c63b15044b21695313a02464, type: 3}
@@ -4703,6 +4975,12 @@ Transform:
   m_PrefabParentObject: {fileID: 4544125824310482, guid: 549ac3294cc9f6a4c9d552c176334656,
     type: 2}
   m_PrefabInternal: {fileID: 410659923}
+--- !u!114 &964151904 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114699244104468294, guid: e3dac1094efa45148a8574d2df70b5d0,
+    type: 2}
+  m_PrefabInternal: {fileID: 30121650}
+  m_Script: {fileID: 11500000, guid: 1f6faed88bb01468fb8fd49178ba50fa, type: 3}
 --- !u!1001 &997933178
 Prefab:
   m_ObjectHideFlags: 0
@@ -4839,6 +5117,3141 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 20, y: 0, z: 0}
+--- !u!1 &1026614855
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1026614859}
+  - component: {fileID: 1026614858}
+  - component: {fileID: 1026614857}
+  - component: {fileID: 1026614856}
+  m_Layer: 0
+  m_Name: SequencerChannel1 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1026614856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1026614855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 981c2862dc2a4474b9d748a52426fab6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  synthesizerMixerGroup: {fileID: 0}
+  spatializerMixerGroup: {fileID: 0}
+--- !u!82 &1026614857
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1026614855}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24300002, guid: c47a64db6dedccc4daab4f43546d2a86,
+    type: 2}
+  m_audioClip: {fileID: 1482513115}
+  m_PlayOnAwake: 1
+  m_Volume: 0
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 0
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!114 &1026614858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1026614855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03c2100a494de423e9975762c775cfac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  noteOnEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1114390749}
+        m_MethodName: spawnNote
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+    m_TypeName: AudioHelm.Sequencer+NoteEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  noteOffEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1114390748}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: AudioHelm.Sequencer+NoteEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  beatEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: AudioHelm.Sequencer+BeatEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  length: 768
+  currentIndex: -1
+  allNotes:
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes:
+    - note_: 36
+      start_: 464
+      end_: 465.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 36
+      start_: 468
+      end_: 469.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 36
+      start_: 472
+      end_: 473.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 36
+      start_: 476
+      end_: 477.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 36
+      start_: 592
+      end_: 593.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 36
+      start_: 596
+      end_: 597.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 36
+      start_: 600
+      end_: 601.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 36
+      start_: 604
+      end_: 605.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+  - notes: []
+  - notes:
+    - note_: 38
+      start_: 448
+      end_: 449.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 38
+      start_: 452
+      end_: 453.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 38
+      start_: 456
+      end_: 457.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 38
+      start_: 460
+      end_: 461.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 38
+      start_: 576
+      end_: 577.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 38
+      start_: 580
+      end_: 581.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 38
+      start_: 584
+      end_: 585.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 38
+      start_: 588
+      end_: 589.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+  - notes: []
+  - notes:
+    - note_: 40
+      start_: 384
+      end_: 385.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 40
+      start_: 388
+      end_: 389.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 40
+      start_: 392
+      end_: 393.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 40
+      start_: 396
+      end_: 397.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 40
+      start_: 424
+      end_: 425.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 40
+      start_: 428
+      end_: 429.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 40
+      start_: 488
+      end_: 489.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 40
+      start_: 492
+      end_: 493.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 40
+      start_: 512
+      end_: 513.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 40
+      start_: 516
+      end_: 517.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 40
+      start_: 520
+      end_: 521.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 40
+      start_: 524
+      end_: 525.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 40
+      start_: 552
+      end_: 553.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 40
+      start_: 556
+      end_: 557.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 40
+      start_: 616
+      end_: 617.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 40
+      start_: 620
+      end_: 621.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes:
+    - note_: 44
+      start_: 304
+      end_: 305.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 44
+      start_: 308
+      end_: 309.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 44
+      start_: 312
+      end_: 313.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 44
+      start_: 316
+      end_: 317.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 44
+      start_: 368
+      end_: 369.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 44
+      start_: 372
+      end_: 373.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 44
+      start_: 376
+      end_: 379.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 44
+      start_: 380
+      end_: 383.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 44
+      start_: 416
+      end_: 417.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 44
+      start_: 420
+      end_: 421.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 44
+      start_: 480
+      end_: 481.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 44
+      start_: 484
+      end_: 485.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 44
+      start_: 544
+      end_: 545.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 44
+      start_: 548
+      end_: 549.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 44
+      start_: 608
+      end_: 609.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 44
+      start_: 612
+      end_: 613.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 44
+      start_: 688
+      end_: 689.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 44
+      start_: 692
+      end_: 693.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 44
+      start_: 696
+      end_: 697.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 44
+      start_: 700
+      end_: 701.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 44
+      start_: 752
+      end_: 753.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 44
+      start_: 756
+      end_: 757.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 44
+      start_: 760
+      end_: 767.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+  - notes:
+    - note_: 45
+      start_: 288
+      end_: 289.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 45
+      start_: 292
+      end_: 293.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 45
+      start_: 296
+      end_: 297.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 45
+      start_: 300
+      end_: 301.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 45
+      start_: 320
+      end_: 321.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 45
+      start_: 324
+      end_: 325.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 45
+      start_: 328
+      end_: 329.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 45
+      start_: 332
+      end_: 333.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 45
+      start_: 352
+      end_: 353.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 45
+      start_: 356
+      end_: 357.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 45
+      start_: 360
+      end_: 361.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 45
+      start_: 364
+      end_: 365.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 45
+      start_: 400
+      end_: 401.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 45
+      start_: 404
+      end_: 405.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 45
+      start_: 408
+      end_: 409.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 45
+      start_: 412
+      end_: 413.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 45
+      start_: 432
+      end_: 433.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 45
+      start_: 436
+      end_: 437.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 45
+      start_: 440
+      end_: 441.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 45
+      start_: 496
+      end_: 497.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 45
+      start_: 500
+      end_: 501.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 45
+      start_: 504
+      end_: 505.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 45
+      start_: 508
+      end_: 511.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 45
+      start_: 528
+      end_: 529.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 45
+      start_: 532
+      end_: 533.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 45
+      start_: 536
+      end_: 537.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 45
+      start_: 540
+      end_: 541.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 45
+      start_: 560
+      end_: 561.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 45
+      start_: 564
+      end_: 565.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 45
+      start_: 568
+      end_: 569.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 45
+      start_: 624
+      end_: 625.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 45
+      start_: 628
+      end_: 629.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 45
+      start_: 632
+      end_: 633.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 45
+      start_: 636
+      end_: 639.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 45
+      start_: 640
+      end_: 641.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 45
+      start_: 644
+      end_: 645.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 45
+      start_: 648
+      end_: 649.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 45
+      start_: 652
+      end_: 653.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 45
+      start_: 672
+      end_: 673.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 45
+      start_: 676
+      end_: 677.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 45
+      start_: 680
+      end_: 681.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 45
+      start_: 684
+      end_: 685.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 45
+      start_: 704
+      end_: 705.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 45
+      start_: 708
+      end_: 709.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 45
+      start_: 712
+      end_: 713.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 45
+      start_: 716
+      end_: 717.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 45
+      start_: 736
+      end_: 737.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 45
+      start_: 740
+      end_: 741.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 45
+      start_: 744
+      end_: 745.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 45
+      start_: 748
+      end_: 749.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+  - notes: []
+  - notes:
+    - note_: 47
+      start_: 272
+      end_: 273.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 47
+      start_: 276
+      end_: 277.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 47
+      start_: 280
+      end_: 281.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 47
+      start_: 284
+      end_: 285.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 47
+      start_: 336
+      end_: 337.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 47
+      start_: 340
+      end_: 341.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 47
+      start_: 344
+      end_: 345.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 47
+      start_: 348
+      end_: 349.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 47
+      start_: 442
+      end_: 443.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 47
+      start_: 570
+      end_: 571.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 47
+      start_: 656
+      end_: 657.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 47
+      start_: 660
+      end_: 661.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 47
+      start_: 664
+      end_: 665.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 47
+      start_: 668
+      end_: 669.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 47
+      start_: 720
+      end_: 721.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 47
+      start_: 724
+      end_: 725.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 47
+      start_: 728
+      end_: 729.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 47
+      start_: 732
+      end_: 733.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+  - notes:
+    - note_: 48
+      start_: 444
+      end_: 445.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 48
+      start_: 466
+      end_: 467.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 48
+      start_: 470
+      end_: 471.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 48
+      start_: 474
+      end_: 475.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 48
+      start_: 478
+      end_: 479.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 48
+      start_: 572
+      end_: 573.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 48
+      start_: 594
+      end_: 595.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 48
+      start_: 598
+      end_: 599.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 48
+      start_: 602
+      end_: 603.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 48
+      start_: 606
+      end_: 607.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+  - notes: []
+  - notes:
+    - note_: 50
+      start_: 338
+      end_: 339.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 50
+      start_: 342
+      end_: 343.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 50
+      start_: 346
+      end_: 347.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 50
+      start_: 350
+      end_: 351.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 50
+      start_: 446
+      end_: 447.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 50
+      start_: 450
+      end_: 451.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 50
+      start_: 454
+      end_: 455.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 50
+      start_: 458
+      end_: 459.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 50
+      start_: 462
+      end_: 463.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 50
+      start_: 574
+      end_: 575.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 50
+      start_: 578
+      end_: 579.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 50
+      start_: 582
+      end_: 583.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 50
+      start_: 586
+      end_: 587.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 50
+      start_: 590
+      end_: 591.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 50
+      start_: 658
+      end_: 659.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 50
+      start_: 662
+      end_: 663.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 50
+      start_: 666
+      end_: 667.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 50
+      start_: 670
+      end_: 671.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 50
+      start_: 722
+      end_: 723.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 50
+      start_: 726
+      end_: 727.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 50
+      start_: 730
+      end_: 731.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 50
+      start_: 734
+      end_: 735.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+  - notes: []
+  - notes:
+    - note_: 52
+      start_: 258
+      end_: 259.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 262
+      end_: 263.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 266
+      end_: 267.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 270
+      end_: 271.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 290
+      end_: 291.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 294
+      end_: 295.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 298
+      end_: 299.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 302
+      end_: 303.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 306
+      end_: 307.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 310
+      end_: 311.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 314
+      end_: 315.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 318
+      end_: 319.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 322
+      end_: 323.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 326
+      end_: 327.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 330
+      end_: 331.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 334
+      end_: 335.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 354
+      end_: 355.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 358
+      end_: 359.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 362
+      end_: 363.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 366
+      end_: 367.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 370
+      end_: 371.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 374
+      end_: 375.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 386
+      end_: 387.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 390
+      end_: 391.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 394
+      end_: 395.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 398
+      end_: 399.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 426
+      end_: 427.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 430
+      end_: 431.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 490
+      end_: 491.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 494
+      end_: 495.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 514
+      end_: 515.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 518
+      end_: 519.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 522
+      end_: 523.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 526
+      end_: 527.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 554
+      end_: 555.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 558
+      end_: 559.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 618
+      end_: 619.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 622
+      end_: 623.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 642
+      end_: 643.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 646
+      end_: 647.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 650
+      end_: 651.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 654
+      end_: 655.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 674
+      end_: 675.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 678
+      end_: 679.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 680
+      end_: 687.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 682
+      end_: 683.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 686
+      end_: 687.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 688
+      end_: 695.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 690
+      end_: 691.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 694
+      end_: 695.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 698
+      end_: 699.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 702
+      end_: 703.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 706
+      end_: 707.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 710
+      end_: 711.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 714
+      end_: 715.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 718
+      end_: 719.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 738
+      end_: 739.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 742
+      end_: 743.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 746
+      end_: 747.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 750
+      end_: 751.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 754
+      end_: 755.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 758
+      end_: 759.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 52
+      start_: 760
+      end_: 767.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes:
+    - note_: 56
+      start_: 418
+      end_: 419.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 56
+      start_: 422
+      end_: 423.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 56
+      start_: 482
+      end_: 483.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 56
+      start_: 486
+      end_: 487.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 56
+      start_: 546
+      end_: 547.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 56
+      start_: 550
+      end_: 551.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 56
+      start_: 610
+      end_: 611.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 56
+      start_: 614
+      end_: 615.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 56
+      start_: 664
+      end_: 671.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 56
+      start_: 688
+      end_: 695.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 56
+      start_: 696
+      end_: 703.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 56
+      start_: 728
+      end_: 735.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+  - notes:
+    - note_: 57
+      start_: 402
+      end_: 403.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 57
+      start_: 406
+      end_: 407.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 57
+      start_: 410
+      end_: 411.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 57
+      start_: 414
+      end_: 415.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 57
+      start_: 434
+      end_: 435.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 57
+      start_: 438
+      end_: 439.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 57
+      start_: 498
+      end_: 499.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 57
+      start_: 502
+      end_: 503.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 57
+      start_: 506
+      end_: 507.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 57
+      start_: 530
+      end_: 531.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 57
+      start_: 534
+      end_: 535.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 57
+      start_: 538
+      end_: 539.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 57
+      start_: 542
+      end_: 543.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 57
+      start_: 562
+      end_: 563.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 57
+      start_: 566
+      end_: 567.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 57
+      start_: 626
+      end_: 627.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 57
+      start_: 630
+      end_: 631.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 57
+      start_: 634
+      end_: 635.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 57
+      start_: 648
+      end_: 655.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 57
+      start_: 672
+      end_: 679.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 57
+      start_: 680
+      end_: 687.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 57
+      start_: 712
+      end_: 719.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 57
+      start_: 736
+      end_: 739.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+  - notes: []
+  - notes:
+    - note_: 59
+      start_: 656
+      end_: 663.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 59
+      start_: 664
+      end_: 671.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 59
+      start_: 696
+      end_: 703.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 59
+      start_: 720
+      end_: 727.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 59
+      start_: 728
+      end_: 735.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+  - notes:
+    - note_: 60
+      start_: 640
+      end_: 647.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 60
+      start_: 648
+      end_: 655.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 60
+      start_: 672
+      end_: 679.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 60
+      start_: 704
+      end_: 711.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 60
+      start_: 712
+      end_: 719.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 60
+      start_: 736
+      end_: 739.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 60
+      start_: 740
+      end_: 743.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+  - notes: []
+  - notes:
+    - note_: 62
+      start_: 656
+      end_: 663.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 62
+      start_: 720
+      end_: 727.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+  - notes: []
+  - notes:
+    - note_: 64
+      start_: 296
+      end_: 303.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 64
+      start_: 304
+      end_: 311.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 64
+      start_: 400
+      end_: 403.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 64
+      start_: 404
+      end_: 405.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 64
+      start_: 418
+      end_: 419.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 64
+      start_: 436
+      end_: 439.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 64
+      start_: 440
+      end_: 447.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 64
+      start_: 470
+      end_: 471.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 64
+      start_: 478
+      end_: 479.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 64
+      start_: 482
+      end_: 483.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 64
+      start_: 500
+      end_: 503.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 64
+      start_: 504
+      end_: 511.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 64
+      start_: 528
+      end_: 531.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 64
+      start_: 532
+      end_: 533.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 64
+      start_: 546
+      end_: 547.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 64
+      start_: 564
+      end_: 567.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 64
+      start_: 568
+      end_: 575.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 64
+      start_: 598
+      end_: 599.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 64
+      start_: 606
+      end_: 607.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 64
+      start_: 610
+      end_: 611.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 64
+      start_: 628
+      end_: 631.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 64
+      start_: 632
+      end_: 639.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 64
+      start_: 640
+      end_: 647.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 64
+      start_: 704
+      end_: 711.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 64
+      start_: 740
+      end_: 743.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 64
+      start_: 744
+      end_: 747.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 64
+      start_: 748
+      end_: 751.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 64
+      start_: 752
+      end_: 767.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+  - notes:
+    - note_: 65
+      start_: 448
+      end_: 451.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 65
+      start_: 452
+      end_: 453.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 65
+      start_: 476
+      end_: 477.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 65
+      start_: 576
+      end_: 579.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 65
+      start_: 580
+      end_: 581.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 65
+      start_: 604
+      end_: 605.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+  - notes: []
+  - notes:
+    - note_: 67
+      start_: 464
+      end_: 467.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 67
+      start_: 468
+      end_: 469.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 67
+      start_: 472
+      end_: 475.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 67
+      start_: 592
+      end_: 595.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 67
+      start_: 596
+      end_: 597.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 67
+      start_: 600
+      end_: 603.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+  - notes:
+    - note_: 68
+      start_: 280
+      end_: 287.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 68
+      start_: 304
+      end_: 311.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 68
+      start_: 312
+      end_: 319.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 68
+      start_: 344
+      end_: 351.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 68
+      start_: 388
+      end_: 389.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 68
+      start_: 398
+      end_: 399.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 68
+      start_: 416
+      end_: 417.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 68
+      start_: 420
+      end_: 420.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 68
+      start_: 421
+      end_: 421.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 68
+      start_: 480
+      end_: 481.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 68
+      start_: 484
+      end_: 484.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 68
+      start_: 485
+      end_: 485.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 68
+      start_: 516
+      end_: 517.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 68
+      start_: 526
+      end_: 527.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 68
+      start_: 544
+      end_: 545.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 68
+      start_: 548
+      end_: 548.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 68
+      start_: 549
+      end_: 549.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 68
+      start_: 608
+      end_: 609.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 68
+      start_: 612
+      end_: 612.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 68
+      start_: 613
+      end_: 613.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 68
+      start_: 752
+      end_: 767.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+  - notes:
+    - note_: 69
+      start_: 16
+      end_: 19.991667
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 69
+      start_: 20
+      end_: 21.991667
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 69
+      start_: 52
+      end_: 55.991665
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 69
+      start_: 56
+      end_: 63.991665
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 69
+      start_: 116
+      end_: 119.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 69
+      start_: 120
+      end_: 127.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 69
+      start_: 144
+      end_: 147.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 69
+      start_: 148
+      end_: 149.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 69
+      start_: 180
+      end_: 183.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 69
+      start_: 184
+      end_: 191.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 69
+      start_: 244
+      end_: 247.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 69
+      start_: 248
+      end_: 255.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 69
+      start_: 264
+      end_: 271.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 69
+      start_: 288
+      end_: 295.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 69
+      start_: 296
+      end_: 303.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 69
+      start_: 328
+      end_: 335.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 69
+      start_: 352
+      end_: 355.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 69
+      start_: 390
+      end_: 391.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 69
+      start_: 396
+      end_: 397.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 69
+      start_: 400
+      end_: 403.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 69
+      start_: 404
+      end_: 405.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 69
+      start_: 406
+      end_: 407.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 69
+      start_: 414
+      end_: 415.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 69
+      start_: 432
+      end_: 435.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 69
+      start_: 436
+      end_: 439.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 69
+      start_: 440
+      end_: 447.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 69
+      start_: 454
+      end_: 455.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 69
+      start_: 462
+      end_: 463.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 69
+      start_: 496
+      end_: 499.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 69
+      start_: 500
+      end_: 503.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 69
+      start_: 504
+      end_: 511.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 69
+      start_: 518
+      end_: 519.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 69
+      start_: 524
+      end_: 525.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 69
+      start_: 528
+      end_: 531.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 69
+      start_: 532
+      end_: 533.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 69
+      start_: 534
+      end_: 535.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 69
+      start_: 542
+      end_: 543.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 69
+      start_: 560
+      end_: 563.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 69
+      start_: 564
+      end_: 567.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 69
+      start_: 568
+      end_: 575.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 69
+      start_: 582
+      end_: 583.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 69
+      start_: 590
+      end_: 591.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 69
+      start_: 624
+      end_: 627.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 69
+      start_: 628
+      end_: 631.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 69
+      start_: 632
+      end_: 639.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 69
+      start_: 744
+      end_: 747.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 69
+      start_: 748
+      end_: 751.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+  - notes: []
+  - notes:
+    - note_: 71
+      start_: 4
+      end_: 5.991667
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 71
+      start_: 14
+      end_: 15.991667
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 71
+      start_: 32
+      end_: 35.991665
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 71
+      start_: 36
+      end_: 36.991665
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 71
+      start_: 96
+      end_: 99.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 71
+      start_: 100
+      end_: 100.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 71
+      start_: 132
+      end_: 133.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 71
+      start_: 142
+      end_: 143.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 71
+      start_: 160
+      end_: 163.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 71
+      start_: 164
+      end_: 165.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 71
+      start_: 224
+      end_: 227.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 71
+      start_: 228
+      end_: 229.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 71
+      start_: 272
+      end_: 279.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 71
+      start_: 280
+      end_: 287.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 71
+      start_: 312
+      end_: 319.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 71
+      start_: 336
+      end_: 343.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 71
+      start_: 344
+      end_: 351.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 71
+      start_: 384
+      end_: 387.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 71
+      start_: 388
+      end_: 389.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 71
+      start_: 392
+      end_: 393.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 71
+      start_: 398
+      end_: 399.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 71
+      start_: 412
+      end_: 413.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 71
+      start_: 416
+      end_: 417.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 71
+      start_: 424
+      end_: 427.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 71
+      start_: 460
+      end_: 461.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 71
+      start_: 480
+      end_: 481.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 71
+      start_: 488
+      end_: 491.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 71
+      start_: 512
+      end_: 515.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 71
+      start_: 516
+      end_: 517.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 71
+      start_: 520
+      end_: 521.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 71
+      start_: 526
+      end_: 527.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 71
+      start_: 540
+      end_: 541.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 71
+      start_: 544
+      end_: 545.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 71
+      start_: 552
+      end_: 555.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 71
+      start_: 588
+      end_: 589.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 71
+      start_: 608
+      end_: 609.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 71
+      start_: 616
+      end_: 619.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+  - notes:
+    - note_: 72
+      start_: 6
+      end_: 7.991667
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 12
+      end_: 13.991667
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 22
+      end_: 23.991667
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 30
+      end_: 31.991667
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 38
+      end_: 39.991665
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 48
+      end_: 51.991665
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 86
+      end_: 87.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 94
+      end_: 95.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 102
+      end_: 103.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 112
+      end_: 115.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 134
+      end_: 135.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 140
+      end_: 141.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 150
+      end_: 151.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 158
+      end_: 159.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 166
+      end_: 167.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 176
+      end_: 179.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 214
+      end_: 215.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 222
+      end_: 223.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 230
+      end_: 231.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 240
+      end_: 243.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 256
+      end_: 263.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 264
+      end_: 271.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 288
+      end_: 295.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 320
+      end_: 327.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 328
+      end_: 335.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 352
+      end_: 355.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 356
+      end_: 359.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 390
+      end_: 391.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 396
+      end_: 397.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 406
+      end_: 407.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 408
+      end_: 411.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 414
+      end_: 415.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 422
+      end_: 423.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 428
+      end_: 431.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 432
+      end_: 435.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 456
+      end_: 459.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 470
+      end_: 471.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 478
+      end_: 479.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 486
+      end_: 487.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 492
+      end_: 495.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 496
+      end_: 499.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 518
+      end_: 519.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 524
+      end_: 525.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 534
+      end_: 535.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 536
+      end_: 539.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 542
+      end_: 543.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 550
+      end_: 551.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 556
+      end_: 559.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 560
+      end_: 563.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 584
+      end_: 587.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 598
+      end_: 599.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 606
+      end_: 607.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 614
+      end_: 615.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 620
+      end_: 623.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 72
+      start_: 624
+      end_: 627.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+  - notes: []
+  - notes:
+    - note_: 74
+      start_: 8
+      end_: 9.991667
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 74
+      start_: 28
+      end_: 29.991667
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 74
+      start_: 40
+      end_: 43.991665
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 74
+      start_: 64
+      end_: 67.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 74
+      start_: 68
+      end_: 69.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 74
+      start_: 92
+      end_: 93.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 74
+      start_: 104
+      end_: 107.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 74
+      start_: 136
+      end_: 137.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 74
+      start_: 156
+      end_: 157.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 74
+      start_: 168
+      end_: 171.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 74
+      start_: 192
+      end_: 195.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 74
+      start_: 196
+      end_: 197.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 74
+      start_: 220
+      end_: 221.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 74
+      start_: 232
+      end_: 235.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 74
+      start_: 272
+      end_: 279.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 74
+      start_: 336
+      end_: 343.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 74
+      start_: 392
+      end_: 393.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 74
+      start_: 395
+      end_: 395.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 74
+      start_: 412
+      end_: 413.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 74
+      start_: 424
+      end_: 427.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 74
+      start_: 448
+      end_: 451.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 74
+      start_: 452
+      end_: 453.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 74
+      start_: 476
+      end_: 477.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 74
+      start_: 488
+      end_: 491.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 74
+      start_: 520
+      end_: 521.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 74
+      start_: 523
+      end_: 523.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 74
+      start_: 540
+      end_: 541.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 74
+      start_: 552
+      end_: 555.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 74
+      start_: 576
+      end_: 579.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 74
+      start_: 580
+      end_: 581.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 74
+      start_: 604
+      end_: 605.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 74
+      start_: 616
+      end_: 619.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+  - notes: []
+  - notes:
+    - note_: 76
+      start_: 0
+      end_: 3.9916666
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 76
+      start_: 10
+      end_: 10.991667
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 76
+      start_: 24
+      end_: 27.991667
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 76
+      start_: 44
+      end_: 47.991665
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 76
+      start_: 80
+      end_: 83.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 76
+      start_: 84
+      end_: 85.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 76
+      start_: 88
+      end_: 91.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 76
+      start_: 108
+      end_: 111.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 76
+      start_: 128
+      end_: 131.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 76
+      start_: 138
+      end_: 138.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 76
+      start_: 152
+      end_: 155.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 76
+      start_: 172
+      end_: 175.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 76
+      start_: 208
+      end_: 211.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 76
+      start_: 212
+      end_: 213.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 76
+      start_: 216
+      end_: 219.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 76
+      start_: 236
+      end_: 239.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 76
+      start_: 256
+      end_: 263.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 76
+      start_: 320
+      end_: 327.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 76
+      start_: 356
+      end_: 359.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 76
+      start_: 360
+      end_: 363.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 76
+      start_: 364
+      end_: 367.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 76
+      start_: 368
+      end_: 383.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 76
+      start_: 384
+      end_: 387.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 76
+      start_: 394
+      end_: 394.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 76
+      start_: 408
+      end_: 411.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 76
+      start_: 428
+      end_: 431.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 76
+      start_: 464
+      end_: 467.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 76
+      start_: 468
+      end_: 469.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 76
+      start_: 472
+      end_: 475.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 76
+      start_: 492
+      end_: 495.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 76
+      start_: 512
+      end_: 515.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 76
+      start_: 522
+      end_: 522.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 76
+      start_: 536
+      end_: 539.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 76
+      start_: 556
+      end_: 559.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 76
+      start_: 592
+      end_: 595.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 76
+      start_: 596
+      end_: 597.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 76
+      start_: 600
+      end_: 603.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 76
+      start_: 620
+      end_: 623.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+  - notes:
+    - note_: 77
+      start_: 70
+      end_: 71.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 77
+      start_: 78
+      end_: 79.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 77
+      start_: 198
+      end_: 199.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 77
+      start_: 206
+      end_: 207.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 77
+      start_: 454
+      end_: 455.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 77
+      start_: 462
+      end_: 463.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 77
+      start_: 582
+      end_: 583.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 77
+      start_: 590
+      end_: 591.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+  - notes: []
+  - notes:
+    - note_: 79
+      start_: 76
+      end_: 77.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 79
+      start_: 204
+      end_: 205.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 79
+      start_: 460
+      end_: 461.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 79
+      start_: 588
+      end_: 589.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+  - notes:
+    - note_: 80
+      start_: 368
+      end_: 383.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+  - notes:
+    - note_: 81
+      start_: 72
+      end_: 75.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 81
+      start_: 200
+      end_: 203.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 81
+      start_: 360
+      end_: 363.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 81
+      start_: 364
+      end_: 367.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 81
+      start_: 456
+      end_: 459.99167
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+    - note_: 81
+      start_: 584
+      end_: 587.99164
+      velocity_: 0.88188976
+      parent: {fileID: 1026614858}
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  scrollPosition: {x: 0, y: 533.40485}
+  autoScroll: 0
+  division: 0
+  zoom: 0
+  channel: 0
+--- !u!4 &1026614859
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1026614855}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1064810009
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4396797753263616, guid: 3cb6b6f2beda6d14c8f884e3c50c06f6, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 11.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 4396797753263616, guid: 3cb6b6f2beda6d14c8f884e3c50c06f6, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4396797753263616, guid: 3cb6b6f2beda6d14c8f884e3c50c06f6, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4396797753263616, guid: 3cb6b6f2beda6d14c8f884e3c50c06f6, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4396797753263616, guid: 3cb6b6f2beda6d14c8f884e3c50c06f6, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4396797753263616, guid: 3cb6b6f2beda6d14c8f884e3c50c06f6, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4396797753263616, guid: 3cb6b6f2beda6d14c8f884e3c50c06f6, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4396797753263616, guid: 3cb6b6f2beda6d14c8f884e3c50c06f6, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1262662131897346, guid: 3cb6b6f2beda6d14c8f884e3c50c06f6, type: 2}
+      propertyPath: m_Name
+      value: AudioHelmClock (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 3cb6b6f2beda6d14c8f884e3c50c06f6, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &1079576593
 Prefab:
   m_ObjectHideFlags: 0
@@ -4959,7 +8372,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1090394247}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.4416114, y: 0.23890424, z: -10.480783}
+  m_LocalPosition: {x: -0.4416114, y: 0.23890424, z: -10.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 905860944}
@@ -4981,30 +8394,16 @@ Transform:
   m_PrefabParentObject: {fileID: 4544125824310482, guid: 549ac3294cc9f6a4c9d552c176334656,
     type: 2}
   m_PrefabInternal: {fileID: 997933178}
---- !u!1 &1114390748
+--- !u!1 &1114390748 stripped
 GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1114390750}
-  - component: {fileID: 1114390749}
-  m_Layer: 0
-  m_Name: Spawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1114390749
+  m_PrefabParentObject: {fileID: 1169988338721756, guid: 71ff681ee21e22f41a08fa20fa148402,
+    type: 2}
+  m_PrefabInternal: {fileID: 1742961861}
+--- !u!114 &1114390749 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1114390748}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
+  m_PrefabParentObject: {fileID: 114236295490942538, guid: 71ff681ee21e22f41a08fa20fa148402,
+    type: 2}
+  m_PrefabInternal: {fileID: 1742961861}
   m_Script: {fileID: 11500000, guid: 7f78df46817fd4f4fa0016f6b7d67024, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -5095,6 +8494,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &1136990755 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114857872742144550, guid: 61b84d4fc6aae6c4e8356de878f273be,
+    type: 2}
+  m_PrefabInternal: {fileID: 454402761}
+  m_Script: {fileID: 11500000, guid: 03c2100a494de423e9975762c775cfac, type: 3}
 --- !u!4 &1159225143 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4856133007751554, guid: 193f83ff8bae0e64ba379833dfb93874,
@@ -5200,6 +8605,33 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 7a3b13ea6fb92f448920e60045c757dd, type: 3}
   m_PrefabInternal: {fileID: 1909507442}
+--- !u!83 &1321217544
+AudioClip:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: helm
+  m_LoadType: 0
+  m_Channels: 1
+  m_Frequency: 48000
+  m_BitsPerSample: 32
+  m_Length: 0
+  m_IsTrackerFormat: 0
+  m_Ambisonic: 0
+  m_SubsoundIndex: 0
+  m_PreloadAudioData: 1
+  m_LoadInBackground: 0
+  m_Legacy3D: 0
+  m_Resource:
+    m_Source: 
+    m_Offset: 0
+    m_Size: 0
+  m_CompressionFormat: 0
+  m_EditorResource:
+    m_Source: 
+    m_Offset: 0
+    m_Size: 0
+  m_EditorCompressionFormat: 0
 --- !u!4 &1330072948 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: d01a7ebd7d2fd3c4ba80fc6fc7832fb7, type: 3}
@@ -5250,6 +8682,74 @@ Prefab:
       objectReference: {fileID: 2100000, guid: d412461839926b64981e00543db1ecf9, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 193f83ff8bae0e64ba379833dfb93874, type: 2}
+  m_IsPrefabParent: 0
+--- !u!114 &1364570549 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114633426340432574, guid: 338087c6465720f48a0c53b405039d02,
+    type: 2}
+  m_PrefabInternal: {fileID: 261801213}
+  m_Script: {fileID: 11500000, guid: 1f6faed88bb01468fb8fd49178ba50fa, type: 3}
+--- !u!1001 &1383724466
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4545489951884502, guid: 22d49c57c1bdee74e96497a3f2d2494d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 11.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 4545489951884502, guid: 22d49c57c1bdee74e96497a3f2d2494d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4545489951884502, guid: 22d49c57c1bdee74e96497a3f2d2494d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4545489951884502, guid: 22d49c57c1bdee74e96497a3f2d2494d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4545489951884502, guid: 22d49c57c1bdee74e96497a3f2d2494d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4545489951884502, guid: 22d49c57c1bdee74e96497a3f2d2494d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4545489951884502, guid: 22d49c57c1bdee74e96497a3f2d2494d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4545489951884502, guid: 22d49c57c1bdee74e96497a3f2d2494d, type: 2}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 114622646568918752, guid: 22d49c57c1bdee74e96497a3f2d2494d,
+        type: 2}
+      propertyPath: sequencer
+      value: 
+      objectReference: {fileID: 964151904}
+    - target: {fileID: 114313944760254676, guid: 22d49c57c1bdee74e96497a3f2d2494d,
+        type: 2}
+      propertyPath: sequencer
+      value: 
+      objectReference: {fileID: 1364570549}
+    - target: {fileID: 114212677991870946, guid: 22d49c57c1bdee74e96497a3f2d2494d,
+        type: 2}
+      propertyPath: sequencer
+      value: 
+      objectReference: {fileID: 1999521922}
+    - target: {fileID: 114547078000603444, guid: 22d49c57c1bdee74e96497a3f2d2494d,
+        type: 2}
+      propertyPath: sequencer
+      value: 
+      objectReference: {fileID: 1136990755}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 22d49c57c1bdee74e96497a3f2d2494d, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &1428917926
 Prefab:
@@ -5309,15 +8809,95 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7a3b13ea6fb92f448920e60045c757dd, type: 3}
   m_IsPrefabParent: 0
+--- !u!83 &1482513115
+AudioClip:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: helm
+  m_LoadType: 0
+  m_Channels: 1
+  m_Frequency: 48000
+  m_BitsPerSample: 32
+  m_Length: 0
+  m_IsTrackerFormat: 0
+  m_Ambisonic: 0
+  m_SubsoundIndex: 0
+  m_PreloadAudioData: 1
+  m_LoadInBackground: 0
+  m_Legacy3D: 0
+  m_Resource:
+    m_Source: 
+    m_Offset: 0
+    m_Size: 0
+  m_CompressionFormat: 0
+  m_EditorResource:
+    m_Source: 
+    m_Offset: 0
+    m_Size: 0
+  m_EditorCompressionFormat: 0
 --- !u!4 &1486849921 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4544125824310482, guid: 549ac3294cc9f6a4c9d552c176334656,
     type: 2}
   m_PrefabInternal: {fileID: 1177749504}
+--- !u!1001 &1501580290
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4654212472362754, guid: 967a380ba180b0b479bcfb63f7e26bd4, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 395.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4654212472362754, guid: 967a380ba180b0b479bcfb63f7e26bd4, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 266
+      objectReference: {fileID: 0}
+    - target: {fileID: 4654212472362754, guid: 967a380ba180b0b479bcfb63f7e26bd4, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4654212472362754, guid: 967a380ba180b0b479bcfb63f7e26bd4, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4654212472362754, guid: 967a380ba180b0b479bcfb63f7e26bd4, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4654212472362754, guid: 967a380ba180b0b479bcfb63f7e26bd4, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4654212472362754, guid: 967a380ba180b0b479bcfb63f7e26bd4, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4654212472362754, guid: 967a380ba180b0b479bcfb63f7e26bd4, type: 2}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 82264488153293848, guid: 967a380ba180b0b479bcfb63f7e26bd4,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 34354553}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 967a380ba180b0b479bcfb63f7e26bd4, type: 2}
+  m_IsPrefabParent: 0
 --- !u!4 &1533737179 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 3d5f7f93c63b15044b21695313a02464, type: 3}
   m_PrefabInternal: {fileID: 307810914}
+--- !u!114 &1574941762 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114778979223769370, guid: bc9204d2550075d46872196cad701a1f,
+    type: 2}
+  m_PrefabInternal: {fileID: 2133485340}
+  m_Script: {fileID: 11500000, guid: 03c2100a494de423e9975762c775cfac, type: 3}
 --- !u!1001 &1580425041
 Prefab:
   m_ObjectHideFlags: 0
@@ -5414,6 +8994,60 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 08bb270bc6cc59a428d3784cdd6f0b8b, type: 2}
   m_IsPrefabParent: 0
+--- !u!83 &1636437391
+AudioClip:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: helm
+  m_LoadType: 0
+  m_Channels: 1
+  m_Frequency: 48000
+  m_BitsPerSample: 32
+  m_Length: 0
+  m_IsTrackerFormat: 0
+  m_Ambisonic: 0
+  m_SubsoundIndex: 0
+  m_PreloadAudioData: 1
+  m_LoadInBackground: 0
+  m_Legacy3D: 0
+  m_Resource:
+    m_Source: 
+    m_Offset: 0
+    m_Size: 0
+  m_CompressionFormat: 0
+  m_EditorResource:
+    m_Source: 
+    m_Offset: 0
+    m_Size: 0
+  m_EditorCompressionFormat: 0
+--- !u!83 &1638081461
+AudioClip:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: helm
+  m_LoadType: 0
+  m_Channels: 1
+  m_Frequency: 48000
+  m_BitsPerSample: 32
+  m_Length: 0
+  m_IsTrackerFormat: 0
+  m_Ambisonic: 0
+  m_SubsoundIndex: 0
+  m_PreloadAudioData: 1
+  m_LoadInBackground: 0
+  m_Legacy3D: 0
+  m_Resource:
+    m_Source: 
+    m_Offset: 0
+    m_Size: 0
+  m_CompressionFormat: 0
+  m_EditorResource:
+    m_Source: 
+    m_Offset: 0
+    m_Size: 0
+  m_EditorCompressionFormat: 0
 --- !u!4 &1642284306 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 772bf8db0e8fb20408ffb12163cef9d9, type: 3}
@@ -5459,6 +9093,83 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 549ac3294cc9f6a4c9d552c176334656, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &1691092702
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 114778979223769370, guid: bc9204d2550075d46872196cad701a1f,
+        type: 2}
+      propertyPath: noteOnEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4416273535221040, guid: bc9204d2550075d46872196cad701a1f, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 395.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4416273535221040, guid: bc9204d2550075d46872196cad701a1f, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 266
+      objectReference: {fileID: 0}
+    - target: {fileID: 4416273535221040, guid: bc9204d2550075d46872196cad701a1f, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4416273535221040, guid: bc9204d2550075d46872196cad701a1f, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4416273535221040, guid: bc9204d2550075d46872196cad701a1f, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4416273535221040, guid: bc9204d2550075d46872196cad701a1f, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4416273535221040, guid: bc9204d2550075d46872196cad701a1f, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4416273535221040, guid: bc9204d2550075d46872196cad701a1f, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 82150384874652558, guid: bc9204d2550075d46872196cad701a1f,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 1636437391}
+    - target: {fileID: 114778979223769370, guid: bc9204d2550075d46872196cad701a1f,
+        type: 2}
+      propertyPath: noteOnEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778979223769370, guid: bc9204d2550075d46872196cad701a1f,
+        type: 2}
+      propertyPath: noteOnEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778979223769370, guid: bc9204d2550075d46872196cad701a1f,
+        type: 2}
+      propertyPath: noteOnEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1114390749}
+    - target: {fileID: 114778979223769370, guid: bc9204d2550075d46872196cad701a1f,
+        type: 2}
+      propertyPath: noteOnEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: spawnNote
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778979223769370, guid: bc9204d2550075d46872196cad701a1f,
+        type: 2}
+      propertyPath: noteOnEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: bc9204d2550075d46872196cad701a1f, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1691288854
 GameObject:
@@ -5620,7 +9331,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1699861371}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.5583887, y: 0.3, z: -5.3892164}
+  m_LocalPosition: {x: -3.5583887, y: 0.3, z: -5.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1090394248}
@@ -5683,6 +9394,62 @@ MeshFilter:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 772bf8db0e8fb20408ffb12163cef9d9, type: 3}
   m_PrefabInternal: {fileID: 74576391}
+--- !u!1001 &1742961861
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4065730865698792, guid: 71ff681ee21e22f41a08fa20fa148402, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.059999943
+      objectReference: {fileID: 0}
+    - target: {fileID: 4065730865698792, guid: 71ff681ee21e22f41a08fa20fa148402, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.68000007
+      objectReference: {fileID: 0}
+    - target: {fileID: 4065730865698792, guid: 71ff681ee21e22f41a08fa20fa148402, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4065730865698792, guid: 71ff681ee21e22f41a08fa20fa148402, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4065730865698792, guid: 71ff681ee21e22f41a08fa20fa148402, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4065730865698792, guid: 71ff681ee21e22f41a08fa20fa148402, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4065730865698792, guid: 71ff681ee21e22f41a08fa20fa148402, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4065730865698792, guid: 71ff681ee21e22f41a08fa20fa148402, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114236295490942538, guid: 71ff681ee21e22f41a08fa20fa148402,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114236295490942538, guid: 71ff681ee21e22f41a08fa20fa148402,
+        type: 2}
+      propertyPath: stop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1169988338721756, guid: 71ff681ee21e22f41a08fa20fa148402, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 71ff681ee21e22f41a08fa20fa148402, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1745408764
 GameObject:
   m_ObjectHideFlags: 0
@@ -5893,6 +9660,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7a3b13ea6fb92f448920e60045c757dd, type: 3}
   m_IsPrefabParent: 0
+--- !u!114 &1999521922 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114778979223769370, guid: bc9204d2550075d46872196cad701a1f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1691092702}
+  m_Script: {fileID: 11500000, guid: 03c2100a494de423e9975762c775cfac, type: 3}
 --- !u!1001 &2038908953
 Prefab:
   m_ObjectHideFlags: 0
@@ -5993,3 +9766,241 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 772bf8db0e8fb20408ffb12163cef9d9, type: 3}
   m_PrefabInternal: {fileID: 521778516}
+--- !u!83 &2133106272
+AudioClip:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: helm
+  m_LoadType: 0
+  m_Channels: 1
+  m_Frequency: 48000
+  m_BitsPerSample: 32
+  m_Length: 0
+  m_IsTrackerFormat: 0
+  m_Ambisonic: 0
+  m_SubsoundIndex: 0
+  m_PreloadAudioData: 1
+  m_LoadInBackground: 0
+  m_Legacy3D: 0
+  m_Resource:
+    m_Source: 
+    m_Offset: 0
+    m_Size: 0
+  m_CompressionFormat: 0
+  m_EditorResource:
+    m_Source: 
+    m_Offset: 0
+    m_Size: 0
+  m_EditorCompressionFormat: 0
+--- !u!1001 &2133485340
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 114778979223769370, guid: bc9204d2550075d46872196cad701a1f,
+        type: 2}
+      propertyPath: allNotes.Array.data[49].notes.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778979223769370, guid: bc9204d2550075d46872196cad701a1f,
+        type: 2}
+      propertyPath: noteOnEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4416273535221040, guid: bc9204d2550075d46872196cad701a1f, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 395.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4416273535221040, guid: bc9204d2550075d46872196cad701a1f, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 266
+      objectReference: {fileID: 0}
+    - target: {fileID: 4416273535221040, guid: bc9204d2550075d46872196cad701a1f, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4416273535221040, guid: bc9204d2550075d46872196cad701a1f, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4416273535221040, guid: bc9204d2550075d46872196cad701a1f, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4416273535221040, guid: bc9204d2550075d46872196cad701a1f, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4416273535221040, guid: bc9204d2550075d46872196cad701a1f, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4416273535221040, guid: bc9204d2550075d46872196cad701a1f, type: 2}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 82150384874652558, guid: bc9204d2550075d46872196cad701a1f,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 1638081461}
+    - target: {fileID: 114778979223769370, guid: bc9204d2550075d46872196cad701a1f,
+        type: 2}
+      propertyPath: noteOnEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778979223769370, guid: bc9204d2550075d46872196cad701a1f,
+        type: 2}
+      propertyPath: noteOnEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778979223769370, guid: bc9204d2550075d46872196cad701a1f,
+        type: 2}
+      propertyPath: noteOnEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1114390749}
+    - target: {fileID: 114778979223769370, guid: bc9204d2550075d46872196cad701a1f,
+        type: 2}
+      propertyPath: noteOnEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: spawnNote
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778979223769370, guid: bc9204d2550075d46872196cad701a1f,
+        type: 2}
+      propertyPath: noteOnEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1828714695692722, guid: bc9204d2550075d46872196cad701a1f, type: 2}
+      propertyPath: m_Name
+      value: BassSequencer (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 82150384874652558, guid: bc9204d2550075d46872196cad701a1f,
+        type: 2}
+      propertyPath: m_Volume
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778979223769370, guid: bc9204d2550075d46872196cad701a1f,
+        type: 2}
+      propertyPath: allNotes.Array.data[49].notes.Array.data[7].start_
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778979223769370, guid: bc9204d2550075d46872196cad701a1f,
+        type: 2}
+      propertyPath: allNotes.Array.data[49].notes.Array.data[7].end_
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778979223769370, guid: bc9204d2550075d46872196cad701a1f,
+        type: 2}
+      propertyPath: allNotes.Array.data[49].notes.Array.data[8].start_
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778979223769370, guid: bc9204d2550075d46872196cad701a1f,
+        type: 2}
+      propertyPath: allNotes.Array.data[49].notes.Array.data[8].end_
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778979223769370, guid: bc9204d2550075d46872196cad701a1f,
+        type: 2}
+      propertyPath: scrollPosition.y
+      value: 660
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778979223769370, guid: bc9204d2550075d46872196cad701a1f,
+        type: 2}
+      propertyPath: allNotes.Array.data[49].notes.Array.data[9].note_
+      value: 49
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778979223769370, guid: bc9204d2550075d46872196cad701a1f,
+        type: 2}
+      propertyPath: allNotes.Array.data[49].notes.Array.data[9].start_
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778979223769370, guid: bc9204d2550075d46872196cad701a1f,
+        type: 2}
+      propertyPath: allNotes.Array.data[49].notes.Array.data[9].end_
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778979223769370, guid: bc9204d2550075d46872196cad701a1f,
+        type: 2}
+      propertyPath: allNotes.Array.data[49].notes.Array.data[9].velocity_
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778979223769370, guid: bc9204d2550075d46872196cad701a1f,
+        type: 2}
+      propertyPath: allNotes.Array.data[49].notes.Array.data[9].parent
+      value: 
+      objectReference: {fileID: 1574941762}
+    - target: {fileID: 114778979223769370, guid: bc9204d2550075d46872196cad701a1f,
+        type: 2}
+      propertyPath: allNotes.Array.data[49].notes.Array.data[8].note_
+      value: 49
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778979223769370, guid: bc9204d2550075d46872196cad701a1f,
+        type: 2}
+      propertyPath: allNotes.Array.data[49].notes.Array.data[8].velocity_
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778979223769370, guid: bc9204d2550075d46872196cad701a1f,
+        type: 2}
+      propertyPath: allNotes.Array.data[49].notes.Array.data[8].parent
+      value: 
+      objectReference: {fileID: 1574941762}
+    - target: {fileID: 114778979223769370, guid: bc9204d2550075d46872196cad701a1f,
+        type: 2}
+      propertyPath: allNotes.Array.data[49].notes.Array.data[3].start_
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778979223769370, guid: bc9204d2550075d46872196cad701a1f,
+        type: 2}
+      propertyPath: allNotes.Array.data[49].notes.Array.data[3].end_
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778979223769370, guid: bc9204d2550075d46872196cad701a1f,
+        type: 2}
+      propertyPath: allNotes.Array.data[49].notes.Array.data[4].start_
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778979223769370, guid: bc9204d2550075d46872196cad701a1f,
+        type: 2}
+      propertyPath: allNotes.Array.data[49].notes.Array.data[4].end_
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778979223769370, guid: bc9204d2550075d46872196cad701a1f,
+        type: 2}
+      propertyPath: allNotes.Array.data[49].notes.Array.data[5].start_
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778979223769370, guid: bc9204d2550075d46872196cad701a1f,
+        type: 2}
+      propertyPath: allNotes.Array.data[49].notes.Array.data[5].end_
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778979223769370, guid: bc9204d2550075d46872196cad701a1f,
+        type: 2}
+      propertyPath: allNotes.Array.data[49].notes.Array.data[6].start_
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778979223769370, guid: bc9204d2550075d46872196cad701a1f,
+        type: 2}
+      propertyPath: allNotes.Array.data[49].notes.Array.data[6].end_
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778979223769370, guid: bc9204d2550075d46872196cad701a1f,
+        type: 2}
+      propertyPath: allNotes.Array.data[49].notes.Array.data[7].note_
+      value: 49
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778979223769370, guid: bc9204d2550075d46872196cad701a1f,
+        type: 2}
+      propertyPath: allNotes.Array.data[49].notes.Array.data[7].velocity_
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778979223769370, guid: bc9204d2550075d46872196cad701a1f,
+        type: 2}
+      propertyPath: allNotes.Array.data[49].notes.Array.data[7].parent
+      value: 
+      objectReference: {fileID: 1574941762}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: bc9204d2550075d46872196cad701a1f, type: 2}
+  m_IsPrefabParent: 0

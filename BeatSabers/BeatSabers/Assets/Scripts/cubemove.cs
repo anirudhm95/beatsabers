@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class cubemove : MonoBehaviour {
 
-    private float speed = 3.0f;
+    private float speed = 6.0f;
 
     // Use this for initialization
     void Start () {

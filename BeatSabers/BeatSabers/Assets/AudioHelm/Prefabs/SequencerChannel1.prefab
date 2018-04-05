@@ -1,0 +1,3770 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1074186564228418}
+  m_IsPrefabParent: 1
+--- !u!1 &1074186564228418
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4229080084119406}
+  - component: {fileID: 114808239492118034}
+  - component: {fileID: 82192429844867112}
+  - component: {fileID: 114973766363703888}
+  m_Layer: 0
+  m_Name: SequencerChannel1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4229080084119406
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1074186564228418}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &82192429844867112
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1074186564228418}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24300002, guid: c47a64db6dedccc4daab4f43546d2a86,
+    type: 2}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 0
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!114 &114808239492118034
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1074186564228418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03c2100a494de423e9975762c775cfac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  noteOnEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: AudioHelm.Sequencer+NoteEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  noteOffEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: AudioHelm.Sequencer+NoteEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  beatEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: AudioHelm.Sequencer+BeatEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  length: 768
+  currentIndex: -1
+  allNotes:
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes:
+    - note_: 31
+      start_: 96
+      end_: 97.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 31
+      start_: 100
+      end_: 101.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 31
+      start_: 224
+      end_: 225.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 31
+      start_: 228
+      end_: 229.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes:
+    - note_: 36
+      start_: 80
+      end_: 81.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 36
+      start_: 84
+      end_: 85.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 36
+      start_: 88
+      end_: 89.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 36
+      start_: 92
+      end_: 93.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 36
+      start_: 208
+      end_: 209.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 36
+      start_: 212
+      end_: 213.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 36
+      start_: 216
+      end_: 217.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 36
+      start_: 220
+      end_: 221.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 36
+      start_: 464
+      end_: 465.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 36
+      start_: 468
+      end_: 469.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 36
+      start_: 472
+      end_: 473.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 36
+      start_: 476
+      end_: 477.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 36
+      start_: 592
+      end_: 593.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 36
+      start_: 596
+      end_: 597.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 36
+      start_: 600
+      end_: 601.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 36
+      start_: 604
+      end_: 605.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+  - notes: []
+  - notes:
+    - note_: 38
+      start_: 64
+      end_: 65.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 38
+      start_: 68
+      end_: 69.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 38
+      start_: 72
+      end_: 73.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 38
+      start_: 76
+      end_: 77.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 38
+      start_: 192
+      end_: 193.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 38
+      start_: 196
+      end_: 197.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 38
+      start_: 200
+      end_: 201.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 38
+      start_: 204
+      end_: 205.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 38
+      start_: 448
+      end_: 449.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 38
+      start_: 452
+      end_: 453.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 38
+      start_: 456
+      end_: 457.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 38
+      start_: 460
+      end_: 461.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 38
+      start_: 576
+      end_: 577.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 38
+      start_: 580
+      end_: 581.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 38
+      start_: 584
+      end_: 585.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 38
+      start_: 588
+      end_: 589.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+  - notes: []
+  - notes:
+    - note_: 40
+      start_: 0
+      end_: 1.9916667
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 40
+      start_: 4
+      end_: 5.991667
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 40
+      start_: 8
+      end_: 9.991667
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 40
+      start_: 12
+      end_: 13.991667
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 40
+      start_: 40
+      end_: 41.991665
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 40
+      start_: 44
+      end_: 45.991665
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 40
+      start_: 104
+      end_: 105.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 40
+      start_: 108
+      end_: 109.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 40
+      start_: 128
+      end_: 129.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 40
+      start_: 132
+      end_: 133.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 40
+      start_: 136
+      end_: 137.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 40
+      start_: 140
+      end_: 141.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 40
+      start_: 168
+      end_: 169.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 40
+      start_: 172
+      end_: 173.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 40
+      start_: 232
+      end_: 233.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 40
+      start_: 236
+      end_: 237.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 40
+      start_: 384
+      end_: 385.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 40
+      start_: 388
+      end_: 389.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 40
+      start_: 392
+      end_: 393.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 40
+      start_: 396
+      end_: 397.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 40
+      start_: 424
+      end_: 425.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 40
+      start_: 428
+      end_: 429.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 40
+      start_: 488
+      end_: 489.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 40
+      start_: 492
+      end_: 493.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 40
+      start_: 512
+      end_: 513.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 40
+      start_: 516
+      end_: 517.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 40
+      start_: 520
+      end_: 521.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 40
+      start_: 524
+      end_: 525.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 40
+      start_: 552
+      end_: 553.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 40
+      start_: 556
+      end_: 557.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 40
+      start_: 616
+      end_: 617.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 40
+      start_: 620
+      end_: 621.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+  - notes: []
+  - notes: []
+  - notes:
+    - note_: 43
+      start_: 98
+      end_: 99.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 43
+      start_: 102
+      end_: 103.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 43
+      start_: 226
+      end_: 227.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 43
+      start_: 230
+      end_: 231.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+  - notes:
+    - note_: 44
+      start_: 32
+      end_: 33.991665
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 44
+      start_: 36
+      end_: 37.991665
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 44
+      start_: 160
+      end_: 161.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 44
+      start_: 164
+      end_: 165.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 44
+      start_: 304
+      end_: 305.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 44
+      start_: 308
+      end_: 309.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 44
+      start_: 312
+      end_: 313.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 44
+      start_: 316
+      end_: 317.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 44
+      start_: 368
+      end_: 369.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 44
+      start_: 372
+      end_: 373.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 44
+      start_: 376
+      end_: 379.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 44
+      start_: 380
+      end_: 383.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 44
+      start_: 416
+      end_: 417.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 44
+      start_: 420
+      end_: 421.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 44
+      start_: 480
+      end_: 481.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 44
+      start_: 484
+      end_: 485.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 44
+      start_: 544
+      end_: 545.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 44
+      start_: 548
+      end_: 549.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 44
+      start_: 608
+      end_: 609.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 44
+      start_: 612
+      end_: 613.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 44
+      start_: 688
+      end_: 689.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 44
+      start_: 692
+      end_: 693.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 44
+      start_: 696
+      end_: 697.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 44
+      start_: 700
+      end_: 701.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 44
+      start_: 752
+      end_: 753.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 44
+      start_: 756
+      end_: 757.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 44
+      start_: 760
+      end_: 767.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+  - notes:
+    - note_: 45
+      start_: 16
+      end_: 17.991667
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 20
+      end_: 21.991667
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 24
+      end_: 25.991667
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 28
+      end_: 29.991667
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 48
+      end_: 49.991665
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 52
+      end_: 53.991665
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 56
+      end_: 57.991665
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 112
+      end_: 113.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 116
+      end_: 117.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 120
+      end_: 121.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 124
+      end_: 127.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 144
+      end_: 145.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 148
+      end_: 149.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 152
+      end_: 153.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 156
+      end_: 157.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 176
+      end_: 177.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 180
+      end_: 181.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 184
+      end_: 185.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 240
+      end_: 241.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 244
+      end_: 245.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 248
+      end_: 249.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 252
+      end_: 255.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 256
+      end_: 257.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 260
+      end_: 261.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 264
+      end_: 265.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 268
+      end_: 269.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 288
+      end_: 289.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 292
+      end_: 293.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 296
+      end_: 297.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 300
+      end_: 301.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 320
+      end_: 321.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 324
+      end_: 325.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 328
+      end_: 329.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 332
+      end_: 333.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 352
+      end_: 353.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 356
+      end_: 357.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 360
+      end_: 361.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 364
+      end_: 365.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 400
+      end_: 401.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 404
+      end_: 405.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 408
+      end_: 409.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 412
+      end_: 413.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 432
+      end_: 433.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 436
+      end_: 437.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 440
+      end_: 441.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 496
+      end_: 497.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 500
+      end_: 501.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 504
+      end_: 505.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 508
+      end_: 511.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 528
+      end_: 529.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 532
+      end_: 533.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 536
+      end_: 537.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 540
+      end_: 541.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 560
+      end_: 561.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 564
+      end_: 565.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 568
+      end_: 569.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 624
+      end_: 625.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 628
+      end_: 629.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 632
+      end_: 633.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 636
+      end_: 639.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 640
+      end_: 641.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 644
+      end_: 645.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 648
+      end_: 649.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 652
+      end_: 653.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 672
+      end_: 673.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 676
+      end_: 677.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 680
+      end_: 681.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 684
+      end_: 685.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 704
+      end_: 705.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 708
+      end_: 709.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 712
+      end_: 713.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 716
+      end_: 717.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 736
+      end_: 737.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 740
+      end_: 741.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 744
+      end_: 745.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 45
+      start_: 748
+      end_: 749.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+  - notes: []
+  - notes:
+    - note_: 47
+      start_: 58
+      end_: 59.991665
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 47
+      start_: 186
+      end_: 187.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 47
+      start_: 272
+      end_: 273.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 47
+      start_: 276
+      end_: 277.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 47
+      start_: 280
+      end_: 281.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 47
+      start_: 284
+      end_: 285.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 47
+      start_: 336
+      end_: 337.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 47
+      start_: 340
+      end_: 341.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 47
+      start_: 344
+      end_: 345.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 47
+      start_: 348
+      end_: 349.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 47
+      start_: 442
+      end_: 443.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 47
+      start_: 570
+      end_: 571.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 47
+      start_: 656
+      end_: 657.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 47
+      start_: 660
+      end_: 661.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 47
+      start_: 664
+      end_: 665.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 47
+      start_: 668
+      end_: 669.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 47
+      start_: 720
+      end_: 721.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 47
+      start_: 724
+      end_: 725.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 47
+      start_: 728
+      end_: 729.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 47
+      start_: 732
+      end_: 733.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+  - notes:
+    - note_: 48
+      start_: 60
+      end_: 61.991665
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 48
+      start_: 82
+      end_: 83.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 48
+      start_: 86
+      end_: 87.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 48
+      start_: 90
+      end_: 91.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 48
+      start_: 94
+      end_: 95.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 48
+      start_: 188
+      end_: 189.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 48
+      start_: 210
+      end_: 211.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 48
+      start_: 214
+      end_: 215.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 48
+      start_: 218
+      end_: 219.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 48
+      start_: 222
+      end_: 223.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 48
+      start_: 444
+      end_: 445.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 48
+      start_: 466
+      end_: 467.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 48
+      start_: 470
+      end_: 471.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 48
+      start_: 474
+      end_: 475.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 48
+      start_: 478
+      end_: 479.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 48
+      start_: 572
+      end_: 573.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 48
+      start_: 594
+      end_: 595.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 48
+      start_: 598
+      end_: 599.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 48
+      start_: 602
+      end_: 603.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 48
+      start_: 606
+      end_: 607.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+  - notes: []
+  - notes:
+    - note_: 50
+      start_: 62
+      end_: 63.991665
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 50
+      start_: 66
+      end_: 67.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 50
+      start_: 70
+      end_: 71.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 50
+      start_: 74
+      end_: 75.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 50
+      start_: 78
+      end_: 79.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 50
+      start_: 190
+      end_: 191.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 50
+      start_: 194
+      end_: 195.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 50
+      start_: 198
+      end_: 199.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 50
+      start_: 202
+      end_: 203.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 50
+      start_: 206
+      end_: 207.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 50
+      start_: 274
+      end_: 275.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 50
+      start_: 278
+      end_: 279.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 50
+      start_: 282
+      end_: 283.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 50
+      start_: 286
+      end_: 287.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 50
+      start_: 338
+      end_: 339.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 50
+      start_: 342
+      end_: 343.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 50
+      start_: 346
+      end_: 347.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 50
+      start_: 350
+      end_: 351.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 50
+      start_: 446
+      end_: 447.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 50
+      start_: 450
+      end_: 451.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 50
+      start_: 454
+      end_: 455.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 50
+      start_: 458
+      end_: 459.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 50
+      start_: 462
+      end_: 463.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 50
+      start_: 574
+      end_: 575.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 50
+      start_: 578
+      end_: 579.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 50
+      start_: 582
+      end_: 583.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 50
+      start_: 586
+      end_: 587.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 50
+      start_: 590
+      end_: 591.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 50
+      start_: 658
+      end_: 659.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 50
+      start_: 662
+      end_: 663.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 50
+      start_: 666
+      end_: 667.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 50
+      start_: 670
+      end_: 671.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 50
+      start_: 722
+      end_: 723.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 50
+      start_: 726
+      end_: 727.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 50
+      start_: 730
+      end_: 731.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 50
+      start_: 734
+      end_: 735.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+  - notes: []
+  - notes:
+    - note_: 52
+      start_: 2
+      end_: 3.9916666
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 6
+      end_: 7.991667
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 10
+      end_: 11.991667
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 14
+      end_: 15.991667
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 42
+      end_: 43.991665
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 46
+      end_: 47.991665
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 106
+      end_: 107.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 110
+      end_: 111.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 130
+      end_: 131.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 134
+      end_: 135.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 138
+      end_: 139.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 142
+      end_: 143.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 170
+      end_: 171.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 174
+      end_: 175.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 234
+      end_: 235.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 238
+      end_: 239.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 258
+      end_: 259.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 262
+      end_: 263.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 266
+      end_: 267.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 270
+      end_: 271.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 290
+      end_: 291.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 294
+      end_: 295.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 298
+      end_: 299.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 302
+      end_: 303.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 306
+      end_: 307.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 310
+      end_: 311.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 314
+      end_: 315.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 318
+      end_: 319.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 322
+      end_: 323.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 326
+      end_: 327.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 330
+      end_: 331.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 334
+      end_: 335.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 354
+      end_: 355.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 358
+      end_: 359.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 362
+      end_: 363.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 366
+      end_: 367.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 370
+      end_: 371.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 374
+      end_: 375.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 386
+      end_: 387.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 390
+      end_: 391.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 394
+      end_: 395.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 398
+      end_: 399.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 426
+      end_: 427.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 430
+      end_: 431.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 490
+      end_: 491.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 494
+      end_: 495.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 514
+      end_: 515.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 518
+      end_: 519.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 522
+      end_: 523.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 526
+      end_: 527.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 554
+      end_: 555.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 558
+      end_: 559.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 618
+      end_: 619.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 622
+      end_: 623.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 642
+      end_: 643.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 646
+      end_: 647.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 650
+      end_: 651.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 654
+      end_: 655.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 674
+      end_: 675.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 678
+      end_: 679.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 680
+      end_: 687.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 682
+      end_: 683.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 686
+      end_: 687.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 688
+      end_: 695.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 690
+      end_: 691.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 694
+      end_: 695.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 698
+      end_: 699.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 702
+      end_: 703.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 706
+      end_: 707.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 710
+      end_: 711.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 714
+      end_: 715.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 718
+      end_: 719.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 738
+      end_: 739.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 742
+      end_: 743.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 746
+      end_: 747.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 750
+      end_: 751.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 754
+      end_: 755.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 758
+      end_: 759.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 52
+      start_: 760
+      end_: 767.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes:
+    - note_: 56
+      start_: 34
+      end_: 35.991665
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 56
+      start_: 38
+      end_: 39.991665
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 56
+      start_: 162
+      end_: 163.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 56
+      start_: 166
+      end_: 167.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 56
+      start_: 418
+      end_: 419.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 56
+      start_: 422
+      end_: 423.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 56
+      start_: 482
+      end_: 483.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 56
+      start_: 486
+      end_: 487.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 56
+      start_: 546
+      end_: 547.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 56
+      start_: 550
+      end_: 551.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 56
+      start_: 610
+      end_: 611.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 56
+      start_: 614
+      end_: 615.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 56
+      start_: 664
+      end_: 671.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 56
+      start_: 688
+      end_: 695.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 56
+      start_: 696
+      end_: 703.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 56
+      start_: 728
+      end_: 735.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+  - notes:
+    - note_: 57
+      start_: 18
+      end_: 19.991667
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 57
+      start_: 22
+      end_: 23.991667
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 57
+      start_: 26
+      end_: 27.991667
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 57
+      start_: 30
+      end_: 31.991667
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 57
+      start_: 50
+      end_: 51.991665
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 57
+      start_: 54
+      end_: 55.991665
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 57
+      start_: 114
+      end_: 115.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 57
+      start_: 118
+      end_: 119.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 57
+      start_: 122
+      end_: 123.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 57
+      start_: 146
+      end_: 147.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 57
+      start_: 150
+      end_: 151.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 57
+      start_: 154
+      end_: 155.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 57
+      start_: 158
+      end_: 159.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 57
+      start_: 178
+      end_: 179.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 57
+      start_: 182
+      end_: 183.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 57
+      start_: 242
+      end_: 243.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 57
+      start_: 246
+      end_: 247.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 57
+      start_: 250
+      end_: 251.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 57
+      start_: 402
+      end_: 403.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 57
+      start_: 406
+      end_: 407.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 57
+      start_: 410
+      end_: 411.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 57
+      start_: 414
+      end_: 415.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 57
+      start_: 434
+      end_: 435.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 57
+      start_: 438
+      end_: 439.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 57
+      start_: 498
+      end_: 499.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 57
+      start_: 502
+      end_: 503.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 57
+      start_: 506
+      end_: 507.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 57
+      start_: 530
+      end_: 531.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 57
+      start_: 534
+      end_: 535.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 57
+      start_: 538
+      end_: 539.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 57
+      start_: 542
+      end_: 543.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 57
+      start_: 562
+      end_: 563.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 57
+      start_: 566
+      end_: 567.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 57
+      start_: 626
+      end_: 627.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 57
+      start_: 630
+      end_: 631.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 57
+      start_: 634
+      end_: 635.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 57
+      start_: 648
+      end_: 655.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 57
+      start_: 672
+      end_: 679.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 57
+      start_: 680
+      end_: 687.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 57
+      start_: 712
+      end_: 719.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 57
+      start_: 736
+      end_: 739.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+  - notes: []
+  - notes:
+    - note_: 59
+      start_: 656
+      end_: 663.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 59
+      start_: 664
+      end_: 671.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 59
+      start_: 696
+      end_: 703.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 59
+      start_: 720
+      end_: 727.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 59
+      start_: 728
+      end_: 735.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+  - notes:
+    - note_: 60
+      start_: 640
+      end_: 647.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 60
+      start_: 648
+      end_: 655.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 60
+      start_: 672
+      end_: 679.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 60
+      start_: 704
+      end_: 711.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 60
+      start_: 712
+      end_: 719.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 60
+      start_: 736
+      end_: 739.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 60
+      start_: 740
+      end_: 743.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+  - notes: []
+  - notes:
+    - note_: 62
+      start_: 656
+      end_: 663.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 62
+      start_: 720
+      end_: 727.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+  - notes: []
+  - notes:
+    - note_: 64
+      start_: 296
+      end_: 303.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 64
+      start_: 304
+      end_: 311.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 64
+      start_: 400
+      end_: 403.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 64
+      start_: 404
+      end_: 405.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 64
+      start_: 418
+      end_: 419.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 64
+      start_: 436
+      end_: 439.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 64
+      start_: 440
+      end_: 447.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 64
+      start_: 470
+      end_: 471.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 64
+      start_: 478
+      end_: 479.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 64
+      start_: 482
+      end_: 483.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 64
+      start_: 500
+      end_: 503.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 64
+      start_: 504
+      end_: 511.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 64
+      start_: 528
+      end_: 531.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 64
+      start_: 532
+      end_: 533.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 64
+      start_: 546
+      end_: 547.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 64
+      start_: 564
+      end_: 567.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 64
+      start_: 568
+      end_: 575.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 64
+      start_: 598
+      end_: 599.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 64
+      start_: 606
+      end_: 607.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 64
+      start_: 610
+      end_: 611.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 64
+      start_: 628
+      end_: 631.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 64
+      start_: 632
+      end_: 639.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 64
+      start_: 640
+      end_: 647.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 64
+      start_: 704
+      end_: 711.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 64
+      start_: 740
+      end_: 743.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 64
+      start_: 744
+      end_: 747.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 64
+      start_: 748
+      end_: 751.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 64
+      start_: 752
+      end_: 767.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+  - notes:
+    - note_: 65
+      start_: 448
+      end_: 451.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 65
+      start_: 452
+      end_: 453.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 65
+      start_: 476
+      end_: 477.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 65
+      start_: 576
+      end_: 579.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 65
+      start_: 580
+      end_: 581.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 65
+      start_: 604
+      end_: 605.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+  - notes: []
+  - notes:
+    - note_: 67
+      start_: 464
+      end_: 467.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 67
+      start_: 468
+      end_: 469.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 67
+      start_: 472
+      end_: 475.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 67
+      start_: 592
+      end_: 595.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 67
+      start_: 596
+      end_: 597.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 67
+      start_: 600
+      end_: 603.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+  - notes:
+    - note_: 68
+      start_: 280
+      end_: 287.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 68
+      start_: 304
+      end_: 311.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 68
+      start_: 312
+      end_: 319.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 68
+      start_: 344
+      end_: 351.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 68
+      start_: 388
+      end_: 389.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 68
+      start_: 398
+      end_: 399.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 68
+      start_: 416
+      end_: 417.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 68
+      start_: 420
+      end_: 420.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 68
+      start_: 421
+      end_: 421.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 68
+      start_: 480
+      end_: 481.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 68
+      start_: 484
+      end_: 484.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 68
+      start_: 485
+      end_: 485.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 68
+      start_: 516
+      end_: 517.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 68
+      start_: 526
+      end_: 527.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 68
+      start_: 544
+      end_: 545.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 68
+      start_: 548
+      end_: 548.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 68
+      start_: 549
+      end_: 549.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 68
+      start_: 608
+      end_: 609.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 68
+      start_: 612
+      end_: 612.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 68
+      start_: 613
+      end_: 613.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 68
+      start_: 752
+      end_: 767.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+  - notes:
+    - note_: 69
+      start_: 16
+      end_: 19.991667
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 69
+      start_: 20
+      end_: 21.991667
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 69
+      start_: 52
+      end_: 55.991665
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 69
+      start_: 56
+      end_: 63.991665
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 69
+      start_: 116
+      end_: 119.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 69
+      start_: 120
+      end_: 127.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 69
+      start_: 144
+      end_: 147.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 69
+      start_: 148
+      end_: 149.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 69
+      start_: 180
+      end_: 183.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 69
+      start_: 184
+      end_: 191.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 69
+      start_: 244
+      end_: 247.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 69
+      start_: 248
+      end_: 255.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 69
+      start_: 264
+      end_: 271.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 69
+      start_: 288
+      end_: 295.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 69
+      start_: 296
+      end_: 303.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 69
+      start_: 328
+      end_: 335.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 69
+      start_: 352
+      end_: 355.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 69
+      start_: 390
+      end_: 391.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 69
+      start_: 396
+      end_: 397.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 69
+      start_: 400
+      end_: 403.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 69
+      start_: 404
+      end_: 405.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 69
+      start_: 406
+      end_: 407.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 69
+      start_: 414
+      end_: 415.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 69
+      start_: 432
+      end_: 435.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 69
+      start_: 436
+      end_: 439.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 69
+      start_: 440
+      end_: 447.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 69
+      start_: 454
+      end_: 455.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 69
+      start_: 462
+      end_: 463.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 69
+      start_: 496
+      end_: 499.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 69
+      start_: 500
+      end_: 503.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 69
+      start_: 504
+      end_: 511.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 69
+      start_: 518
+      end_: 519.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 69
+      start_: 524
+      end_: 525.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 69
+      start_: 528
+      end_: 531.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 69
+      start_: 532
+      end_: 533.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 69
+      start_: 534
+      end_: 535.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 69
+      start_: 542
+      end_: 543.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 69
+      start_: 560
+      end_: 563.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 69
+      start_: 564
+      end_: 567.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 69
+      start_: 568
+      end_: 575.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 69
+      start_: 582
+      end_: 583.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 69
+      start_: 590
+      end_: 591.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 69
+      start_: 624
+      end_: 627.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 69
+      start_: 628
+      end_: 631.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 69
+      start_: 632
+      end_: 639.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 69
+      start_: 744
+      end_: 747.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 69
+      start_: 748
+      end_: 751.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+  - notes: []
+  - notes:
+    - note_: 71
+      start_: 4
+      end_: 5.991667
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 71
+      start_: 14
+      end_: 15.991667
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 71
+      start_: 32
+      end_: 35.991665
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 71
+      start_: 36
+      end_: 36.991665
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 71
+      start_: 37
+      end_: 37.991665
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 71
+      start_: 96
+      end_: 99.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 71
+      start_: 100
+      end_: 100.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 71
+      start_: 101
+      end_: 101.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 71
+      start_: 132
+      end_: 133.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 71
+      start_: 142
+      end_: 143.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 71
+      start_: 160
+      end_: 163.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 71
+      start_: 164
+      end_: 165.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 71
+      start_: 224
+      end_: 227.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 71
+      start_: 228
+      end_: 229.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 71
+      start_: 272
+      end_: 279.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 71
+      start_: 280
+      end_: 287.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 71
+      start_: 312
+      end_: 319.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 71
+      start_: 336
+      end_: 343.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 71
+      start_: 344
+      end_: 351.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 71
+      start_: 384
+      end_: 387.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 71
+      start_: 388
+      end_: 389.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 71
+      start_: 392
+      end_: 393.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 71
+      start_: 398
+      end_: 399.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 71
+      start_: 412
+      end_: 413.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 71
+      start_: 416
+      end_: 417.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 71
+      start_: 424
+      end_: 427.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 71
+      start_: 460
+      end_: 461.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 71
+      start_: 480
+      end_: 481.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 71
+      start_: 488
+      end_: 491.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 71
+      start_: 512
+      end_: 515.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 71
+      start_: 516
+      end_: 517.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 71
+      start_: 520
+      end_: 521.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 71
+      start_: 526
+      end_: 527.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 71
+      start_: 540
+      end_: 541.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 71
+      start_: 544
+      end_: 545.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 71
+      start_: 552
+      end_: 555.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 71
+      start_: 588
+      end_: 589.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 71
+      start_: 608
+      end_: 609.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 71
+      start_: 616
+      end_: 619.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+  - notes:
+    - note_: 72
+      start_: 6
+      end_: 7.991667
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 12
+      end_: 13.991667
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 22
+      end_: 23.991667
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 30
+      end_: 31.991667
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 38
+      end_: 39.991665
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 48
+      end_: 51.991665
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 86
+      end_: 87.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 94
+      end_: 95.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 102
+      end_: 103.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 112
+      end_: 115.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 134
+      end_: 135.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 140
+      end_: 141.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 150
+      end_: 151.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 158
+      end_: 159.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 166
+      end_: 167.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 176
+      end_: 179.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 214
+      end_: 215.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 222
+      end_: 223.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 230
+      end_: 231.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 240
+      end_: 243.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 256
+      end_: 263.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 264
+      end_: 271.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 288
+      end_: 295.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 320
+      end_: 327.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 328
+      end_: 335.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 352
+      end_: 355.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 356
+      end_: 359.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 390
+      end_: 391.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 396
+      end_: 397.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 406
+      end_: 407.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 408
+      end_: 411.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 414
+      end_: 415.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 422
+      end_: 423.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 428
+      end_: 431.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 432
+      end_: 435.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 456
+      end_: 459.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 470
+      end_: 471.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 478
+      end_: 479.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 486
+      end_: 487.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 492
+      end_: 495.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 496
+      end_: 499.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 518
+      end_: 519.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 524
+      end_: 525.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 534
+      end_: 535.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 536
+      end_: 539.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 542
+      end_: 543.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 550
+      end_: 551.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 556
+      end_: 559.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 560
+      end_: 563.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 584
+      end_: 587.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 598
+      end_: 599.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 606
+      end_: 607.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 614
+      end_: 615.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 620
+      end_: 623.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 72
+      start_: 624
+      end_: 627.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+  - notes: []
+  - notes:
+    - note_: 74
+      start_: 8
+      end_: 9.991667
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 74
+      start_: 11
+      end_: 11.991667
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 74
+      start_: 28
+      end_: 29.991667
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 74
+      start_: 40
+      end_: 43.991665
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 74
+      start_: 64
+      end_: 67.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 74
+      start_: 68
+      end_: 69.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 74
+      start_: 92
+      end_: 93.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 74
+      start_: 104
+      end_: 107.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 74
+      start_: 136
+      end_: 137.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 74
+      start_: 139
+      end_: 139.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 74
+      start_: 156
+      end_: 157.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 74
+      start_: 168
+      end_: 171.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 74
+      start_: 192
+      end_: 195.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 74
+      start_: 196
+      end_: 197.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 74
+      start_: 220
+      end_: 221.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 74
+      start_: 232
+      end_: 235.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 74
+      start_: 272
+      end_: 279.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 74
+      start_: 336
+      end_: 343.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 74
+      start_: 392
+      end_: 393.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 74
+      start_: 395
+      end_: 395.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 74
+      start_: 412
+      end_: 413.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 74
+      start_: 424
+      end_: 427.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 74
+      start_: 448
+      end_: 451.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 74
+      start_: 452
+      end_: 453.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 74
+      start_: 476
+      end_: 477.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 74
+      start_: 488
+      end_: 491.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 74
+      start_: 520
+      end_: 521.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 74
+      start_: 523
+      end_: 523.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 74
+      start_: 540
+      end_: 541.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 74
+      start_: 552
+      end_: 555.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 74
+      start_: 576
+      end_: 579.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 74
+      start_: 580
+      end_: 581.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 74
+      start_: 604
+      end_: 605.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 74
+      start_: 616
+      end_: 619.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+  - notes: []
+  - notes:
+    - note_: 76
+      start_: 0
+      end_: 3.9916666
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 76
+      start_: 10
+      end_: 10.991667
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 76
+      start_: 24
+      end_: 27.991667
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 76
+      start_: 44
+      end_: 47.991665
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 76
+      start_: 80
+      end_: 83.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 76
+      start_: 84
+      end_: 85.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 76
+      start_: 88
+      end_: 91.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 76
+      start_: 108
+      end_: 111.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 76
+      start_: 128
+      end_: 131.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 76
+      start_: 138
+      end_: 138.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 76
+      start_: 152
+      end_: 155.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 76
+      start_: 172
+      end_: 175.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 76
+      start_: 208
+      end_: 211.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 76
+      start_: 212
+      end_: 213.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 76
+      start_: 216
+      end_: 219.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 76
+      start_: 236
+      end_: 239.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 76
+      start_: 256
+      end_: 263.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 76
+      start_: 320
+      end_: 327.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 76
+      start_: 356
+      end_: 359.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 76
+      start_: 360
+      end_: 363.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 76
+      start_: 364
+      end_: 367.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 76
+      start_: 368
+      end_: 383.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 76
+      start_: 384
+      end_: 387.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 76
+      start_: 394
+      end_: 394.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 76
+      start_: 408
+      end_: 411.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 76
+      start_: 428
+      end_: 431.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 76
+      start_: 464
+      end_: 467.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 76
+      start_: 468
+      end_: 469.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 76
+      start_: 472
+      end_: 475.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 76
+      start_: 492
+      end_: 495.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 76
+      start_: 512
+      end_: 515.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 76
+      start_: 522
+      end_: 522.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 76
+      start_: 536
+      end_: 539.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 76
+      start_: 556
+      end_: 559.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 76
+      start_: 592
+      end_: 595.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 76
+      start_: 596
+      end_: 597.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 76
+      start_: 600
+      end_: 603.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 76
+      start_: 620
+      end_: 623.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+  - notes:
+    - note_: 77
+      start_: 70
+      end_: 71.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 77
+      start_: 78
+      end_: 79.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 77
+      start_: 198
+      end_: 199.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 77
+      start_: 206
+      end_: 207.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 77
+      start_: 454
+      end_: 455.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 77
+      start_: 462
+      end_: 463.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 77
+      start_: 582
+      end_: 583.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 77
+      start_: 590
+      end_: 591.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+  - notes: []
+  - notes:
+    - note_: 79
+      start_: 76
+      end_: 77.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 79
+      start_: 204
+      end_: 205.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 79
+      start_: 460
+      end_: 461.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 79
+      start_: 588
+      end_: 589.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+  - notes:
+    - note_: 80
+      start_: 368
+      end_: 383.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+  - notes:
+    - note_: 81
+      start_: 72
+      end_: 75.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 81
+      start_: 200
+      end_: 203.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 81
+      start_: 360
+      end_: 363.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 81
+      start_: 364
+      end_: 367.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 81
+      start_: 456
+      end_: 459.99167
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+    - note_: 81
+      start_: 584
+      end_: 587.99164
+      velocity_: 0.88188976
+      parent: {fileID: 114808239492118034}
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []
+  scrollPosition: {x: 0, y: 0}
+  autoScroll: 0
+  division: 3
+  zoom: 0.3
+  channel: 0
+--- !u!114 &114973766363703888
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1074186564228418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 981c2862dc2a4474b9d748a52426fab6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  synthesizerMixerGroup: {fileID: 0}
+  spatializerMixerGroup: {fileID: 0}
