@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -8405,6 +8405,30 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1742961861}
   m_Script: {fileID: 11500000, guid: 7f78df46817fd4f4fa0016f6b7d67024, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemies:
+  - {fileID: 1605393357631320, guid: bc67ec9051cebba47b1cd5db37ba6ac6, type: 2}
+  - {fileID: 1255226421873750, guid: 22389ffdda9cf04408d465053c974271, type: 2}
+  spawnValues: {x: 2, y: 0, z: 2}
+  spawnWait: 0
+  spawnMostWait: 2
+  spawnLeastWait: 2
+  startWait: 2
+  stop: 0
+--- !u!4 &1114390750
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1114390748}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0.059999943, y: -0.68000007, z: 4.56}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &1118855819
 GameObject:
   m_ObjectHideFlags: 0
@@ -8468,7 +8492,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!114 &1136990755 stripped
 MonoBehaviour:
@@ -8965,7 +8989,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4969317433530472, guid: 08bb270bc6cc59a428d3784cdd6f0b8b, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 08bb270bc6cc59a428d3784cdd6f0b8b, type: 2}
