@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class SaberCollision : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
+
+    public static GameObject DifficultyManager;
+    // Use this for initialization
+    void Start () {
+        DifficultyManager = GameObject.Find("Spawner");
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -18,6 +21,7 @@ public class SaberCollision : MonoBehaviour {
     {
         if (other.tag == "Player")
         {
+            DifficultyManager.GetComponent<DifficultyManager>().incrementNotesHit();
             Destroy(gameObject);
         }
         Debug.Log(message: other.tag);

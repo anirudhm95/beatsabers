@@ -63,8 +63,8 @@ namespace AudioHelm {
         public void spawnNote(Note note)
         {
             randEnemy = Random.Range(0, 2);
-            Vector3 spawnPosition = new Vector3(Random.Range(-spawnValues.x, spawnValues.x), 1, 0);
-
+            Vector3 spawnPosition = new Vector3(Random.Range(-spawnValues.x, spawnValues.x), 1, 16);
+            GetComponent<DifficultyManager>().incrementNotesSpawned();
             Instantiate(enemies[randEnemy], spawnPosition + transform.TransformPoint(0, 0, 0), gameObject.transform.rotation);
         }
     }
