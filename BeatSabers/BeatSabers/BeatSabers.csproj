@@ -331,6 +331,7 @@
     <Compile Include="Assets\Scripts\onMouseClick.cs" />
     <Compile Include="Assets\Scripts\RobotFadeIn.cs" />
     <Compile Include="Assets\Scripts\SaberCollision.cs" />
+    <Compile Include="Assets\Scripts\SaberCollisionRight.cs" />
     <Compile Include="Assets\Scripts\ShootLaser.cs" />
     <Compile Include="Assets\Scripts\Spawner.cs" />
     <Compile Include="Assets\Scripts\spherecontrol.cs" />
