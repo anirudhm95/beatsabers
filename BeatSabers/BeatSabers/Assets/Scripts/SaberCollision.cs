@@ -19,6 +19,7 @@ public class SaberCollision : MonoBehaviour {
         if (other.tag == "PlayerLeft")
         {
             Destroy(gameObject);
+            SteamVR_Controller.Input(1).TriggerHapticPulse(3999);
         }
         Debug.Log(message: other.tag);
     }
