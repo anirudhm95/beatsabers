@@ -46,6 +46,8 @@ public class onMouseClick : MonoBehaviour {
                     if (bc != null)
                     {
                         Destroy(bc.gameObject);
+                        SteamVR_Controller.Input(1).TriggerHapticPulse(2000);
+                        SteamVR_Controller.Input(2).TriggerHapticPulse(2000);
                     }
                 }
             }
