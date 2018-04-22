@@ -358,12 +358,21 @@
     <Compile Include="Assets\Sample UI\Scripts\ScrollDetailTexture.cs" />
     <Compile Include="Assets\Sample UI\Scripts\ShowSliderValue.cs" />
     <Compile Include="Assets\Sample UI\Scripts\TiltWindow.cs" />
+    <Compile Include="Assets\Scripts\changeMaterial.cs" />
+    <Compile Include="Assets\Scripts\cubemove.cs" />
+    <Compile Include="Assets\Scripts\DrawLine.cs" />
     <Compile Include="Assets\Scripts\GM.cs" />
     <Compile Include="Assets\Scripts\LevelManager.cs" />
     <Compile Include="Assets\Scripts\LoadonClick.cs" />
     <Compile Include="Assets\Scripts\QuitonClick.cs" />
+    <Compile Include="Assets\Scripts\onMouseClick.cs" />
+    <Compile Include="Assets\Scripts\RobotFadeIn.cs" />
+    <Compile Include="Assets\Scripts\SaberCollision.cs" />
+    <Compile Include="Assets\Scripts\ShootLaser.cs" />
+    <Compile Include="Assets\Scripts\Spawner.cs" />
     <Compile Include="Assets\Scripts\spherecontrol.cs" />
     <Compile Include="Assets\Scripts\sucess1.cs" />
+    <Compile Include="Assets\Scripts\Testss.cs" />
     <Compile Include="Assets\Simple Health Bar\_Asteroids Example\Scripts\AsteroidController.cs" />
     <Compile Include="Assets\Simple Health Bar\_Asteroids Example\Scripts\GameManager.cs" />
     <Compile Include="Assets\Simple Health Bar\_Asteroids Example\Scripts\HealthPickupController.cs" />
@@ -472,6 +481,7 @@
     <Compile Include="Assets\SteamVR\Scripts\SteamVR_TrackedObject.cs" />
     <Compile Include="Assets\SteamVR\Scripts\SteamVR_UpdatePoses.cs" />
     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Utils.cs" />
+    <Compile Include="Assets\swordswing.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\EnergySwords\ESinfo.txt" />

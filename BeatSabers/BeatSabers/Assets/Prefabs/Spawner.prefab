@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1169988338721756}
+  m_IsPrefabParent: 1
+--- !u!1 &1169988338721756
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4065730865698792}
+  - component: {fileID: 114236295490942538}
+  - component: {fileID: 114956973687391442}
+  m_Layer: 0
+  m_Name: Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4065730865698792
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1169988338721756}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0.059999943, y: -0.68000007, z: -16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &114236295490942538
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1169988338721756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f78df46817fd4f4fa0016f6b7d67024, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemies:
+  - {fileID: 1605393357631320, guid: bc67ec9051cebba47b1cd5db37ba6ac6, type: 2}
+  - {fileID: 1255226421873750, guid: 22389ffdda9cf04408d465053c974271, type: 2}
+  spawnValues: {x: 2, y: 0, z: 2}
+  spawnWait: 0
+  spawnMostWait: 2
+  spawnLeastWait: 2
+  startWait: 2
+  stop: 0
+  startingNote: 20
+  scale: 0000000002000000040000000500000007000000090000000b000000
+--- !u!114 &114956973687391442
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1169988338721756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6646ce722aac604e96090dfd23ab231, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numNotesSpawned: 0
+  numNotesHit: 0
+  numNotesPrecision: 0
+  numLastChecked: 0
