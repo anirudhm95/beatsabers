@@ -360,12 +360,14 @@
     <Compile Include="Assets\Sample UI\Scripts\TiltWindow.cs" />
     <Compile Include="Assets\Scripts\changeMaterial.cs" />
     <Compile Include="Assets\Scripts\cubemove.cs" />
+    <Compile Include="Assets\Scripts\DifficultyManager.cs" />
     <Compile Include="Assets\Scripts\DrawLine.cs" />
     <Compile Include="Assets\Scripts\GM.cs" />
     <Compile Include="Assets\Scripts\LevelManager.cs" />
     <Compile Include="Assets\Scripts\LoadonClick.cs" />
-    <Compile Include="Assets\Scripts\QuitonClick.cs" />
+    <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
     <Compile Include="Assets\Scripts\onMouseClick.cs" />
+    <Compile Include="Assets\Scripts\QuitonClick.cs" />
     <Compile Include="Assets\Scripts\RobotFadeIn.cs" />
     <Compile Include="Assets\Scripts\SaberCollision.cs" />
     <Compile Include="Assets\Scripts\ShootLaser.cs" />
