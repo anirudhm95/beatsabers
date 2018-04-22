@@ -19,10 +19,11 @@ public class SaberCollision : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "PlayerLeft")
         {
             DifficultyManager.GetComponent<DifficultyManager>().incrementNotesHit();
             Destroy(gameObject);
+            SteamVR_Controller.Input(1).TriggerHapticPulse(3999);
         }
         else if (other.tag == "Reaction")
         {
