@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4065730865698792}
   - component: {fileID: 114236295490942538}
+  - component: {fileID: 114956973687391442}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -34,7 +35,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1169988338721756}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0.059999943, y: -0.68000007, z: 4.56}
+  m_LocalPosition: {x: 0.059999943, y: -0.68000007, z: -16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -52,11 +53,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemies:
-  - {fileID: 1428811209764812, guid: f08b9c6c84054a64887afd48d635d83b, type: 2}
-  - {fileID: 1439567199382324, guid: b75f1e58c60c7104aa9982c27986a62b, type: 2}
+  - {fileID: 1605393357631320, guid: bc67ec9051cebba47b1cd5db37ba6ac6, type: 2}
+  - {fileID: 1255226421873750, guid: 22389ffdda9cf04408d465053c974271, type: 2}
   spawnValues: {x: 2, y: 0, z: 2}
   spawnWait: 0
   spawnMostWait: 2
   spawnLeastWait: 2
   startWait: 2
-  stop: 1
+  stop: 0
+  startingNote: 20
+  scale: 0000000002000000040000000500000007000000090000000b000000
+--- !u!114 &114956973687391442
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1169988338721756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6646ce722aac604e96090dfd23ab231, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numNotesSpawned: 0
+  numNotesHit: 0
+  numNotesPrecision: 0
+  numLastChecked: 0

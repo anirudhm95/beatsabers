@@ -12,12 +12,14 @@ namespace AudioHelm {
         public float spawnLeastWait;
         public int startWait;
         public bool stop;
+        private float modifier;
+        private float spawnZvalue;
 
         int randEnemy;
 
         void Start()
         {
-
+            updateMoveSpeed(110f, 0.0f);
             //StartCoroutine(waitSpawner());
         }
 
@@ -63,9 +65,16 @@ namespace AudioHelm {
         public void spawnNote(Note note)
         {
             randEnemy = Random.Range(0, 2);
-            Vector3 spawnPosition = new Vector3(Random.Range(-spawnValues.x, spawnValues.x), 1, 16);
+            Vector3 spawnPosition = new Vector3(Random.Range(-spawnValues.x, spawnValues.x), 1, spawnZvalue);
             GetComponent<DifficultyManager>().incrementNotesSpawned();
-            Instantiate(enemies[randEnemy], spawnPosition + transform.TransformPoint(0, 0, 0), gameObject.transform.rotation);
+            GameObject spawnedNote = Instantiate(enemies[randEnemy], spawnPosition + transform.TransformPoint(0, 0, 0), gameObject.transform.rotation);
+            spawnedNote.GetComponent<cubemove>().setModifier(modifier);
+        }
+
+        public void updateMoveSpeed(float tempo, float moveSpeed) {
+            float distance = 280.0f / tempo;
+            modifier = moveSpeed;
+            spawnZvalue = distance * (9.0f+moveSpeed);
         }
     }
 }
