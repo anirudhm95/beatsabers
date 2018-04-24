@@ -6,7 +6,7 @@ using UnityEngine;
 public class RobotFadeIn : MonoBehaviour
 {
     Material[] mats;
-    public float fadeSpeed = .003f;
+    public float fadeSpeed = 0.3f;
     float lerpAmount;
     Renderer[] r;
 
