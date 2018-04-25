@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class SaberCollisionRight : MonoBehaviour
 {
-
+    SteamVR_Controller.Device device { get { return SteamVR_Controller.Input((int)trackedObj.index); } }
+    SteamVR_TrackedObject trackedObj;
+    GameObject tracked;
     // Use this for initialization
     void Start()
     {
-
+        tracked = GameObject.Find("Controller (right)");
+        trackedObj = tracked.GetComponent<SteamVR_TrackedObject>();
     }
 
     // Update is called once per frame
@@ -19,10 +22,15 @@ public class SaberCollisionRight : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "PlayerRight")
+        if (device.velocity.sqrMagnitude > 1)
         {
-            Destroy(gameObject);
-            SteamVR_Controller.Input(2).TriggerHapticPulse(3000);
+            if (other.tag == "PlayerRight")
+            {
+
+                Destroy(gameObject);
+                SteamVR_Controller.Input(2).TriggerHapticPulse(3999);
+
+            }
         }
         Debug.Log(message: other.tag);
     }
