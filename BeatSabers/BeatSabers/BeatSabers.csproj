@@ -327,6 +327,7 @@
     <Compile Include="Assets\Scripts\cubemove.cs" />
     <Compile Include="Assets\Scripts\DrawLine.cs" />
     <Compile Include="Assets\Scripts\GM.cs" />
+    <Compile Include="Assets\Scripts\LaserCollision.cs" />
     <Compile Include="Assets\Scripts\LevelManager.cs" />
     <Compile Include="Assets\Scripts\onMouseClick.cs" />
     <Compile Include="Assets\Scripts\RobotFadeIn.cs" />
