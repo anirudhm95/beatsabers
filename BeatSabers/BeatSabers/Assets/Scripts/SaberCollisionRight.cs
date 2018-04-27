@@ -7,11 +7,13 @@ public class SaberCollisionRight : MonoBehaviour
     SteamVR_Controller.Device device { get { return SteamVR_Controller.Input((int)trackedObj.index); } }
     SteamVR_TrackedObject trackedObj;
     GameObject tracked;
+    public static GameObject DifficultyManager;
     // Use this for initialization
     void Start()
     {
         tracked = GameObject.Find("Controller (right)");
         trackedObj = tracked.GetComponent<SteamVR_TrackedObject>();
+        DifficultyManager = GameObject.Find("Spawner");
     }
 
     // Update is called once per frame
@@ -26,12 +28,12 @@ public class SaberCollisionRight : MonoBehaviour
         {
             if (other.tag == "PlayerRight")
             {
-
+                 DifficultyManager.GetComponent<DifficultyManager>().incrementNotesHit();
                 Destroy(gameObject);
                 SteamVR_Controller.Input(2).TriggerHapticPulse(3999);
 
             }
         }
-        Debug.Log(message: other.tag);
+        //Debug.Log(message: other.tag);
     }
 }

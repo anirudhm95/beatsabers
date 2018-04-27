@@ -21,7 +21,7 @@ public class LaserCollision : MonoBehaviour {
         if (other.tag == "MainCamera")
         {
             Debug.Log("HIT HIT HIT");
-            //DifficultyManager.GetComponent<DifficultyManager>().incrementLasersFailed();
+            DifficultyManager.GetComponent<DifficultyManager>().incrementLasersFailed();
         }
     }
 }
