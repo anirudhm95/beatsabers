@@ -18,8 +18,9 @@ public class LaserCollision : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "PlayerLeft")
+        if (other.tag == "MainCamera")
         {
+            Debug.Log("HIT HIT HIT");
             DifficultyManager.GetComponent<DifficultyManager>().incrementLasersFailed();
         }
     }
