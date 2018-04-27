@@ -5,7 +5,9 @@ using UnityEngine;
 public class ShootLaser : MonoBehaviour {
 
     private LineRenderer laser;
+    private CapsuleCollider laserHitbox;
     private Vector3 laserPosition;
+    private GameObject target;
     private float speed = 8.0f;
     private bool hasFinishedSpawning;
     private float counter;
@@ -17,11 +19,15 @@ public class ShootLaser : MonoBehaviour {
         laserPosition = new Vector3(0,0,0);
         hasFinishedSpawning = false;
         counter = 0.0f;
+        laserHitbox = transform.Find("LaserHitbox").gameObject.GetComponent<CapsuleCollider>();
+        target = GameObject.Find("Camera (eye)");
     }
 
     // Update is called once per frame
     void Update() {
-
+        if (!hasFinishedSpawning) {
+            transform.LookAt(target.transform);
+        }
         if (hasFinishedSpawning && counter < 5)
         {
             counter += 0.1f;
@@ -43,6 +49,8 @@ public class ShootLaser : MonoBehaviour {
                     laser.SetPosition(1, hit.point);
             }
             else laser.SetPosition(1, new Vector3(0, 0, laserPosition.z + 5));
+
+            laserHitbox.transform.Translate(new Vector3((speed * Time.deltaTime),0,0));
         }
     }
 

@@ -4,13 +4,18 @@ using UnityEngine;
 
 public class SaberCollision : MonoBehaviour {
 
+    SteamVR_Controller.Device device { get { return SteamVR_Controller.Input((int)trackedObj.index); } }
+    SteamVR_TrackedObject trackedObj;
+    GameObject tracked;
     public float timeAlive = 0.0f;
     public float timeEntered = 0.0f;
     public static GameObject DifficultyManager;
-    // Use this for initialization
-    void Start () {
+	// Use this for initialization
+	void Start () {
+        tracked = GameObject.Find("Controller (left)");
+		    trackedObj = tracked.GetComponent<SteamVR_TrackedObject>();
         DifficultyManager = GameObject.Find("Spawner");       
-    }
+   }
 	
 	// Update is called once per frame
 	void Update () {
@@ -19,16 +24,20 @@ public class SaberCollision : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "PlayerLeft")
+        if (device.velocity.sqrMagnitude > 1)
         {
-            DifficultyManager.GetComponent<DifficultyManager>().incrementNotesHit();
-            Destroy(gameObject);
-            SteamVR_Controller.Input(1).TriggerHapticPulse(3999);
+            if (other.tag == "PlayerLeft")
+            {
+
+                Destroy(gameObject);
+                SteamVR_Controller.Input(1).TriggerHapticPulse(3999);
+                DifficultyManager.GetComponent<DifficultyManager>().incrementNotesHit();
+            }
         }
         else if (other.tag == "Reaction")
         {
             timeEntered = timeAlive;
         }
-        Debug.Log(message: timeEntered);
+        //Debug.Log(message: timeEntered);
     }
 }

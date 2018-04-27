@@ -7,6 +7,8 @@ public class DifficultyManager : MonoBehaviour {
     public int numNotesSpawned = 0;
     public int numNotesHit = 0;
     public float numNotesPrecision = 0.0f;
+    public int numLasersDodged = 0;
+    public int numLasersFailed = 0;
     public int numLastChecked = 0;
     public float modifier = 0.0f;
     private static float moveSpeed = 6.0f;
@@ -34,6 +36,11 @@ public class DifficultyManager : MonoBehaviour {
     public void incrementNotesHit()
     {
         numNotesHit++;
+    }
+
+    public void incrementLasersFailed()
+    {
+        numLasersFailed++;
     }
 
     public float getModifier() {
