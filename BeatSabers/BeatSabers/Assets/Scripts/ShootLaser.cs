@@ -8,7 +8,7 @@ public class ShootLaser : MonoBehaviour {
     private CapsuleCollider laserHitbox;
     private Vector3 laserPosition;
     private GameObject target;
-    private float speed = 8.0f;
+    private float speed = 3.0f;
     private bool hasFinishedSpawning;
     private float counter;
     private float lerpAmount;
@@ -18,16 +18,17 @@ public class ShootLaser : MonoBehaviour {
         laser = GetComponent<LineRenderer>();
         laserPosition = new Vector3(0,0,0);
         hasFinishedSpawning = false;
-        counter = 0.0f;
+        counter = 5.0f;
         laserHitbox = transform.Find("LaserHitbox").gameObject.GetComponent<CapsuleCollider>();
         target = GameObject.Find("Camera (eye)");
+        transform.LookAt(target.transform);
     }
 
     // Update is called once per frame
     void Update() {
-        if (!hasFinishedSpawning) {
-            transform.LookAt(target.transform);
-        }
+        //if (!hasFinishedSpawning) {
+        //    transform.LookAt(target.transform);
+        //}
         if (hasFinishedSpawning && counter < 5)
         {
             counter += 0.1f;
