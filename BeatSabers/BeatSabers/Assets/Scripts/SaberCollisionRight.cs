@@ -30,7 +30,7 @@ public class SaberCollisionRight : MonoBehaviour
             {
                  DifficultyManager.GetComponent<DifficultyManager>().incrementNotesHit();
                 Destroy(gameObject);
-                SteamVR_Controller.Input(2).TriggerHapticPulse(3999);
+                SteamVR_Controller.Input(3).TriggerHapticPulse(3999);
 
             }
         }

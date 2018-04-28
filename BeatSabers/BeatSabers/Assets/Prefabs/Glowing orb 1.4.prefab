@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 114883667187093936}
   - component: {fileID: 114110522816607612}
   - component: {fileID: 23333607887545044}
-  - component: {fileID: 114065192684226380}
+  - component: {fileID: 114619687129783822}
   m_Layer: 0
   m_Name: Glowing orb 1.4
   m_TagString: projectile
@@ -251,17 +251,6 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &114065192684226380
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1255226421873750}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99dba4c21a786cc4d9e3702e723f0623, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114110522816607612
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -273,6 +262,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c59708fcc2e232a438e5ca7c19e2b04d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114619687129783822
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1255226421873750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 630664c43164e1641b864168d90afc6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeAlive: 0
+  timeEntered: 0
 --- !u!114 &114883667187093936
 MonoBehaviour:
   m_ObjectHideFlags: 1
