@@ -56,6 +56,9 @@ public class Login : MonoBehaviour {
 		SaveData.playerData.playerID = PlayerID.GetComponent<InputField>().text;
 
 		String playerFile = "Assets/Resources/Game_Data_" + playerName + ".csv";
+		Debug.Log (playerName);
+		SaveData.playerData.playerName = playerName;
+		playerprogress.setDataPath(playerFile);
 		if (File.Exists(playerFile))
 		{
 			SaveData.Load();

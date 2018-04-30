@@ -29,6 +29,6 @@ public class SaberCollision : MonoBehaviour {
         {
             timeEntered = timeAlive;
         }
-        Debug.Log(message: timeEntered);
+        //Debug.Log(message: timeEntered);
     }
 }

@@ -6,7 +6,7 @@ using System;
 [Serializable]
 public class PlayerData {
 
-
+	public string path;
 	public string playerName;
 	public string playerID;
 	public string currentSong;

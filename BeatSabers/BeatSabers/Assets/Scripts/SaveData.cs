@@ -25,6 +25,7 @@ public class SaveData  {
 		SaveData.Save("Assets/Resources/Game_Data_" + playername + ".csv");
 
 	}
+		
 
 	private static void LoadPlayerData()
 	{
@@ -64,13 +65,14 @@ public class SaveData  {
 	{
 
 
+		Debug.Log (path);
 		StreamWriter outStream = System.IO.File.CreateText (path);
 		// write column header
 		outStream.WriteLine ("playerName, playerID, CurrentSong, timeStamp, score, earlyHit, perfectHit, Miss, currentStreak, noOfOrbsSpawning, precision");
 
 		/*
         // test data
-		playerData.playerName = "em";
+		playerData.playerName = "emem";
 		playerData.playerID = "12345";
 		playerData.currentSong = "abcd";
 		playerData.timeStamp = 3.0f;

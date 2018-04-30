@@ -142,6 +142,7 @@
      <Compile Include="Assets\Scripts\LoadonClick.cs" />
      <Compile Include="Assets\Scripts\Login.cs" />
      <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
+     <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\PlayerData.cs" />
      <Compile Include="Assets\Scripts\PlayerProgressHolder.cs" />
      <Compile Include="Assets\Scripts\QuitonClick.cs" />
