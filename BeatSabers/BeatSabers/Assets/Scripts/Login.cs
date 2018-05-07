@@ -66,10 +66,8 @@ public class Login : MonoBehaviour {
 
 			if (playerName == SaveData.playerData.playerName && playerID  == SaveData.playerData.playerID)
 			{
-				//SaveData.Save(playerFile);
+				
 				Debug.Log("Login Successful");
-				Debug.Log(playerName + "," + playerID);
-				Debug.Log(SaveData.playerData.playerName + "," +  SaveData.playerData.playerID);
 				SceneManager.LoadScene("Start");
 			}
 			else
@@ -79,9 +77,12 @@ public class Login : MonoBehaviour {
 
 		}
 		else
-		{
-			GenerateNewFile(SaveData.playerData.playerName);
-			SaveData.Save(playerFile);
+		{  
+			StreamWriter outStream = System.IO.File.AppendText(playerFile);
+			outStream.WriteLine ("playerName, playerID, CurrentSong, timeStamp, score, earlyHit, perfectHit, Miss, currentStreak, noOfOrbsSpawning, precision, map, difficulty");
+			outStream.Close ();
+	    	GenerateNewFile(SaveData.playerData.playerName);
+
 			SceneManager.LoadScene("Start");
 		}
 	}
@@ -89,8 +90,7 @@ public class Login : MonoBehaviour {
 	public void GenerateNewFile(String playerName)
 	{
 
-
-		SaveData.CreateNewGameData(playerName);
+		SaveData.CreateNewPlayerData(playerName);
 
 	}
 

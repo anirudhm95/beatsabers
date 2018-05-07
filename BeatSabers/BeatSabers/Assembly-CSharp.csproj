@@ -134,6 +134,7 @@
      <Compile Include="Assets\Sample UI\Scripts\ShowSliderValue.cs" />
      <Compile Include="Assets\Sample UI\Scripts\TiltWindow.cs" />
      <Compile Include="Assets\Scripts\CameraMovement.cs" />
+     <Compile Include="Assets\Scripts\CreateGameData.cs" />
      <Compile Include="Assets\Scripts\DifficultyManager.cs" />
      <Compile Include="Assets\Scripts\DrawLine.cs" />
      <Compile Include="Assets\Scripts\GM.cs" />

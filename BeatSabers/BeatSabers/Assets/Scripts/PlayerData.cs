@@ -18,5 +18,8 @@ public class PlayerData {
 	public int noOfOrbsSpawning;
 	public float precision;
 	public float timeStamp;
+	public string map;
+	public string difficulty; 
+
 
 }
