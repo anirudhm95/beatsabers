@@ -24,7 +24,6 @@ public class PlayerProgressHolder : MonoBehaviour {
 		}
 		// Use this for initialization
 		void Start () {
-
 			GameLoaded = true;
 			
 		}
@@ -45,9 +44,11 @@ public class PlayerProgressHolder : MonoBehaviour {
 			//SaveData.Load();
 			//Debug.Log ("Created Game Loaded");
 		}
-		
-		public void setDataPath(string path){
-		dataPath = path;
+
+        public void SetDataPath(string path) {
+            dataPath = path;
+            SaveData.playerData.path = dataPath;
+        }
 	}
 }
 

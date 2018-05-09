@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DifficultyManager : MonoBehaviour {
+    PlayerProgressHolder playerprogress;
+    public static PlayerData playerData = new PlayerData();
 
 	PlayerProgressHolder playerprogress;
 	public static PlayerData playerData = new PlayerData ();
@@ -13,6 +15,11 @@ public class DifficultyManager : MonoBehaviour {
 	public int perfectHit = 70;
 	public int missHit = 30;
     public float numNotesPrecision = 0.0f;
+    public int earlyHit = 23;
+    public int perfectHit = 70;
+    public int missHit = 30;
+    public int numLasersDodged = 0;
+    public int numLasersFailed = 0;
     public int numLastChecked = 0;
     public float modifier = 0.0f;
     private static float moveSpeed = 6.0f;
@@ -24,10 +31,12 @@ public class DifficultyManager : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        playerprogress = FindObjectOfType<PlayerProgressHolder>();
     }
 
     // Update is called once per frame
     void Update() {
+        
         if (numNotesSpawned > 0)
             numNotesPrecision = numNotesHit / (float)numNotesSpawned;
 
@@ -67,6 +76,11 @@ public class DifficultyManager : MonoBehaviour {
     public void incrementNotesHit()
     {
         numNotesHit++;
+    }
+
+    public void incrementLasersFailed()
+    {
+        numLasersFailed++;
     }
 
     public float getModifier() {

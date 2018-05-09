@@ -56,7 +56,6 @@ public class Login : MonoBehaviour {
 		SaveData.playerData.playerID = PlayerID.GetComponent<InputField>().text;
 
 		String playerFile = "Assets/Resources/Game_Data_" + playerName + ".csv";
-		Debug.Log (playerName);
 		SaveData.playerData.playerName = playerName;
 		playerprogress.setDataPath(playerFile);
 		if (File.Exists(playerFile))
@@ -68,7 +67,7 @@ public class Login : MonoBehaviour {
 			{
 				
 				Debug.Log("Login Successful");
-				SceneManager.LoadScene("Start");
+				SceneManager.LoadScene("Game");
 			}
 			else
 			{
@@ -81,9 +80,8 @@ public class Login : MonoBehaviour {
 			StreamWriter outStream = System.IO.File.AppendText(playerFile);
 			outStream.WriteLine ("playerName, playerID, CurrentSong, timeStamp, score, earlyHit, perfectHit, Miss, currentStreak, noOfOrbsSpawning, precision, map, difficulty");
 			outStream.Close ();
-	    	GenerateNewFile(SaveData.playerData.playerName);
-
-			SceneManager.LoadScene("Start");
+	    GenerateNewFile(SaveData.playerData.playerName);
+      SceneManager.LoadScene("Game");
 		}
 	}
 
