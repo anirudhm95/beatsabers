@@ -6,8 +6,6 @@ public class DifficultyManager : MonoBehaviour {
     PlayerProgressHolder playerprogress;
     public static PlayerData playerData = new PlayerData();
 
-	PlayerProgressHolder playerprogress;
-	public static PlayerData playerData = new PlayerData ();
 
     public int numNotesSpawned = 0;
     public int numNotesHit = 0;
@@ -15,9 +13,6 @@ public class DifficultyManager : MonoBehaviour {
 	public int perfectHit = 70;
 	public int missHit = 30;
     public float numNotesPrecision = 0.0f;
-    public int earlyHit = 23;
-    public int perfectHit = 70;
-    public int missHit = 30;
     public int numLasersDodged = 0;
     public int numLasersFailed = 0;
     public int numLastChecked = 0;
