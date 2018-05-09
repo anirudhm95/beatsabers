@@ -9,6 +9,8 @@ public class SaberCollision : MonoBehaviour {
     GameObject tracked;
     public float timeAlive = 0.0f;
     public float timeEntered = 0.0f;
+    public float distance = 0.0f;
+    public int score = 0;
     public static GameObject DifficultyManager;
 	// Use this for initialization
 	void Start () {
@@ -24,11 +26,40 @@ public class SaberCollision : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
+
+            if (other.tag == "Respawn")
+        {
+            this.GetComponent<ParticleSystem>().startColor = new Color(255, 255, 255, 255);
+        }
+
+        if (other.tag == "Reaction")
+        {
+            this.GetComponent<ParticleSystem>().startColor = new Color(0, 0, 0, 255);
+        }
+
+
         if (device.velocity.sqrMagnitude > 1)
         {
             if (other.tag == "PlayerLeft")
             {
+                string hitbox = "Reaction";
+                GameObject hitBox = GameObject.FindGameObjectWithTag(hitbox);
+                distance = Mathf.Abs(transform.position.z - hitBox.transform.position.z);
 
+                if (distance < 0.2)
+                {
+                    score = 5;
+                }
+                else if (distance < 0.5)
+                {
+                    score = 2;
+                }
+                else
+                {
+                    score = 1;
+                }
+
+                Debug.Log("Score: " + score);
                 Destroy(gameObject);
                 SteamVR_Controller.Input(1).TriggerHapticPulse(3999);
                 DifficultyManager.GetComponent<DifficultyManager>().incrementNotesHit();
