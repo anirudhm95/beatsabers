@@ -8,23 +8,32 @@ public class SaveData  {
 	// public static GameContainer gamecontainer = new GameContainer();
 	// make it static so we can call it from anywhere
 	public static PlayerData playerData = new PlayerData();
+	//public static CreateGameData createGameData = new CreateGameData ();
+
 
 	public static void Save(string path)
 	{
 		SavePlayerData(path);
+		//SaveCreatedGameData(path);
 	}
+		
 
 	public static void Load()
 	{
+		
 		LoadPlayerData();
+		//LoadCreateGameData ();
 	}
+		
 
-	public static void CreateNewGameData(string playername)
+	public static void CreateNewPlayerData(string playername)
 	{
+		
 		playerData.playerName = playername;
 		SaveData.Save("Assets/Resources/Game_Data_" + playername + ".csv");
 
 	}
+		
 
 	private static void LoadPlayerData()
 	{
@@ -52,51 +61,80 @@ public class SaveData  {
 		int.TryParse(readData[9] , out playerData.noOfOrbsSpawning);
 		float.TryParse(readData[10], out playerData.precision);
 
-
+		 
 		// for testing
 		Debug.Log(playerData.playerName + "," + playerData.playerID + "," + playerData.currentSong + "," + playerData.timeStamp + "," + playerData.score + "," + 
 			playerData.earlyHit + "," + playerData.perfectHit + "," + playerData.Miss + "," + playerData.currentStreak + "," + playerData.noOfOrbsSpawning + "," + playerData.precision);
 
 
 	}
+	/*
+	private static void LoadCreateGameData(){
+
+		string[] readData;
+		char[] fieldSeparators = { ',' };
+
+		StreamReader inputStream = new StreamReader ("Assets/Resources/CreatedGame_Data.csv");
+
+		string data = inputStream.ReadLine ();
+		data = inputStream.ReadLine ();
+
+		readData = data.Split (fieldSeparators);
+		createGameData.playerName = readData [0];
+		createGameData.nameOfSong = readData [1];
+		createGameData.map = readData [2];
+		createGameData.difficulty = readData [3];
+	}*/
 
 	private static void SavePlayerData(string path)
 	{
+		 
 
+		Debug.Log (path);
+		StreamWriter outStream = System.IO.File.AppendText(path);
 
-		StreamWriter outStream = System.IO.File.CreateText (path);
-		// write column header
-		outStream.WriteLine ("playerName, playerID, CurrentSong, timeStamp, score, earlyHit, perfectHit, Miss, currentStreak, noOfOrbsSpawning, precision");
+		                                                                                                                                                                                                                                                                             //if ((firstLine = stream.ReadLine ()) != null) {
+				outStream.WriteLine (playerData.playerName +
+				"," + playerData.playerID +
+				"," + playerData.currentSong +
+				"," + " " + playerData.timeStamp +
+				"," + playerData.score.ToString () +
+				"," + playerData.earlyHit.ToString () +
+				"," + playerData.perfectHit.ToString () +
+				"," + playerData.Miss.ToString () +
+				"," + playerData.currentStreak.ToString () +
+				"," + playerData.noOfOrbsSpawning.ToString () +
+				"," + playerData.precision.ToString () +
+				"," + playerData.map +
+				"," + playerData.difficulty);
 
-		/*
-        // test data
-		playerData.playerName = "em";
-		playerData.playerID = "12345";
-		playerData.currentSong = "abcd";
-		playerData.timeStamp = 3.0f;
-		playerData.score = 150;
-		playerData.earlyHit = 15;
-		playerData.perfectHit = 45;
-		playerData.Miss = 50;
-		playerData.currentStreak = 25;
-		playerData.noOfOrbsSpawning = 200;
-		playerData.precision = 1.0f;
-		*/
-		outStream.WriteLine (playerData.playerName +
-		"," + playerData.playerID +
-		"," + playerData.currentSong +
-		"," + " " + playerData.timeStamp +
-		"," + playerData.score.ToString () +
-		"," + playerData.earlyHit.ToString () +
-		"," + playerData.perfectHit.ToString () +
-		"," + playerData.Miss.ToString () +
-		"," + playerData.currentStreak.ToString () +
-		"," + playerData.noOfOrbsSpawning.ToString () +
-		"," + playerData.precision.ToString ());
-
-		outStream.Flush ();
-		outStream.Close ();     
-
+				outStream.Flush ();
+				outStream.Close (); 
+			
 
 	}
+	/*
+	private static void SaveCreatedGameData(string path){
+
+		StreamWriter outStream = System.IO.File.AppendText(path);
+		outStream.WriteLine ("playerName, nameOfSong, map, difficulty");
+
+
+		//test data
+
+		createGameData.playerName = "hung";
+		createGameData.nameOfSong = "abcd";
+		createGameData.map = "Forest";
+		createGameData.difficulty = "Easy";
+
+		outStream.WriteLine (createGameData.playerName +
+			"," + createGameData.nameOfSong +
+			"," + createGameData.map +
+			"," + createGameData.difficulty);
+
+		outStream.Flush ();
+		outStream.Close ();
+	}*/
+			
 }
+

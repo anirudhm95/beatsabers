@@ -6,7 +6,7 @@ using System;
 [Serializable]
 public class PlayerData {
 
-    public string path;
+	public string path;
 	public string playerName;
 	public string playerID;
 	public string currentSong;
@@ -18,5 +18,8 @@ public class PlayerData {
 	public int noOfOrbsSpawning;
 	public float precision;
 	public float timeStamp;
+	public string map;
+	public string difficulty; 
+
 
 }

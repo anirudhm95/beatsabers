@@ -56,19 +56,17 @@ public class Login : MonoBehaviour {
 		SaveData.playerData.playerID = PlayerID.GetComponent<InputField>().text;
 
 		String playerFile = "Assets/Resources/Game_Data_" + playerName + ".csv";
-        SaveData.playerData.playerName = playerName;
-        playerprogress.SetDataPath(playerFile);
-        if (File.Exists(playerFile))
+		SaveData.playerData.playerName = playerName;
+		playerprogress.setDataPath(playerFile);
+		if (File.Exists(playerFile))
 		{
 			SaveData.Load();
 
 
 			if (playerName == SaveData.playerData.playerName && playerID  == SaveData.playerData.playerID)
 			{
-				//SaveData.Save(playerFile);
+				
 				Debug.Log("Login Successful");
-				Debug.Log(playerName + "," + playerID);
-				Debug.Log(SaveData.playerData.playerName + "," +  SaveData.playerData.playerID);
 				SceneManager.LoadScene("Game");
 			}
 			else
@@ -78,18 +76,19 @@ public class Login : MonoBehaviour {
 
 		}
 		else
-		{
-			GenerateNewFile(SaveData.playerData.playerName);
-			SaveData.Save(playerFile);
-			SceneManager.LoadScene("Game");
+		{  
+			StreamWriter outStream = System.IO.File.AppendText(playerFile);
+			outStream.WriteLine ("playerName, playerID, CurrentSong, timeStamp, score, earlyHit, perfectHit, Miss, currentStreak, noOfOrbsSpawning, precision, map, difficulty");
+			outStream.Close ();
+	    GenerateNewFile(SaveData.playerData.playerName);
+      SceneManager.LoadScene("Game");
 		}
 	}
 
 	public void GenerateNewFile(String playerName)
 	{
 
-
-		SaveData.CreateNewGameData(playerName);
+		SaveData.CreateNewPlayerData(playerName);
 
 	}
 

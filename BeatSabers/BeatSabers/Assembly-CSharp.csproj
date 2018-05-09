@@ -134,6 +134,7 @@
      <Compile Include="Assets\Sample UI\Scripts\ShowSliderValue.cs" />
      <Compile Include="Assets\Sample UI\Scripts\TiltWindow.cs" />
      <Compile Include="Assets\Scripts\CameraMovement.cs" />
+     <Compile Include="Assets\Scripts\CreateGameData.cs" />
      <Compile Include="Assets\Scripts\DifficultyManager.cs" />
      <Compile Include="Assets\Scripts\DrawLine.cs" />
      <Compile Include="Assets\Scripts\GM.cs" />
@@ -142,6 +143,7 @@
      <Compile Include="Assets\Scripts\LoadonClick.cs" />
      <Compile Include="Assets\Scripts\Login.cs" />
      <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
+     <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\PlayerData.cs" />
      <Compile Include="Assets\Scripts\PlayerProgressHolder.cs" />
      <Compile Include="Assets\Scripts\QuitonClick.cs" />
