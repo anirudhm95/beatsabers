@@ -394,6 +394,7 @@
     <Compile Include="Assets\Scripts\SaberCollisionRight.cs" />
     <Compile Include="Assets\Scripts\SaveData.cs" />
     <Compile Include="Assets\Scripts\ShootLaser.cs" />
+    <Compile Include="Assets\Scripts\SpawnEnviornment.cs" />
     <Compile Include="Assets\Scripts\Spawner.cs" />
     <Compile Include="Assets\Scripts\spherecontrol.cs" />
     <Compile Include="Assets\Scripts\sucess1.cs" />

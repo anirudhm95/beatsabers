@@ -1,0 +1,4 @@
+playerName, playerID, CurrentSong, timeStamp, score, earlyHit, perfectHit, Miss, currentStreak, noOfOrbsSpawning, precision, map, difficulty
+nanef,222222,, 0,0,0,0,0,0,0,0,,
+nanef,222222,BeatSabers, 5,28,7,2,14,1,30,0.4333333,Forest,Easy
+nanef,222222,BeatSabers, 14,40,8,3,7,4,30,0.6666667,Forest,Easy

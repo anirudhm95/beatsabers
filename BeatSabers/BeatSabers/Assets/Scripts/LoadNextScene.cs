@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class LoadNextScene : MonoBehaviour {
 
-	public string sceneToLoad = "Login";
+	public string sceneToLoad = "NewMenu";
 
 	public PlayerProgressHolder plyerprogress;
 	
