@@ -1,16 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
-public class CreateGameData : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+[Serializable]
+public class CreateGameData {
+
+	public string playerName;
+	public string nameOfSong;
+	public string map;
+	public string difficulty;
+			
 }
+

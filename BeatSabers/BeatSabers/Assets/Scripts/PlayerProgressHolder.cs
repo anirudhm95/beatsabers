@@ -17,7 +17,7 @@ public class PlayerProgressHolder : MonoBehaviour
 
         dataPath = "Assets/Resources/Game_Data_" + SaveData.playerData.playerName + ".csv";
         SaveData.playerData.path = dataPath;
-        //createGameFile = "Assets/Resources/CreatedGame_Data.csv";
+       
 
 
         // to keep game data and this game object live througout the life cycle of the game
@@ -35,16 +35,16 @@ public class PlayerProgressHolder : MonoBehaviour
     {
         SaveData.Save(dataPath);
         Debug.Log("Game Saved");
-        // SaveData.Save(createGameFile);
-        //Debug.Log ("Created Game Saved");
+        SaveData.Save();
+       
     }
 
     void Load()
     {
         SaveData.Load();
         Debug.Log("Game Loaded");
-        //SaveData.Load();
-        //Debug.Log ("Created Game Loaded");
+        SaveData.Loads();
+        
     }
 
     public void SetDataPath(string path)
