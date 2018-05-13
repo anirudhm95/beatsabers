@@ -1,8 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class LevelManager : MonoBehaviour {
+
+
+
+	void Update(){
+
+		if (Input.GetKeyDown(KeyCode.Return))
+		{
+			 
+
+				CreateGameButton();
+
+		}
+	}
+
 
 	public void LoadLevel (string name)
 	{
@@ -14,6 +29,11 @@ public class LevelManager : MonoBehaviour {
 		Debug.Log("I want to quit!");
 		Application.Quit();
 
+	}
+
+	public void CreateGameButton(){
+
+		SceneManager.LoadScene("CreateGame");
 	}
 
 }

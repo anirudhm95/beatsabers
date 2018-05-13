@@ -375,6 +375,7 @@
     <Compile Include="Assets\Sample UI\Scripts\TiltWindow.cs" />
     <Compile Include="Assets\Scripts\CameraMovement.cs" />
     <Compile Include="Assets\Scripts\changeMaterial.cs" />
+    <Compile Include="Assets\Scripts\CreateGame.cs" />
     <Compile Include="Assets\Scripts\CreateGameData.cs" />
     <Compile Include="Assets\Scripts\cubemove.cs" />
     <Compile Include="Assets\Scripts\DifficultyManager.cs" />
@@ -392,6 +393,7 @@
     <Compile Include="Assets\Scripts\PlayerProgressHolder.cs" />
     <Compile Include="Assets\Scripts\QuitonClick.cs" />
     <Compile Include="Assets\Scripts\RobotFadeIn.cs" />
+    <Compile Include="Assets\Scripts\RobotSpawner.cs" />
     <Compile Include="Assets\Scripts\SaberCollision.cs" />
     <Compile Include="Assets\Scripts\SaberCollisionRight.cs" />
     <Compile Include="Assets\Scripts\SaveData.cs" />

@@ -8,13 +8,16 @@ public class SaveData  {
 	// public static GameContainer gamecontainer = new GameContainer();
 	// make it static so we can call it from anywhere
 	public static PlayerData playerData = new PlayerData();
-	//public static CreateGameData createGameData = new CreateGameData ();
+	public static CreateGameData createGameData = new CreateGameData ();
 
 
 	public static void Save(string path)
 	{
 		SavePlayerData(path);
-		//SaveCreatedGameData(path);
+	}
+
+	public static void Save(){
+		SaveCreatedGameData ();
 	}
 		
 
@@ -22,7 +25,11 @@ public class SaveData  {
 	{
 		
 		LoadPlayerData();
-		//LoadCreateGameData ();
+
+	}
+
+	public static void Loads(){
+		LoadCreatedGameData ();
 	}
 		
 
@@ -68,13 +75,13 @@ public class SaveData  {
 
 
 	}
-	/*
-	private static void LoadCreateGameData(){
+
+	private static void LoadCreatedGameData(){
 
 		string[] readData;
 		char[] fieldSeparators = { ',' };
 
-		StreamReader inputStream = new StreamReader ("Assets/Resources/CreatedGame_Data.csv");
+		StreamReader inputStream = new StreamReader ("Assets/Resources/Scientist_CreateGame.csv");
 
 		string data = inputStream.ReadLine ();
 		data = inputStream.ReadLine ();
@@ -84,7 +91,8 @@ public class SaveData  {
 		createGameData.nameOfSong = readData [1];
 		createGameData.map = readData [2];
 		createGameData.difficulty = readData [3];
-	}*/
+
+	}
 
 	private static void SavePlayerData(string path)
 	{
@@ -113,28 +121,28 @@ public class SaveData  {
 			
 
 	}
-	/*
-	private static void SaveCreatedGameData(string path){
 
-		StreamWriter outStream = System.IO.File.AppendText(path);
-		outStream.WriteLine ("playerName, nameOfSong, map, difficulty");
+	private static void SaveCreatedGameData(){
 
+		StreamWriter outStream = System.IO.File.AppendText("Assets/Resources/Scientist_CreateGame.csv");
+		//outStream.WriteLine ("playerName, nameOfSong, map, difficulty");
 
-		//test data
-
-		createGameData.playerName = "hung";
+		createGameData.playerName = "saengduean";
 		createGameData.nameOfSong = "abcd";
 		createGameData.map = "Forest";
 		createGameData.difficulty = "Easy";
 
+
+
 		outStream.WriteLine (createGameData.playerName +
 			"," + createGameData.nameOfSong +
-			"," + createGameData.map +
+			"," + createGameData.map + 
 			"," + createGameData.difficulty);
 
 		outStream.Flush ();
 		outStream.Close ();
-	}*/
+	}
+
 			
 }
 

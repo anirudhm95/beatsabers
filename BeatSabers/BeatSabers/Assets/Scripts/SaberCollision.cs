@@ -39,7 +39,8 @@ public class SaberCollision : MonoBehaviour {
             if (device.velocity.sqrMagnitude > 1)
             {
 
-                //FindObjectOfType<AudioManager>().Play("OrbHit");
+                FindObjectOfType<AudioManager>().Play("OrbHit");
+
                 string hitbox = "Reaction";
                 GameObject hitBox = GameObject.FindGameObjectWithTag(hitbox);
                 distance = Mathf.Abs(transform.position.z - hitBox.transform.position.z);
@@ -70,7 +71,7 @@ public class SaberCollision : MonoBehaviour {
     {
         if (other.tag == "PlayerLeft")
         {
-            SteamVR_Controller.Input(controllerIndex).TriggerHapticPulse(3999);
+            //SteamVR_Controller.Input(controllerIndex).TriggerHapticPulse(3999);
             collided = true;
             foreach (var snapshot in Snapshots)
                 snapshot.TransitionTo(overTime);
@@ -87,35 +88,35 @@ public class SaberCollision : MonoBehaviour {
         }
 
 
-        if (device.velocity.sqrMagnitude > 50)
-        {
-            if (other.tag == "PlayerLeft" && inReactionArea)
-            {
-                //FindObjectOfType<AudioManager>().Play("OrbHit");
+        //if (device.velocity.sqrMagnitude > 50)
+        //{
+        //    if (other.tag == "PlayerLeft" && inReactionArea)
+        //    {
+        //        //FindObjectOfType<AudioManager>().Play("OrbHit");
 
-                string hitbox = "Reaction";
-                GameObject hitBox = GameObject.FindGameObjectWithTag(hitbox);
-                distance = Mathf.Abs(transform.position.z - hitBox.transform.position.z);
+        //        string hitbox = "Reaction";
+        //        GameObject hitBox = GameObject.FindGameObjectWithTag(hitbox);
+        //        distance = Mathf.Abs(transform.position.z - hitBox.transform.position.z);
 
-                if (distance < 0.2)
-                {
-                    score = 5;
-                }
-                else if (distance < 0.5)
-                {
-                    score = 2;
-                }
-                else
-                {
-                    score = 1;
-                }
+        //        if (distance < 0.2)
+        //        {
+        //            score = 5;
+        //        }
+        //        else if (distance < 0.5)
+        //        {
+        //            score = 2;
+        //        }
+        //        else
+        //        {
+        //            score = 1;
+        //        }
 
-                Debug.Log("Score: " + score);
-                //SteamVR_Controller.Input(3).TriggerHapticPulse(3999);
-                DifficultyManager.GetComponent<DifficultyManager>().IncrementNotesHit(score);
-                Destroy(gameObject);
-            }
-        }
+        //        Debug.Log("Score: " + score);
+        //        //SteamVR_Controller.Input(3).TriggerHapticPulse(3999);
+        //        DifficultyManager.GetComponent<DifficultyManager>().IncrementNotesHit(score);
+        //        Destroy(gameObject);
+        //    }
+        //}
         else if (other.tag == "Reaction")
         {
             timeEntered = timeAlive;

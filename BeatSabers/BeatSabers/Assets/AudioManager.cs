@@ -1,4 +1,4 @@
-﻿//using UnityEngine.Audio;
+//using UnityEngine.Audio;
 using UnityEngine;
 using System;
 
@@ -6,10 +6,14 @@ public class AudioManager : MonoBehaviour {
 
 
     public Sounds[] sounds;
+    public Sounds[] orbSounds;
 
-	// Use this for initialization
-	void Awake () {
-		
+    public string musicName;
+    public AudioHelm.AudioHelmClock clock;
+
+    // Use this for initialization
+    void Awake () {
+        clock = FindObjectOfType<AudioHelm.AudioHelmClock>();
         foreach (Sounds s in sounds)
         {
             s.source = gameObject.AddComponent<AudioSource>();
@@ -22,7 +26,14 @@ public class AudioManager : MonoBehaviour {
 
     private void Start()
     {
-        Play("Theme");
+        Invoke("PlayMusic", 240f/clock.bpm);
+    }
+
+    public void PlayMusic()
+    {
+        musicName = "Theme";
+        Sounds s = Array.Find(sounds, Sounds => Sounds.name == musicName);
+        s.source.Play();
     }
 
     public void Play (string name)
