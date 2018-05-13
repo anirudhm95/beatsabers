@@ -1,15 +1,6 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SaveData.cs">
-    <Files>
-      <File FileName="Assets/Scripts/Login.cs" Line="61" Column="1" />
-      <File FileName="Assets/Scripts/Player.cs" Line="9" Column="12" />
-      <File FileName="Assets/Scripts/SaveData.cs" Line="94" Column="272" />
-      <File FileName="Assets/Scripts/PlayerProgressHolder.cs" Line="37" Column="29" />
-      <File FileName="Assets/Scripts/PlayerData.cs" Line="9" Column="2" />
-      <File FileName="Assets/Scripts/DifficultyManager.cs" Line="52" Column="44" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
