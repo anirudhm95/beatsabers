@@ -6,6 +6,7 @@ namespace AudioHelm {
     {
         [AddComponentMenu("")]
         public GameObject[] enemies;
+        public AudioHelmClock clock;
         public Vector3 spawnValues;
         public float spawnWait;
         public float spawnMostWait;
@@ -19,6 +20,7 @@ namespace AudioHelm {
 
         void Start()
         {
+            clock = FindObjectOfType<AudioHelmClock>();
             updateMoveSpeed(110f, 0.0f);
             //StartCoroutine(waitSpawner());
         }
@@ -70,7 +72,7 @@ namespace AudioHelm {
         }
 
         public void updateMoveSpeed(float tempo, float moveSpeed) {
-            float distance = 280.0f / tempo;
+            float distance = 280.0f / clock.bpm;
             modifier = moveSpeed;
             spawnZvalue = distance * (9.0f+moveSpeed);
         }
