@@ -273,8 +273,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 630664c43164e1641b864168d90afc6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Snapshots:
+  - {fileID: 24500003, guid: 95096f29d1ddcd647ace66f3641d42f5, type: 2}
+  overTime: 0
   timeAlive: 0
   timeEntered: 0
+  distance: 0
+  score: 0
 --- !u!114 &114883667187093936
 MonoBehaviour:
   m_ObjectHideFlags: 1

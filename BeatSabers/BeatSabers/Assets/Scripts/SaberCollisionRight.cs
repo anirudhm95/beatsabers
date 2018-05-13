@@ -9,6 +9,7 @@ public class SaberCollisionRight : MonoBehaviour
     GameObject tracked;
     public float distance = 0.0f;
     public int score = 0;
+    private int controllerIndex;
     public static GameObject DifficultyManager;
     private bool inReactionArea, collided;
     // Use this for initialization
@@ -16,6 +17,7 @@ public class SaberCollisionRight : MonoBehaviour
     {
         tracked = GameObject.Find("Controller (right)");
         trackedObj = tracked.GetComponent<SteamVR_TrackedObject>();
+        controllerIndex = tracked.GetComponent<SteamVR_TrackedObject>().GetDeviceIndex();
         DifficultyManager = GameObject.Find("Spawner");
         inReactionArea = false;
         collided = false;
@@ -45,6 +47,8 @@ public class SaberCollisionRight : MonoBehaviour
                     score = 1;
                 }
 
+                FindObjectOfType<AudioManager>().Play("OrbHit");
+
                 Debug.Log("Score: " + score);
                 DifficultyManager.GetComponent<DifficultyManager>().IncrementNotesHit(score);
                 SteamVR_Controller.Input(4).TriggerHapticPulse(3999);
@@ -58,7 +62,7 @@ public class SaberCollisionRight : MonoBehaviour
         if (other.tag == "PlayerRight")
         {
             collided = true;
-            SteamVR_Controller.Input(4).TriggerHapticPulse(3999);
+            SteamVR_Controller.Input(controllerIndex).TriggerHapticPulse(3999);
         }
             if (other.tag == "Respawn")
         {
@@ -77,6 +81,8 @@ public class SaberCollisionRight : MonoBehaviour
                 string hitbox = "Reaction";
                 GameObject hitBox = GameObject.FindGameObjectWithTag(hitbox);
                 distance = Mathf.Abs(transform.position.z - hitBox.transform.position.z);
+
+                FindObjectOfType<AudioManager>().Play("OrbHit");
 
                 if (distance < 0.2)
                 {

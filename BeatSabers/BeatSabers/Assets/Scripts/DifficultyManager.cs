@@ -6,7 +6,7 @@ public class DifficultyManager : MonoBehaviour {
     PlayerProgressHolder playerprogress;
     public static PlayerData playerData = new PlayerData();
 
-
+    public GameObject sequencer;
     public int numNotesSpawned = 0;
     public int numNotesHit = 0;
 	public int earlyHit = 0;
@@ -19,6 +19,7 @@ public class DifficultyManager : MonoBehaviour {
     public int currentStreak = 0;
     public int maxStreak = 0;
     public int score = 0;
+    private bool GameEnded = false;
     public float modifier = 0.0f;
     private static float moveSpeed = 6.0f;
 	public bool hasFinished = false;
@@ -44,7 +45,7 @@ public class DifficultyManager : MonoBehaviour {
             GetComponent<AudioHelm.Spawner>().updateMoveSpeed(120f, modifier);
         }
 
-		if (numNotesSpawned == 30) {
+		if (GameEnded) {
 			Debug.Log ("Line 41"); 
 			SaveData.playerData.currentSong = "BeatSabers";
 			SaveData.playerData.timeStamp = maxStreak;
@@ -62,7 +63,7 @@ public class DifficultyManager : MonoBehaviour {
 			//SaveData.Save(SaveData.playerData.path);
 			Debug.Log("Line 54");
             numNotesSpawned = 31;
-
+            GameEnded = false;
 		}
 
     }
@@ -97,5 +98,9 @@ public class DifficultyManager : MonoBehaviour {
         }
         currentStreak = 0;
         missHit++;
+    }
+
+    public void SetGameEnded(bool isEnded) {
+        GameEnded = isEnded;
     }
 }
