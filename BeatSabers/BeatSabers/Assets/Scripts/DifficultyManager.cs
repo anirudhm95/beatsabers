@@ -6,16 +6,20 @@ public class DifficultyManager : MonoBehaviour {
     PlayerProgressHolder playerprogress;
     public static PlayerData playerData = new PlayerData();
 
-
+    public GameObject sequencer;
     public int numNotesSpawned = 0;
     public int numNotesHit = 0;
-	public int earlyHit = 23;
-	public int perfectHit = 70;
-	public int missHit = 30;
+	public int earlyHit = 0;
+	public int perfectHit = 0;
+	public int missHit = 0;
     public float numNotesPrecision = 0.0f;
     public int numLasersDodged = 0;
     public int numLasersFailed = 0;
     public int numLastChecked = 0;
+    public int currentStreak = 0;
+    public int maxStreak = 0;
+    public int score = 0;
+    private bool GameEnded = false;
     public float modifier = 0.0f;
     private static float moveSpeed = 6.0f;
 	public bool hasFinished = false;
@@ -41,25 +45,25 @@ public class DifficultyManager : MonoBehaviour {
             GetComponent<AudioHelm.Spawner>().updateMoveSpeed(120f, modifier);
         }
 
-		if (numNotesSpawned == 60) {
+		if (GameEnded) {
 			Debug.Log ("Line 41"); 
 			SaveData.playerData.currentSong = "BeatSabers";
-			SaveData.playerData.timeStamp = 3.0f;
-			SaveData.playerData.score = 450;
+			SaveData.playerData.timeStamp = maxStreak;
+			SaveData.playerData.score = score;
 			SaveData.playerData.earlyHit = earlyHit;
 			SaveData.playerData.perfectHit = perfectHit;
 			SaveData.playerData.Miss = missHit;
-			SaveData.playerData.currentStreak = 60;
+			SaveData.playerData.currentStreak = currentStreak;
 			SaveData.playerData.noOfOrbsSpawning = numNotesSpawned;
-			SaveData.playerData.precision = 1.0f;
+			SaveData.playerData.precision = numNotesPrecision;
 			SaveData.playerData.map = "Forest";
 			SaveData.playerData.difficulty = "Easy";
 
-			playerprogress.GetComponent<PlayerProgressHolder> ().Save ();
+            playerprogress.GetComponent<PlayerProgressHolder> ().Save ();
 			//SaveData.Save(SaveData.playerData.path);
 			Debug.Log("Line 54");
-
-
+            numNotesSpawned = 31;
+            GameEnded = false;
 		}
 
     }
@@ -68,9 +72,15 @@ public class DifficultyManager : MonoBehaviour {
         numNotesSpawned++;
     }
 
-    public void incrementNotesHit()
+    public void IncrementNotesHit(int Score)
     {
+        if (Score == 5)
+            perfectHit++;
+        else if (Score == 2)
+            earlyHit++;
         numNotesHit++;
+        currentStreak++;
+        score += Score;
     }
 
     public void incrementLasersFailed()
@@ -80,5 +90,17 @@ public class DifficultyManager : MonoBehaviour {
 
     public float getModifier() {
         return modifier;
+    }
+
+    public void BreakStreak() {
+        if (currentStreak > maxStreak) {
+            maxStreak = currentStreak;
+        }
+        currentStreak = 0;
+        missHit++;
+    }
+
+    public void SetGameEnded(bool isEnded) {
+        GameEnded = isEnded;
     }
 }

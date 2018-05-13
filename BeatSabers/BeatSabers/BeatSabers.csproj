@@ -323,6 +323,7 @@
     <Compile Include="Assets\AudioHelm\Scripts\SampleSequencer.cs" />
     <Compile Include="Assets\AudioHelm\Scripts\Sequencer.cs" />
     <Compile Include="Assets\AudioHelm\Scripts\Utils.cs" />
+    <Compile Include="Assets\AudioManager.cs" />
     <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Antialiasing.cs" />
     <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Bloom.cs" />
     <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\BloomAndFlares.cs" />
@@ -374,9 +375,11 @@
     <Compile Include="Assets\Sample UI\Scripts\TiltWindow.cs" />
     <Compile Include="Assets\Scripts\CameraMovement.cs" />
     <Compile Include="Assets\Scripts\changeMaterial.cs" />
+    <Compile Include="Assets\Scripts\CreateGameData.cs" />
     <Compile Include="Assets\Scripts\cubemove.cs" />
     <Compile Include="Assets\Scripts\DifficultyManager.cs" />
     <Compile Include="Assets\Scripts\DrawLine.cs" />
+    <Compile Include="Assets\Scripts\EndGame.cs" />
     <Compile Include="Assets\Scripts\GM.cs" />
     <Compile Include="Assets\Scripts\LaserCollision.cs" />
     <Compile Include="Assets\Scripts\LevelManager.cs" />
@@ -384,6 +387,7 @@
     <Compile Include="Assets\Scripts\LoadonClick.cs" />
     <Compile Include="Assets\Scripts\Login.cs" />
     <Compile Include="Assets\Scripts\onMouseClick.cs" />
+    <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\PlayerData.cs" />
     <Compile Include="Assets\Scripts\PlayerProgressHolder.cs" />
     <Compile Include="Assets\Scripts\QuitonClick.cs" />
@@ -392,6 +396,8 @@
     <Compile Include="Assets\Scripts\SaberCollisionRight.cs" />
     <Compile Include="Assets\Scripts\SaveData.cs" />
     <Compile Include="Assets\Scripts\ShootLaser.cs" />
+    <Compile Include="Assets\Scripts\Sounds.cs" />
+    <Compile Include="Assets\Scripts\SpawnEnviornment.cs" />
     <Compile Include="Assets\Scripts\Spawner.cs" />
     <Compile Include="Assets\Scripts\spherecontrol.cs" />
     <Compile Include="Assets\Scripts\sucess1.cs" />
@@ -515,6 +521,27 @@
     <Compile Include="Assets\WarZone\Scripts\TurretController.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Audio\Orb Beats\Orb Beats Array\Metadata\Asset\{00345d49-24d5-4f86-8827-fa516a133d73}.xml" />
+    <None Include="Assets\Audio\Orb Beats\Orb Beats Array\Metadata\AudioFile\{29431a7b-1606-47cf-8910-9ba270bb9a78}.xml" />
+    <None Include="Assets\Audio\Orb Beats\Orb Beats Array\Metadata\AudioFile\{35f91792-5601-4ed6-86f2-2e19dce685a2}.xml" />
+    <None Include="Assets\Audio\Orb Beats\Orb Beats Array\Metadata\AudioFile\{3c0b0ee5-80ee-4a91-95b8-974393a92c8f}.xml" />
+    <None Include="Assets\Audio\Orb Beats\Orb Beats Array\Metadata\AudioFile\{3f4d93d1-4375-48fc-8142-cf8382b8838e}.xml" />
+    <None Include="Assets\Audio\Orb Beats\Orb Beats Array\Metadata\AudioFile\{83b91e1e-e1db-41fb-9e3a-780b5ce8d631}.xml" />
+    <None Include="Assets\Audio\Orb Beats\Orb Beats Array\Metadata\AudioFile\{db5c4d2b-0c87-4fa0-9209-50dc79bf9638}.xml" />
+    <None Include="Assets\Audio\Orb Beats\Orb Beats Array\Metadata\Bank\{f4de9abf-39ca-4c34-a7de-a01aacb17c10}.xml" />
+    <None Include="Assets\Audio\Orb Beats\Orb Beats Array\Metadata\BankFolder\{017206fa-f2e7-4944-bb22-c47826be63cd}.xml" />
+    <None Include="Assets\Audio\Orb Beats\Orb Beats Array\Metadata\EffectPresetFolder\{5024871a-66f5-46ea-a89b-65b283c10331}.xml" />
+    <None Include="Assets\Audio\Orb Beats\Orb Beats Array\Metadata\EncodingSetting\{9511fb44-650d-40cf-b48c-687dce7b5f48}.xml" />
+    <None Include="Assets\Audio\Orb Beats\Orb Beats Array\Metadata\Event\{cc2d1d1a-1e32-49a2-8d77-640604002f9d}.xml" />
+    <None Include="Assets\Audio\Orb Beats\Orb Beats Array\Metadata\EventFolder\{557db4a6-603f-4bf5-a135-60ba2b88e3da}.xml" />
+    <None Include="Assets\Audio\Orb Beats\Orb Beats Array\Metadata\Master.xml" />
+    <None Include="Assets\Audio\Orb Beats\Orb Beats Array\Metadata\Mixer.xml" />
+    <None Include="Assets\Audio\Orb Beats\Orb Beats Array\Metadata\ParameterPresetFolder\{6fc300f7-154f-4f4b-99e4-8e7b0fb36863}.xml" />
+    <None Include="Assets\Audio\Orb Beats\Orb Beats Array\Metadata\Platform\{d65f922f-1f4c-47ca-9549-9f6083179c6f}.xml" />
+    <None Include="Assets\Audio\Orb Beats\Orb Beats Array\Metadata\Return\{51561281-43e2-43e5-82f8-53d76c5f21fa}.xml" />
+    <None Include="Assets\Audio\Orb Beats\Orb Beats Array\Metadata\SnapshotGroup\{9627bf46-fc57-4d49-94bb-fcd5bcf1162f}.xml" />
+    <None Include="Assets\Audio\Orb Beats\Orb Beats Array\Metadata\Tags.xml" />
+    <None Include="Assets\Audio\Orb Beats\Orb Beats Array\Metadata\Workspace.xml" />
     <None Include="Assets\EnergySwords\ESinfo.txt" />
     <None Include="Assets\FantasyEnvironments\Environments\README.txt" />
     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />

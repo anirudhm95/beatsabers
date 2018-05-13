@@ -26,8 +26,6 @@ namespace AudioHelm {
 
         void Update()
         {
-
-            spawnWait = Random.Range(spawnLeastWait, spawnMostWait);
         }
 
         //   IEnumerator waitSpawner(){
