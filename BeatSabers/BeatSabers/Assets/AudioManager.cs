@@ -28,6 +28,6 @@ public class AudioManager : MonoBehaviour {
     public void Play (string name)
     {
         Sounds s = Array.Find(sounds, Sounds => Sounds.name == name);
-        s.source.Play();
+        s.source.PlayScheduled(500);
     }
 }
