@@ -15,6 +15,7 @@ public class ShootLaser : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        FindObjectOfType<AudioManager>().Play("Robot");
         laser = GetComponent<LineRenderer>();
         laserPosition = new Vector3(0,0,0);
         hasFinishedSpawning = false;

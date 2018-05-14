@@ -67,7 +67,7 @@ public class Login : MonoBehaviour {
 			{
 				
 				Debug.Log("Login Successful");
-				SceneManager.LoadScene("Menu");
+				SceneManager.LoadScene("NewMenu");
 			}
 			else
 			{
@@ -81,7 +81,7 @@ public class Login : MonoBehaviour {
 			outStream.WriteLine ("playerName, playerID, CurrentSong, timeStamp, score, earlyHit, perfectHit, Miss, currentStreak, noOfOrbsSpawning, precision, map, difficulty");
 			outStream.Close ();
 	        GenerateNewFile(SaveData.playerData.playerName);
-            SceneManager.LoadScene("Menu");
+            SceneManager.LoadScene("NewMenu");
 		}
 	}
 

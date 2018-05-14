@@ -30,10 +30,11 @@ public class SaberCollision : MonoBehaviour {
         inReactionArea = false;
         collided = false;
     }
-	
-	// Update is called once per frame
-	void Update () {
-        timeAlive += 1.0f*Time.deltaTime;
+
+    // Update is called once per frame
+    void Update()
+    {
+        timeAlive += 1.0f * Time.deltaTime;
         if (inReactionArea && collided)
         {
             if (device.velocity.sqrMagnitude > 1)

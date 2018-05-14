@@ -397,6 +397,8 @@
     <Compile Include="Assets\Scripts\RobotSpawner.cs" />
     <Compile Include="Assets\Scripts\SaberCollision.cs" />
     <Compile Include="Assets\Scripts\SaberCollisionRight.cs" />
+    <Compile Include="Assets\Scripts\SaberNoise.cs" />
+    <Compile Include="Assets\Scripts\SaberNoiseRight.cs" />
     <Compile Include="Assets\Scripts\SaveData.cs" />
     <Compile Include="Assets\Scripts\ShootLaser.cs" />
     <Compile Include="Assets\Scripts\Sounds.cs" />
