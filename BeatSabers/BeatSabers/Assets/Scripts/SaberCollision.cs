@@ -24,7 +24,7 @@ public class SaberCollision : MonoBehaviour {
 
 
         tracked = GameObject.Find("Controller (left)");
-		    trackedObj = tracked.GetComponent<SteamVR_TrackedObject>();
+		trackedObj = tracked.GetComponent<SteamVR_TrackedObject>();
         controllerIndex = tracked.GetComponent<SteamVR_TrackedObject>().GetDeviceIndex();
         DifficultyManager = GameObject.Find("Spawner");
         inReactionArea = false;

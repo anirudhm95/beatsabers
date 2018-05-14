@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DifficultyManager : MonoBehaviour {
     PlayerProgressHolder playerprogress;
@@ -64,7 +65,8 @@ public class DifficultyManager : MonoBehaviour {
 			Debug.Log("Line 54");
             numNotesSpawned = 31;
             GameEnded = false;
-		}
+            SceneManager.LoadScene("NewMenu");
+        }
 
     }
 

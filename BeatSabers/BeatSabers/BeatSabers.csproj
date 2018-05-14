@@ -388,6 +388,7 @@
     <Compile Include="Assets\Scripts\LoadonClick.cs" />
     <Compile Include="Assets\Scripts\Login.cs" />
     <Compile Include="Assets\Scripts\onMouseClick.cs" />
+    <Compile Include="Assets\Scripts\Pausing.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\PlayerData.cs" />
     <Compile Include="Assets\Scripts\PlayerProgressHolder.cs" />

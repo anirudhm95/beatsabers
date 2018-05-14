@@ -294,7 +294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 552e4c24a079d45e0be0b925699b72ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: Menu
+  sceneToLoad: NewMenu
   plyerprogress: {fileID: 988278969}
 --- !u!4 &381831011
 Transform:

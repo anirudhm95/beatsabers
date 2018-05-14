@@ -17,15 +17,17 @@ public class CreateGame : MonoBehaviour{
 	// Use this for initialization
 	void Awake () {
 		playerprogress = FindObjectOfType<PlayerProgressHolder>();
+        data.map = "Game";
+        data.nameOfSong = "Meltdown";
 	}
 
 	// Update is called once per frame
 	void Update () {
 
-		if (Input.GetKeyDown(KeyCode.Return))
-		{
-			StartButton ();
-		}
+		//if (Input.GetKeyDown(KeyCode.Return))
+	    //	{
+	    //		StartButton ();
+        //	}
 
 	}
 
@@ -37,9 +39,9 @@ public class CreateGame : MonoBehaviour{
 
 		if (File.Exists (ScientistFile)) {
 
-			SaveData.Loads ();
+			//SaveData.Loads ();
 			Debug.Log ("File exists");
-			SceneManager.LoadScene("Game");
+			SceneManager.LoadScene(data.map);
 
 		} else {
 
@@ -48,9 +50,17 @@ public class CreateGame : MonoBehaviour{
 
 			outStream.Flush ();
 			outStream.Close ();
-			SceneManager.LoadScene("Game");
+			SceneManager.LoadScene(data.map);
 
 		}
 	}
+
+    public void SetGameLevel(string GameLevel) {
+        data.map = GameLevel;
+    }
+
+    public void SetSong(string GameSong) {
+        data.nameOfSong = GameSong;
+    }
 }
 

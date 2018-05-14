@@ -59,7 +59,7 @@ namespace AudioHelm {
             else
                 lastHorLocationOther = (int)spawnPositions[0].x;
             int randHorLane = Random.Range(Mathf.Max(-3, lastHorLocation - 2, lastHorLocationOther - 3), Mathf.Min(4, lastHorLocation + 3, lastHorLocationOther + 4));
-            Debug.Log(Mathf.Max(-3, lastHorLocation - 2) + ", " + randHorLane + ", " + Mathf.Min(4, lastHorLocation + 2));
+           // Debug.Log(Mathf.Max(-3, lastHorLocation - 2) + ", " + randHorLane + ", " + Mathf.Min(4, lastHorLocation + 2));
             spawnPositions[randEnemy] = new Vector3(randHorLane, randVertLane * 1.18f, spawnZvalue);
             GetComponent<DifficultyManager>().incrementNotesSpawned();
             GameObject spawnedNote = Instantiate(enemies[randEnemy], spawnPositions[randEnemy] + transform.TransformPoint(0, 0, 0), gameObject.transform.rotation);
