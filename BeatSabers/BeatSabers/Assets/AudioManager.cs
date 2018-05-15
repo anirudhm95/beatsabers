@@ -26,7 +26,7 @@ public class AudioManager : MonoBehaviour {
 
     private void Start()
     {
-        Invoke("PlayMusic", 240f/clock.bpm);
+        Invoke("PlayMusic", 260f/clock.bpm);
     }
 
     public void PlayMusic()
@@ -40,5 +40,15 @@ public class AudioManager : MonoBehaviour {
     {
         Sounds s = Array.Find(sounds, Sounds => Sounds.name == name);
         s.source.PlayScheduled(500);
+    }
+
+    public void Pause()
+    {
+        sounds[1].source.Pause();
+    }
+
+    public void UnPause()
+    {
+        sounds[1].source.Play();
     }
 }

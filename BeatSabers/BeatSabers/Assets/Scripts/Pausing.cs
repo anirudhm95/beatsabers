@@ -14,13 +14,14 @@ public class Pausing : MonoBehaviour {
     SteamVR_TrackedObject trackedObj;
     GameObject tracked;
     float StartPressDown;
-
+    public AudioSource aSource;
+    public GameObject AudioManager;
     // Use this for initialization
     void Start () {
         tracked = GameObject.Find("Controller (left)");
         trackedObj = tracked.GetComponent<SteamVR_TrackedObject>();
         isPaused = false;
-
+        AudioManager = GameObject.Find("AudioManager");
     }
 	
 	// Update is called once per frame
@@ -34,6 +35,8 @@ public class Pausing : MonoBehaviour {
                 Unpause();
         }
         if (device.GetPress(touchPad) && device.GetPress(triggerButton) && isPaused) {
+            Time.timeScale = 1f;
+            isPaused = false;
             SceneManager.LoadScene("NewMenu");
         }
 
@@ -43,11 +46,13 @@ public class Pausing : MonoBehaviour {
     {
         Time.timeScale = 0f;
         isPaused = true;
+        AudioManager.GetComponent<AudioManager>().Pause();
     }
 
     void Unpause()
     {
         Time.timeScale = 1f;
         isPaused = false;
+        AudioManager.GetComponent<AudioManager>().UnPause();
     }
 }

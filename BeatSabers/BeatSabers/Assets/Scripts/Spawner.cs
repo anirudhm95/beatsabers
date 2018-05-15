@@ -67,7 +67,7 @@ namespace AudioHelm {
         }
 
         public void updateMoveSpeed(float tempo, float moveSpeed) {
-            float distance = 280.0f / clock.bpm;
+            float distance = 240.0f / clock.bpm;
             modifier = moveSpeed;
             spawnZvalue = distance * (9.0f+moveSpeed);
         }
