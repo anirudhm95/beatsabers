@@ -11,6 +11,7 @@ public class CreateGameData {
 	public string nameOfSong;
 	public string map;
 	public string difficulty;
-			
+    public int songIndex;
+    public int bpm;
 }
 

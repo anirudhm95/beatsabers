@@ -18,8 +18,10 @@ public class CreateGame : MonoBehaviour{
 	void Awake () {
 		playerprogress = FindObjectOfType<PlayerProgressHolder>();
         data.map = "Game";
-        data.nameOfSong = "Meltdown";
-	}
+        SaveData.createGameData.nameOfSong = "Meltdown";
+        SaveData.createGameData.songIndex = 0;
+        SaveData.createGameData.bpm = 165;
+    }
 
 	// Update is called once per frame
 	void Update () {
@@ -57,10 +59,23 @@ public class CreateGame : MonoBehaviour{
 
     public void SetGameLevel(string GameLevel) {
         data.map = GameLevel;
+        SaveData.createGameData.map = GameLevel;
     }
 
     public void SetSong(string GameSong) {
         data.nameOfSong = GameSong;
+        SaveData.createGameData.nameOfSong = GameSong;
+    }
+
+    public void SetSongIndex(int GameSongIndex)
+    {
+        data.songIndex = GameSongIndex;
+        SaveData.createGameData.songIndex = GameSongIndex;
+    }
+
+    public void SetBPM(int bpm) {
+        data.bpm = bpm;
+        SaveData.createGameData.bpm = bpm;
     }
 }
 

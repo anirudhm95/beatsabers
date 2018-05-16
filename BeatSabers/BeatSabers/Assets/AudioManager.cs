@@ -7,13 +7,23 @@ public class AudioManager : MonoBehaviour {
 
     public Sounds[] sounds;
     public Sounds[] orbSounds;
+    public Sounds[] music;
 
     public string musicName;
     public AudioHelm.AudioHelmClock clock;
-
+    float timeOffset;
     // Use this for initialization
     void Awake () {
         clock = FindObjectOfType<AudioHelm.AudioHelmClock>();
+        clock.bpm = SaveData.createGameData.bpm; 
+        foreach (Sounds s in music)
+        {
+            s.source = gameObject.AddComponent<AudioSource>();
+            s.source.clip = s.clip;
+
+            s.source.volume = s.volume;
+            s.source.pitch = s.pitch;
+        }
         foreach (Sounds s in sounds)
         {
             s.source = gameObject.AddComponent<AudioSource>();
@@ -22,18 +32,28 @@ public class AudioManager : MonoBehaviour {
             s.source.volume = s.volume;
             s.source.pitch = s.pitch;
         }
-	}
+        foreach (Sounds s in orbSounds)
+        {
+            s.source = gameObject.AddComponent<AudioSource>();
+            s.source.clip = s.clip;
+
+            s.source.volume = s.volume;
+            s.source.pitch = s.pitch;
+        }
+        if (clock.bpm == 163) { timeOffset = 280f; }
+        else { timeOffset = 240f; }
+
+        Invoke("PlayMusic", timeOffset / clock.bpm);
+    }
 
     private void Start()
     {
-        Invoke("PlayMusic", 260f/clock.bpm);
     }
 
     public void PlayMusic()
     {
-        musicName = "Theme";
-        Sounds s = Array.Find(sounds, Sounds => Sounds.name == musicName);
-        s.source.Play();
+        //music[1].source.Play();
+        music[SaveData.createGameData.songIndex].source.Play();
     }
 
     public void Play (string name)
@@ -44,11 +64,11 @@ public class AudioManager : MonoBehaviour {
 
     public void Pause()
     {
-        sounds[1].source.Pause();
+        music[1].source.Pause();
     }
 
     public void UnPause()
     {
-        sounds[1].source.Play();
+        music[1].source.Play();
     }
 }
