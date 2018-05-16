@@ -8,6 +8,7 @@ public class AudioManager : MonoBehaviour {
     public Sounds[] sounds;
     public Sounds[] orbSounds;
     public Sounds[] music;
+    public GameObject[] sequencers;
 
     public string musicName;
     public AudioHelm.AudioHelmClock clock;
@@ -15,7 +16,13 @@ public class AudioManager : MonoBehaviour {
     // Use this for initialization
     void Awake () {
         clock = FindObjectOfType<AudioHelm.AudioHelmClock>();
-        clock.bpm = SaveData.createGameData.bpm; 
+        clock.bpm = SaveData.createGameData.bpm;
+        sequencers[SaveData.createGameData.songIndex].SetActive(true);
+        if (clock.bpm == 163) { timeOffset = 280f; }
+        else { timeOffset = 240f; }
+
+        Invoke("PlayMusic", timeOffset / clock.bpm);
+
         foreach (Sounds s in music)
         {
             s.source = gameObject.AddComponent<AudioSource>();
@@ -40,10 +47,6 @@ public class AudioManager : MonoBehaviour {
             s.source.volume = s.volume;
             s.source.pitch = s.pitch;
         }
-        if (clock.bpm == 163) { timeOffset = 280f; }
-        else { timeOffset = 240f; }
-
-        Invoke("PlayMusic", timeOffset / clock.bpm);
     }
 
     private void Start()
