@@ -5,25 +5,19 @@ namespace AudioHelm {
     public class Spawner : MonoBehaviour
     {
         [AddComponentMenu("")]
-        public GameObject[] enemies;
+        public GameObject[] orbTypes;
         public AudioHelmClock clock;
-        public Vector3 spawnValues;
         public Vector3[] spawnPositions = new Vector3[2];
-        public float spawnWait;
-        public float spawnMostWait;
-        public float spawnLeastWait;
-        public int startWait;
-        public bool stop;
         private float modifier;
         private float spawnZvalue;
-
-        int randEnemy;
+        int randOrbType;
+        public int startingNote = 20;
+        public int[] scale = { 0, 2, 4, 5, 7, 9, 11 };
 
         void Start()
         {
             clock = FindObjectOfType<AudioHelmClock>();
-            updateMoveSpeed(110f, 0.0f);
-            //StartCoroutine(waitSpawner());
+            UpdateMoveSpeed(0.0f);
         }
 
 
@@ -31,9 +25,7 @@ namespace AudioHelm {
         {
         }
 
-        public int startingNote = 20;
-        public int[] scale = { 0, 2, 4, 5, 7, 9, 11 };
-
+        //determine note with audio helm (not used in current build)
         int GetNoteIndex(int note)
         {
             int noteAdjusted = (note - startingNote + Utils.kMidiSize) % Utils.kMidiSize;
@@ -50,23 +42,26 @@ namespace AudioHelm {
 
         public void SpawnNote(Note note)
         {
-            randEnemy = Random.Range(0, 2);
+            //randomly determine orb type and lane
+            randOrbType = Random.Range(0, 2);
             int randVertLane = Random.Range(0, 2);
-            int lastHorLocation = (int)spawnPositions[randEnemy].x;
+            int lastHorLocation = (int)spawnPositions[randOrbType].x;
             int lastHorLocationOther;
-            if (randEnemy == 0)
+            if (randOrbType == 0)
                 lastHorLocationOther = (int)spawnPositions[1].x;
             else
                 lastHorLocationOther = (int)spawnPositions[0].x;
             int randHorLane = Random.Range(Mathf.Max(-3, lastHorLocation - 1, lastHorLocationOther - 3), Mathf.Min(4, lastHorLocation + 2, lastHorLocationOther + 4));
            // Debug.Log(Mathf.Max(-3, lastHorLocation - 2) + ", " + randHorLane + ", " + Mathf.Min(4, lastHorLocation + 2));
-            spawnPositions[randEnemy] = new Vector3(randHorLane, randVertLane * 1.18f, spawnZvalue);
+            spawnPositions[randOrbType] = new Vector3(randHorLane, randVertLane * 1.18f, spawnZvalue);
+
+            //spawn orb with determined values
             GetComponent<DifficultyManager>().IncrementNotesSpawned();
-            GameObject spawnedNote = Instantiate(enemies[randEnemy], spawnPositions[randEnemy] + transform.TransformPoint(0, 0, 0), gameObject.transform.rotation);
+            GameObject spawnedNote = Instantiate(orbTypes[randOrbType], spawnPositions[randOrbType] + transform.TransformPoint(0, 0, 0), gameObject.transform.rotation);
             spawnedNote.GetComponent<cubemove>().setModifier(modifier);
         }
 
-        public void updateMoveSpeed(float tempo, float moveSpeed) {
+        public void UpdateMoveSpeed(float moveSpeed) {
             float distance = 240.0f / clock.bpm;
             modifier = moveSpeed;
             spawnZvalue = distance * (9.0f+moveSpeed);

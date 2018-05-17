@@ -22,8 +22,6 @@ public class DifficultyManager : MonoBehaviour {
     public int score = 0;
     private bool GameEnded = false;
     public float modifier = 0.0f;
-    private static float moveSpeed = 6.0f;
-	public bool hasFinished = false;
 
 	void Awake () {
 		playerprogress = FindObjectOfType<PlayerProgressHolder>();
@@ -46,42 +44,6 @@ public class DifficultyManager : MonoBehaviour {
 
 		if (GameEnded)
             EndGame();
-    }
-
-    public void IncrementNotesSpawned() {
-        numNotesSpawned++;
-    }
-
-    public void IncrementNotesHit(int Score)
-    {
-        if (Score == 5)
-            perfectHit++;
-        else if (Score == 2)
-            earlyHit++;
-        numNotesHit++;
-        currentStreak++;
-        score += Score;
-    }
-
-    public void IncrementLasersFailed()
-    {
-        numLasersFailed++;
-    }
-
-    public float GetModifier() {
-        return modifier;
-    }
-
-    public void BreakStreak() {
-        if (currentStreak > maxStreak) {
-            maxStreak = currentStreak;
-        }
-        currentStreak = 0;
-        missHit++;
-    }
-
-    public void SetGameEnded(bool isEnded) {
-        GameEnded = isEnded;
     }
 
     //Updates player data, saves data and loads new menu at end of song
@@ -109,12 +71,53 @@ public class DifficultyManager : MonoBehaviour {
         if (numNotesPrecision > 0.8f)
         {
             modifier++;
-            GetComponent<AudioHelm.Spawner>().updateMoveSpeed(120f, modifier);
+            GetComponent<AudioHelm.Spawner>().UpdateMoveSpeed(modifier);
         }
         else if (numNotesPrecision < 0.6f && modifier > -9.0f)
         {
             modifier--;
-            GetComponent<AudioHelm.Spawner>().updateMoveSpeed(120f, modifier);
+            GetComponent<AudioHelm.Spawner>().UpdateMoveSpeed(modifier);
         }
+    }
+
+    public void IncrementNotesSpawned()
+    {
+        numNotesSpawned++;
+    }
+
+    public void IncrementNotesHit(int Score)
+    {
+        if (Score == 5)
+            perfectHit++;
+        else if (Score == 2)
+            earlyHit++;
+        numNotesHit++;
+        currentStreak++;
+        score += Score;
+    }
+
+    public void IncrementLasersFailed()
+    {
+        numLasersFailed++;
+    }
+
+    public float GetModifier()
+    {
+        return modifier;
+    }
+
+    public void BreakStreak()
+    {
+        if (currentStreak > maxStreak)
+        {
+            maxStreak = currentStreak;
+        }
+        currentStreak = 0;
+        missHit++;
+    }
+
+    public void SetGameEnded(bool isEnded)
+    {
+        GameEnded = isEnded;
     }
 }
