@@ -13,15 +13,13 @@ public class AudioManager : MonoBehaviour {
     public string musicName;
     public AudioHelm.AudioHelmClock clock;
     public GameObject clockObject;
-    float timeOffset;
+    float timeOffset = 240f; //60 * number of beats song is delayed 
+
     // Use this for initialization
     void Awake () {
-        //clock = FindObjectOfType<AudioHelm.AudioHelmClock>();
         clock.bpm = SaveData.createGameData.bpm;
         clockObject.SetActive(true);
         sequencers[SaveData.createGameData.songIndex].SetActive(true);
-        if (clock.bpm == 163) { timeOffset = 280f; }
-        else { timeOffset = 240f; }
 
         Invoke("PlayMusic", timeOffset / clock.bpm);
 
