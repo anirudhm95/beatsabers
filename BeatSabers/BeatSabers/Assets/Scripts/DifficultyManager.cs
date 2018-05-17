@@ -41,36 +41,14 @@ public class DifficultyManager : MonoBehaviour {
             numNotesPrecision = numNotesHit / (float)numNotesSpawned;
 
         if (numNotesSpawned > numLastChecked + 50) {
-            numLastChecked = numNotesSpawned;
-            modifier++;
-            GetComponent<AudioHelm.Spawner>().updateMoveSpeed(120f, modifier);
+            ManageDifficulty();
         }
 
-		if (GameEnded) {
-			Debug.Log ("Line 41"); 
-			SaveData.playerData.currentSong = "BeatSabers";
-			SaveData.playerData.timeStamp = maxStreak;
-			SaveData.playerData.score = score;
-			SaveData.playerData.earlyHit = earlyHit;
-			SaveData.playerData.perfectHit = perfectHit;
-			SaveData.playerData.Miss = missHit;
-			SaveData.playerData.currentStreak = currentStreak;
-			SaveData.playerData.noOfOrbsSpawning = numNotesSpawned;
-			SaveData.playerData.precision = numNotesPrecision;
-			SaveData.playerData.map = "Forest";
-			SaveData.playerData.difficulty = "Easy";
-
-            playerprogress.GetComponent<PlayerProgressHolder> ().Save ();
-			//SaveData.Save(SaveData.playerData.path);
-			Debug.Log("Line 54");
-            numNotesSpawned = 31;
-            GameEnded = false;
-            SceneManager.LoadScene("NewMenu");
-        }
-
+		if (GameEnded)
+            EndGame();
     }
 
-    public void incrementNotesSpawned() {
+    public void IncrementNotesSpawned() {
         numNotesSpawned++;
     }
 
@@ -85,12 +63,12 @@ public class DifficultyManager : MonoBehaviour {
         score += Score;
     }
 
-    public void incrementLasersFailed()
+    public void IncrementLasersFailed()
     {
         numLasersFailed++;
     }
 
-    public float getModifier() {
+    public float GetModifier() {
         return modifier;
     }
 
@@ -104,5 +82,39 @@ public class DifficultyManager : MonoBehaviour {
 
     public void SetGameEnded(bool isEnded) {
         GameEnded = isEnded;
+    }
+
+    //Updates player data, saves data and loads new menu at end of song
+    void EndGame() {
+        SaveData.playerData.currentSong = SaveData.createGameData.nameOfSong;
+        SaveData.playerData.timeStamp = maxStreak;
+        SaveData.playerData.score = score;
+        SaveData.playerData.earlyHit = earlyHit;
+        SaveData.playerData.perfectHit = perfectHit;
+        SaveData.playerData.Miss = missHit;
+        SaveData.playerData.currentStreak = currentStreak;
+        SaveData.playerData.noOfOrbsSpawning = numNotesSpawned;
+        SaveData.playerData.precision = numNotesPrecision;
+        SaveData.playerData.map = SaveData.createGameData.map;
+        SaveData.playerData.difficulty = "Easy";
+
+        playerprogress.GetComponent<PlayerProgressHolder>().Save();
+        GameEnded = false;
+        SceneManager.LoadScene("NewMenu");
+    }
+
+    //determines how difficulty should be modified and changes orb move speed 
+    void ManageDifficulty() {
+        numLastChecked = numNotesSpawned;
+        if (numNotesPrecision > 0.8f)
+        {
+            modifier++;
+            GetComponent<AudioHelm.Spawner>().updateMoveSpeed(120f, modifier);
+        }
+        else if (numNotesPrecision < 0.6f && modifier > -9.0f)
+        {
+            modifier--;
+            GetComponent<AudioHelm.Spawner>().updateMoveSpeed(120f, modifier);
+        }
     }
 }

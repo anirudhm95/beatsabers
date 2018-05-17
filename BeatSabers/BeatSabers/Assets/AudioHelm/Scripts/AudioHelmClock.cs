@@ -125,5 +125,9 @@ namespace AudioHelm
             globalBeatTime += deltaTime * globalBpm / SECONDS_PER_MIN;
             Native.SetBeatTime(globalBeatTime);
         }
+
+        public void SetActive(bool isActive) {
+            SetActive(isActive);
+        }
     }
 }

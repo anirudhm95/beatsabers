@@ -17,7 +17,7 @@ public class CreateGame : MonoBehaviour{
 	// Use this for initialization
 	void Awake () {
 		playerprogress = FindObjectOfType<PlayerProgressHolder>();
-        data.map = "Game";
+        data.map = "Forest";
         SaveData.createGameData.nameOfSong = "Meltdown";
         SaveData.createGameData.songIndex = 0;
         SaveData.createGameData.bpm = 165;
