@@ -15,6 +15,7 @@ public class ShootLaser : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        FindObjectOfType<AudioManager>().Play("Robot");
         laser = GetComponent<LineRenderer>();
         laserPosition = new Vector3(0,0,0);
         hasFinishedSpawning = false;
@@ -22,6 +23,7 @@ public class ShootLaser : MonoBehaviour {
         laserHitbox = transform.Find("LaserHitbox").gameObject.GetComponent<CapsuleCollider>();
         target = GameObject.Find("Camera (eye)");
         transform.LookAt(target.transform);
+        Invoke("FadeOut", 6.0f);
     }
 
     // Update is called once per frame
@@ -57,5 +59,9 @@ public class ShootLaser : MonoBehaviour {
 
     public void SetHasFinishedSpawning(bool temp) {
         hasFinishedSpawning = temp;
+    }
+
+    public void FadeOut() {
+        GetComponent<RobotFadeIn>().BeginFadeout();
     }
 }

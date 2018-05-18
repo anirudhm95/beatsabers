@@ -67,7 +67,7 @@ public class Login : MonoBehaviour {
 			{
 				
 				Debug.Log("Login Successful");
-				SceneManager.LoadScene("Start");
+				SceneManager.LoadScene("NewMenu");
 			}
 			else
 			{
@@ -80,8 +80,8 @@ public class Login : MonoBehaviour {
 			StreamWriter outStream = System.IO.File.AppendText(playerFile);
 			outStream.WriteLine ("playerName, playerID, CurrentSong, timeStamp, score, earlyHit, perfectHit, Miss, currentStreak, noOfOrbsSpawning, precision, map, difficulty");
 			outStream.Close ();
-	    GenerateNewFile(SaveData.playerData.playerName);
-      SceneManager.LoadScene("Start");
+	        GenerateNewFile(SaveData.playerData.playerName);
+            SceneManager.LoadScene("NewMenu");
 		}
 	}
 
