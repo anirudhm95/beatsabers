@@ -16,11 +16,12 @@ public class AudioManager : MonoBehaviour {
     float timeOffset = 240f; //60 * number of beats song is delayed 
 
     // Use this for initialization
-    void Awake () {
+    void Awake() {
         clock.bpm = SaveData.createGameData.bpm;
         clockObject.SetActive(true);
         sequencers[SaveData.createGameData.songIndex].SetActive(true);
-
+        if (SaveData.createGameData.map == "Space")
+            timeOffset += 40f;
         Invoke("PlayMusic", timeOffset / clock.bpm);
 
         foreach (Sounds s in music)

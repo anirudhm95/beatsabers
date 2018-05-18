@@ -12,6 +12,7 @@ public class PlayerData {
 	public string currentSong;
 	public int score;
 	public int earlyHit;
+    public int lateHit;
 	public int perfectHit;
 	public int Miss;
 	public int currentStreak;
@@ -19,7 +20,6 @@ public class PlayerData {
 	public float precision;
 	public float timeStamp;
 	public string map;
-	public string difficulty; 
 
 
 }

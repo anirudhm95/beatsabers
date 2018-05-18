@@ -13,6 +13,7 @@ public class DifficultyManager : MonoBehaviour {
 	public int earlyHit = 0;
 	public int perfectHit = 0;
 	public int missHit = 0;
+    public int lateHit = 0;
     public float numNotesPrecision = 0.0f;
     public int numLasersDodged = 0;
     public int numLasersFailed = 0;
@@ -52,13 +53,13 @@ public class DifficultyManager : MonoBehaviour {
         SaveData.playerData.timeStamp = maxStreak;
         SaveData.playerData.score = score;
         SaveData.playerData.earlyHit = earlyHit;
+        SaveData.playerData.earlyHit = lateHit;
         SaveData.playerData.perfectHit = perfectHit;
         SaveData.playerData.Miss = missHit;
         SaveData.playerData.currentStreak = currentStreak;
         SaveData.playerData.noOfOrbsSpawning = numNotesSpawned;
         SaveData.playerData.precision = numNotesPrecision;
         SaveData.playerData.map = SaveData.createGameData.map;
-        SaveData.playerData.difficulty = "Easy";
 
         playerprogress.GetComponent<PlayerProgressHolder>().Save();
         GameEnded = false;
@@ -85,20 +86,40 @@ public class DifficultyManager : MonoBehaviour {
         numNotesSpawned++;
     }
 
-    public void IncrementNotesHit(int Score)
+    //determines type of hit and updates score, streak, and corresponding hit count
+    public void IncrementNotesHit(float distance)
     {
-        if (Score == 5)
+        float distanceAbs = Mathf.Abs(distance);
+        if (distanceAbs < 0.2)
+        {
             perfectHit++;
-        else if (Score == 2)
-            earlyHit++;
+            score += 5;
+        }
+        else if (distanceAbs < 0.5)
+        {
+            if (distance > 0)
+                earlyHit++;
+            else
+                lateHit++;
+            score += 2;
+        }
+        else
+        {
+            score += 1;
+        }
         numNotesHit++;
         currentStreak++;
-        score += Score;
     }
 
     public void IncrementLasersFailed()
     {
+        score -= 7;
         numLasersFailed++;
+    }
+
+    public void IncrementLasersDodged() {
+        score += 5;
+        numLasersDodged++;
     }
 
     public float GetModifier()

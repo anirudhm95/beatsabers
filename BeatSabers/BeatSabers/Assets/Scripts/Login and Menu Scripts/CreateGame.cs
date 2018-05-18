@@ -18,6 +18,10 @@ public class CreateGame : MonoBehaviour{
 	void Awake () {
 		playerprogress = FindObjectOfType<PlayerProgressHolder>();
         data.map = "Forest";
+        data.nameOfSong = "Meltdown";
+        data.songIndex = 0;
+        data.bpm = 165;
+        SaveData.createGameData.map = "Forest";
         SaveData.createGameData.nameOfSong = "Meltdown";
         SaveData.createGameData.songIndex = 0;
         SaveData.createGameData.bpm = 165;
@@ -52,7 +56,7 @@ public class CreateGame : MonoBehaviour{
 
 			outStream.Flush ();
 			outStream.Close ();
-			SceneManager.LoadScene(data.map);
+            SceneManager.LoadScene(data.map);
 
 		}
 	}

@@ -78,7 +78,7 @@ public class Login : MonoBehaviour {
 		else
 		{  
 			StreamWriter outStream = System.IO.File.AppendText(playerFile);
-			outStream.WriteLine ("playerName, playerID, CurrentSong, timeStamp, score, earlyHit, perfectHit, Miss, currentStreak, noOfOrbsSpawning, precision, map, difficulty");
+			outStream.WriteLine ("playerName, playerID, CurrentSong, timeStamp, score, earlyHit, lateHit, perfectHit, Miss, currentStreak, noOfOrbsSpawning, precision, map");
 			outStream.Close ();
 	        GenerateNewFile(SaveData.playerData.playerName);
             SceneManager.LoadScene("NewMenu");

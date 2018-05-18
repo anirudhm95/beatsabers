@@ -27,6 +27,7 @@ public class RobotFadeIn : MonoBehaviour
         StartCoroutine("FadeOut", mats);
     }
 
+    //makes robot turn from transparent to opaque
     IEnumerator FadeIn(Material[] materialsToFadeIn)
     {
         lerpAmount = 0;
@@ -49,7 +50,7 @@ public class RobotFadeIn : MonoBehaviour
     }
 
 
-
+    //makes robot turn from opaque to transparent
     IEnumerator FadeOut(Material[] materialsToFadeOut)
     {
         lerpAmount = 0;
@@ -68,7 +69,7 @@ public class RobotFadeIn : MonoBehaviour
 
         if (lerpAmount >= 1)
         {
-            Destroy(gameObject);
+            GetComponent<LaserCollision>().LaserDodged();
         }
     }
 }

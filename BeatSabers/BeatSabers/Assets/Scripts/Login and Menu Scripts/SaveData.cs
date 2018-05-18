@@ -14,7 +14,7 @@ public class SaveData  {
 	public static void Save(string path)
 	{
 		SavePlayerData(path);
-	}
+    }
 
 	public static void Save(){
 		SaveCreatedGameData ();
@@ -108,13 +108,13 @@ public class SaveData  {
 				"," + " " + playerData.timeStamp +
 				"," + playerData.score.ToString () +
 				"," + playerData.earlyHit.ToString () +
-				"," + playerData.perfectHit.ToString () +
+                "," + playerData.lateHit.ToString() +
+                "," + playerData.perfectHit.ToString () +
 				"," + playerData.Miss.ToString () +
 				"," + playerData.currentStreak.ToString () +
 				"," + playerData.noOfOrbsSpawning.ToString () +
 				"," + playerData.precision.ToString () +
-				"," + playerData.map +
-				"," + playerData.difficulty);
+				"," + playerData.map);
 
 				outStream.Flush ();
 				outStream.Close (); 
@@ -127,10 +127,7 @@ public class SaveData  {
 		StreamWriter outStream = System.IO.File.AppendText("Assets/Resources/Scientist_CreateGame.csv");
 		//outStream.WriteLine ("playerName, nameOfSong, map, difficulty");
 
-		createGameData.playerName = "saengduean";
-		createGameData.nameOfSong = "abcd";
-		createGameData.map = "Forest";
-		createGameData.difficulty = "Easy";
+		createGameData.playerName = playerData.playerName;
 
 
 
