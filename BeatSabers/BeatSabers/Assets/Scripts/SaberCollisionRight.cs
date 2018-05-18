@@ -30,30 +30,17 @@ public class SaberCollisionRight : MonoBehaviour
         {
             if (device.velocity.sqrMagnitude > 1)
             {
+                //determine distance and send to DifficultyManager
                 string hitbox = "Reaction";
                 GameObject hitBox = GameObject.FindGameObjectWithTag(hitbox);
-                distance = Mathf.Abs(transform.position.z - hitBox.transform.position.z);
+                distance = transform.position.z - hitBox.transform.position.z;
+                DifficultyManager.GetComponent<DifficultyManager>().IncrementNotesHit(distance);
 
+                //provide feedback
                 SteamVR_Controller.Input(controllerIndex).TriggerHapticPulse(3999);
-
-                if (distance < 0.2)
-                {
-                    score = 5;
-                }
-                else if (distance < 0.5)
-                {
-                    score = 2;
-                }
-                else
-                {
-                    score = 1;
-                }
-
                 FindObjectOfType<AudioManager>().Play("OrbHit");
 
-                Debug.Log("Score: " + score);
-                DifficultyManager.GetComponent<DifficultyManager>().IncrementNotesHit(score);
-                SteamVR_Controller.Input(4).TriggerHapticPulse(3999);
+                //Destroy orb
                 Destroy(gameObject);
             }
         }
@@ -65,7 +52,8 @@ public class SaberCollisionRight : MonoBehaviour
         {
             collided = true;
         }
-            if (other.tag == "Respawn")
+
+        if (other.tag == "Respawn")
         {
             GetComponent<ParticleSystem>().startColor = new Color(255, 255, 255, 255);
         }
@@ -75,37 +63,6 @@ public class SaberCollisionRight : MonoBehaviour
             GetComponent<ParticleSystem>().startColor = new Color(0, 0, 0, 255);
             inReactionArea = true;
         }
-        //if (device.velocity.sqrMagnitude > 50)
-        //{
-        //    if (other.tag == "PlayerRight")
-        //    {
-        //        string hitbox = "Reaction";
-        //        GameObject hitBox = GameObject.FindGameObjectWithTag(hitbox);
-        //        distance = Mathf.Abs(transform.position.z - hitBox.transform.position.z);
-
-
-        //        if (distance < 0.2)
-        //        {
-        //            score = 5;
-        //        }
-        //        else if (distance < 0.5)
-        //        {
-        //            score = 2;
-        //        }
-        //        else
-        //        {
-        //            score = 1;
-        //        }
-
-        //        Debug.Log("Score: " + score);
-        //        DifficultyManager.GetComponent<DifficultyManager>().IncrementNotesHit(score);
-        //        SteamVR_Controller.Input(4).TriggerHapticPulse(3999);
-        //        Destroy(gameObject);
-
-        //    }
-        //}
-
-        //Debug.Log(message: other.tag);
     }
 
     private void OnTriggerExit(Collider other)

@@ -21,8 +21,6 @@ public class SaberCollision : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-
-
         tracked = GameObject.Find("Controller (left)");
 		trackedObj = tracked.GetComponent<SteamVR_TrackedObject>();
         controllerIndex = tracked.GetComponent<SteamVR_TrackedObject>().GetDeviceIndex();
@@ -39,31 +37,18 @@ public class SaberCollision : MonoBehaviour {
         {
             if (device.velocity.sqrMagnitude > 1)
             {
-
-                FindObjectOfType<AudioManager>().Play("OrbHit");
-
+                //determine distance and send to DifficultyManager
                 string hitbox = "Reaction";
                 GameObject hitBox = GameObject.FindGameObjectWithTag(hitbox);
-                distance = Mathf.Abs(transform.position.z - hitBox.transform.position.z);
+                distance = transform.position.z - hitBox.transform.position.z;
+                DifficultyManager.GetComponent<DifficultyManager>().IncrementNotesHit(distance);
 
-                if (distance < 0.2)
-                {
-                    score = 5;
-                }
-                else if (distance < 0.5)
-                {
-                    score = 2;
-                }
-                else
-                {
-                    score = 1;
-                }
+                //provide feedback
+                SteamVR_Controller.Input(controllerIndex).TriggerHapticPulse(3999);
+                FindObjectOfType<AudioManager>().Play("OrbHit");
 
-                Debug.Log("Score: " + score);
-                DifficultyManager.GetComponent<DifficultyManager>().IncrementNotesHit(score);
-                SteamVR_Controller.Input(4).TriggerHapticPulse(3999);
+                //Destroy orb
                 Destroy(gameObject);
-
             }
         }
     }
@@ -74,8 +59,6 @@ public class SaberCollision : MonoBehaviour {
         {
             //SteamVR_Controller.Input(controllerIndex).TriggerHapticPulse(3999);
             collided = true;
-            foreach (var snapshot in Snapshots)
-                snapshot.TransitionTo(overTime);
         }
         if (other.tag == "Respawn")
         {
@@ -88,41 +71,10 @@ public class SaberCollision : MonoBehaviour {
             inReactionArea = true;
         }
 
-
-        //if (device.velocity.sqrMagnitude > 50)
-        //{
-        //    if (other.tag == "PlayerLeft" && inReactionArea)
-        //    {
-        //        //FindObjectOfType<AudioManager>().Play("OrbHit");
-
-        //        string hitbox = "Reaction";
-        //        GameObject hitBox = GameObject.FindGameObjectWithTag(hitbox);
-        //        distance = Mathf.Abs(transform.position.z - hitBox.transform.position.z);
-
-        //        if (distance < 0.2)
-        //        {
-        //            score = 5;
-        //        }
-        //        else if (distance < 0.5)
-        //        {
-        //            score = 2;
-        //        }
-        //        else
-        //        {
-        //            score = 1;
-        //        }
-
-        //        Debug.Log("Score: " + score);
-        //        //SteamVR_Controller.Input(3).TriggerHapticPulse(3999);
-        //        DifficultyManager.GetComponent<DifficultyManager>().IncrementNotesHit(score);
-        //        Destroy(gameObject);
-        //    }
-        //}
         else if (other.tag == "Reaction")
         {
             timeEntered = timeAlive;
         }
-        //Debug.Log(message: timeEntered);
     }
     private void OnTriggerExit(Collider other) {
         if (other.tag == "Reaction") {

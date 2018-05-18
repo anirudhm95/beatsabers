@@ -1,49 +1,17 @@
-playerName, playerID, CurrentSong, timeStamp, score, earlyHit, perfectHit, Miss, currentStreak, noOfOrbsSpawning, precision
-Taylor,3333,, 0,0,0,0,0,0,0,0
-Taylor,3333,BeatSabers, 3,450,23,70,30,60,60,1
-Taylor,3333,BeatSabers, 3,450,23,70,30,60,60,1,Forest,Easy
-Taylor,3333,BeatSabers, 3,450,23,70,30,60,60,1,Forest,Easy
-Taylor,3333,BeatSabers, 3,450,23,70,30,60,60,1,Forest,Easy
-Taylor,3333,BeatSabers, 3,450,23,70,30,60,60,1,Forest,Easy
-Taylor,3333,BeatSabers, 3,450,23,70,30,60,60,1,Forest,Easy
-Taylor,3333,BeatSabers, 3,450,23,70,30,60,60,1,Forest,Easy
-Taylor,3333,BeatSabers, 3,450,23,70,30,60,60,1,Forest,Easy
-Taylor,3333,BeatSabers, 3,450,23,70,30,60,60,1,Forest,Easy
-Taylor,3333,BeatSabers, 3,450,23,70,30,60,60,1,Forest,Easy
-Taylor,3333,BeatSabers, 3,450,23,70,30,60,60,1,Forest,Easy
-Taylor,3333,BeatSabers, 3,450,23,70,30,60,60,1,Forest,Easy
-Taylor,3333,BeatSabers, 3,450,23,70,30,60,60,1,Forest,Easy
-Taylor,3333,BeatSabers, 3,450,23,70,30,60,60,1,Forest,Easy
-Taylor,3333,BeatSabers, 3,450,23,70,30,60,60,1,Forest,Easy
-Taylor,3333,BeatSabers, 3,450,23,70,30,60,60,1,Forest,Easy
-Taylor,3333,BeatSabers, 3,450,23,70,30,60,60,1,Forest,Easy
-Taylor,3333,BeatSabers, 3,450,23,70,30,60,60,1,Forest,Easy
-Taylor,3333,BeatSabers, 3,450,23,70,30,60,60,1,Forest,Easy
-Taylor,3333,BeatSabers, 3,450,23,70,30,60,60,1,Forest,Easy
-Taylor,3333,BeatSabers, 3,450,23,70,30,60,60,1,Forest,Easy
-Taylor,3333,BeatSabers, 3,450,23,70,30,60,60,1,Forest,Easy
-Taylor,3333,BeatSabers, 3,450,23,70,30,60,60,1,Forest,Easy
-Taylor,3333,BeatSabers, 3,450,23,70,30,60,60,1,Forest,Easy
-Taylor,3333,BeatSabers, 3,450,23,70,30,60,60,1,Forest,Easy
-Taylor,3333,BeatSabers, 3,450,23,70,30,60,60,1,Forest,Easy
-Taylor,3333,BeatSabers, 3,450,23,70,30,60,60,1,Forest,Easy
-Taylor,3333,BeatSabers, 3,450,23,70,30,60,60,1,Forest,Easy
-Taylor,3333,BeatSabers, 3,450,23,70,30,60,60,1,Forest,Easy
-Taylor,3333,BeatSabers, 3,450,23,70,30,60,60,1,Forest,Easy
-Taylor,3333,BeatSabers, 3,450,23,70,30,60,60,1,Forest,Easy
-Taylor,3333,BeatSabers, 3,450,23,70,30,60,60,1,Forest,Easy
-Taylor,3333,BeatSabers, 3,450,23,70,30,60,60,1,Forest,Easy
-Taylor,3333,BeatSabers, 3,450,23,70,30,60,60,1,Forest,Easy
-Taylor,3333,BeatSabers, 3,450,23,70,30,60,60,1,Forest,Easy
-Taylor,3333,BeatSabers, 3,450,23,70,30,60,60,1,Forest,Easy
-Taylor,3333,BeatSabers, 3,450,23,70,30,60,60,1,Forest,Easy
-Taylor,3333,BeatSabers, 3,450,23,70,30,60,60,1,Forest,Easy
-Taylor,3333,BeatSabers, 3,450,23,70,30,60,60,1,Forest,Easy
-Taylor,3333,BeatSabers, 3,450,23,70,30,60,60,1,Forest,Easy
-Taylor,3333,BeatSabers, 3,450,23,70,30,60,60,1,Forest,Easy
-Taylor,3333,BeatSabers, 3,450,23,70,30,60,60,1,Forest,Easy
-Taylor,3333,BeatSabers, 4,24,3,2,14,1,30,0.4333333,Forest,Easy
-Taylor,3333,BeatSabers, 0,0,0,0,3,0,3,0,Forest,Easy
-Taylor,3333,BeatSabers, 18,149,21,15,13,6,82,0.8292683,Forest,Easy
-Taylor,3333,BeatSabers, 28,647,105,64,79,5,367,0.7792916,Forest,Easy
-Taylor,3333,BeatSabers, 29,661,105,69,85,7,367,0.7629428,Forest,Easy
+playerName, playerID, CurrentSong, timeStamp, score, earlyHit, perfectHit, Miss, currentStreak, noOfOrbsSpawning, precision,map,difficulty
+Taylor,3333,BeatSabers,4,24,3,2,14,1,30,0.4333333,Forest,Easy
+Taylor,3333,BeatSabers,18,149,21,15,13,6,82,0.8292683,Forest,Easy
+Taylor,3333,BeatSabers,28,647,105,64,79,5,367,0.7792916,Forest,Easy
+Taylor,3333,BeatSabers,29,661,105,69,85,7,367,0.7629428,Forest,Easy
+Taylor,3333,Kurobeiniki,0,0,0,0,0,0,154,0,Space,Easy
+Taylor,3333,Meltdown,0,0,0,0,0,0,365,0,Forest,Easy
+Taylor,3333,Kurobeiniki,0,0,0,0,0,0,154,0,Forest,Easy
+Taylor,3333,Kurobeiniki,0,0,0,0,0,0,154,0,Space,Easy
+Taylor,3333,Meltdown,0,0,0,0,0,0,365,0,Space,Easy
+Taylor,3333,Kurobeiniki,0,0,0,0,0,0,154,0,Forest,Easy
+Taylor,3333,Kurobeiniki,0,0,0,0,0,0,154,0,Space,Easy
+Taylor,3333,Meltdown,0,0,0,0,0,0,365,0,Forest,Easy
+Taylor,3333,Kurobeiniki,0,0,0,0,0,0,154,0,Forest,Easy
+Taylor,3333,Meltdown,0,0,0,0,0,0,365,0,Forest,Easy
+Taylor,3333,Meltdown,0,0,0,0,0,0,365,0,Forest,Easy
+Taylor,3333,Kurobeiniki,0,0,0,0,0,0,154,0,Forest,Easy
