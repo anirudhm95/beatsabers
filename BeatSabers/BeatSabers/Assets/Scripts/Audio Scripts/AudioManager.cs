@@ -21,7 +21,7 @@ public class AudioManager : MonoBehaviour {
         clockObject.SetActive(true);
         sequencers[SaveData.createGameData.songIndex].SetActive(true);
         if (SaveData.createGameData.map == "Space")
-            timeOffset += 40f;
+            timeOffset += 60f;
         Invoke("PlayMusic", timeOffset / clock.bpm);
 
         foreach (Sounds s in music)
